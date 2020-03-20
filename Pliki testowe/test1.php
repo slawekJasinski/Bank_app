@@ -1,5 +1,5 @@
 <?php
-//heredoc KCIC
+//heredoc
 //echo phpinfo();
 mcmck
 
