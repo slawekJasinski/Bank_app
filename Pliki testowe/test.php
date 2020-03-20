@@ -1,5 +1,5 @@
 <?php
-//heredoc
+//heredoc KCIC
 //echo phpinfo();
 $name = "Janusz";
 echo <<<TEXT
