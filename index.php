@@ -1,4 +1,5 @@
 <?php include('connect.php');
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,3 +19,4 @@
 </form>
 </body>
 </html>
+<body>
