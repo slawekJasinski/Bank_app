@@ -23,7 +23,7 @@ if(isset($_POST['login'])) {
     $stmt = $conn -> prepare("SELECT * FROM `ebok` where login=?");
     $stmt->bind_param('s', $username);
     $stmt->execute();
-    $result = $stmt->get_result() or die("Błąd logowania" . mysqli_error($conn));
+    $result = $stmt->get_result() or die("Błąd logowania " . mysqli_error($conn));
     $verify = mysqli_fetch_array($result);
     if(is_null($verify)){
     $_SESSION['error-trigger']=1;
