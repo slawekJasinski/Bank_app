@@ -18,7 +18,7 @@ session_start();
         <i class="fas fa-user"></i>
       </div>
       
-      <input type="text" name="login" placeholder="Login" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
+      <input type="email" name="login" placeholder="Login" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
 
       <div class="iconn">
         <i class="fas fa-lock"></i>
