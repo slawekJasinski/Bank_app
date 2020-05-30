@@ -2,21 +2,31 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>login tutorial</title>
-</head>
-<body>
-<form action="login.php" method="post">
-    <input type="text" name="login" required/>
-    <br/>
-    <input type="password" name="password" required/>
-    <br/>
-    <button type="submit">login</button>
-</form>
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>َAnimated Login Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <form class="box" action="login.php" method="post">
+      <h1>Zaloguj się</h1>
+
+      <div class="iconn">
+        <i class="fas fa-user"></i>
+      </div>
+      
+      <input type="text" name="" placeholder="Login" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
+
+      <div class="iconn">
+        <i class="fas fa-lock"></i>
+      </div>
+
+      <input type="password" name="" placeholder="Hasło" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
+      <input type="submit" name="" value="Zaloguj">
+    </form>
+
+  </body>
 </html>
-<body>
