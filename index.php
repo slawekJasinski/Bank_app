@@ -5,7 +5,7 @@ session_start();
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>َAnimated Login Form</title>
+    <title>KASBank</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
