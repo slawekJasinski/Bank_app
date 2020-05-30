@@ -3,8 +3,8 @@ body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: gray;
-  background: url("1.jpg") no-repeat;
+  /*background-color: gray;*/
+  background: url("2.jpg") no-repeat;
   background-size: cover;
 }
 .box{
