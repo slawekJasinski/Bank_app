@@ -18,13 +18,13 @@ session_start();
         <i class="fas fa-user"></i>
       </div>
       
-      <input type="text" name="" placeholder="Login" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
+      <input type="text" name="login" placeholder="Login" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
 
       <div class="iconn">
         <i class="fas fa-lock"></i>
       </div>
 
-      <input type="password" name="" placeholder="Hasło" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
+      <input type="password" name="password" placeholder="Hasło" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
       <input type="submit" name="" value="Zaloguj">
     </form>
 
