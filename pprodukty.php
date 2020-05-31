@@ -60,9 +60,9 @@ ROW;
             <a href="#" class="scrollup"></a>
 
             <div class="sidebar">
-                <a href="sgb.html"><h2>Pulpit</h2></a>
+                <a href="pprodukty.php"><h2>Pulpit</h2></a>
                 <ul>
-                    <li><a href="sgb.html"><i class="fas fa-home"></i>Strona główna</a></li>
+                    <li><a href="pprodukty.php"><i class="fas fa-home"></i>Strona główna</a></li>
                     <li><a href="#"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
                     <li><a href="#"><i class="fas fa-credit-card"></i>Karty</a></li>
                     <li><a href="#"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
