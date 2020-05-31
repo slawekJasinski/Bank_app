@@ -11,7 +11,7 @@ session_start();
 
   <body>
 
-    <form class="box" action="login.php" method="post">
+    <form class="box" action="pprodukty.php" method="post">
       <h1>Zaloguj się</h1>
 
       <div class="iconn">

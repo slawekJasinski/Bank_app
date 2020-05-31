@@ -89,7 +89,7 @@ ROW;
                         <div style="clear: both;"></div>
                     </div>
                     <div class="witanie">
-                        Tu będzie wylogowanie czy coś
+                        <a href="logout.php">Wyloguj<i class="fas fa-sign-out-alt"></i></a>
                     </div>
                     
                 </div>  

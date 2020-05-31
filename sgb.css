@@ -52,10 +52,9 @@ body{
   padding-top: 15px;
   padding-left: 20px;
   /*background-color: red;*/
-
 }
 
-.wrapper .sidebar ul li a .fas, .wrapper .sidebar ul li a .fab {
+.wrapper .sidebar ul li a .fas{
   width: 25px;
   font-size: 20px;
   margin-right: 10px;
@@ -124,6 +123,7 @@ body{
     text-align: right;
     padding-right: 240px;
     color: rgb(240, 240, 240);
+    display: block;
   }
 
 .logo-header{
@@ -157,3 +157,20 @@ body{
   opacity: .85;
 }
 
+.wrapper .main_content .header .witanie a{
+    color: #bdb8d7;
+    /*background-color: pink;*/
+    padding: 15px;
+    font-size: 20px;
+}
+
+.wrapper .main_content .header .witanie a:hover{
+  color: black;
+  background-color: #4b4276;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.wrapper .main_content .header .witanie .fas{
+  padding-left: 10px;
+}
