@@ -60,39 +60,47 @@ ROW;
             <a href="#" class="scrollup"></a>
 
             <div class="sidebar">
-                <a href="pprodukty.php"><h2>Pulpit</h2></a>
-                <ul>
-                    <li><a href="pprodukty.php"><i class="fas fa-home"></i>Strona główna</a></li>
-                    <li><a href="#"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
-                    <li><a href="#"><i class="fas fa-credit-card"></i>Karty</a></li>
-                    <li><a href="#"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
-                    <li><a href="#"><i class="fas fa-exchange-alt"></i>Przelewy</a></li>
-                    <li><a href="#"><i class="fas fa-history"></i>Historia rachunku</a></li>
-                    <li><a href="#"><i class="fas fa-exclamation-circle"></i>Limity</a></li>
-                    <li><a href="#"><i class="fas fa-ban"></i>Blokady kart</a></li>
-                    <li><a href="#"><i class="fas fa-shopping-basket"></i>Koszyk przelewów</a></li>
-                    <li><a href="#"><i class="fas fa-address-book"></i>Odbiorcy i płatnicy</a></li>
-                    <li><a href="#"><i class="fas fa-history"></i>Historia przelewów</a></li>
-                    
-                </ul> 
-                <!--<div class="social_media">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>-->
+                <div class="sidebar-top">
+                    <a href="pprodukty.php"><h2>Pulpit</h2></a>
+                    <ul>
+                        <li><a href="pprodukty.php"><i class="fas fa-home"></i>Strona główna</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
+                        <li><a href="#"><i class="fas fa-credit-card"></i>Karty</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
+                        <li><a href="#"><i class="fas fa-exchange-alt"></i>Przelewy</a></li>
+                        <li><a href="#"><i class="fas fa-history"></i>Historia rachunku</a></li>
+                        <li><a href="#"><i class="fas fa-exclamation-circle"></i>Limity</a></li>
+                        <li><a href="#"><i class="fas fa-ban"></i>Blokady kart</a></li>
+                        <li><a href="#"><i class="fas fa-shopping-basket"></i>Koszyk przelewów</a></li>
+                        <li><a href="#"><i class="fas fa-address-book"></i>Odbiorcy i płatnicy</a></li>
+                        <li><a href="#"><i class="fas fa-history"></i>Historia przelewów</a></li>
+                    </ul> 
+                </div>
+                
+                <div class="sidebar-bottom">
+                    <div class="sidebar-top">
+                        <ul>
+                            <li><a href="#" style="padding: 0; text-align: center; line-height: 50px;">Ustawienia</a></li>
+                            <li><a href="logout.php" style="padding: 0; text-align: center; line-height: 50px;">Wyloguj</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <div class="main_content">
                 <div class="header">
+
                     <div class="logo-header">
                         <img src="logo.png" alt="logo KAS Bank" >
                         <div style="clear: both;"></div>
                     </div>
-                    <div class="witanie">
+
+                    <div class="sign-out">
                         <a href="logout.php">Wyloguj<i class="fas fa-sign-out-alt"></i></a>
                     </div>
                     
                 </div>  
+
                 <div class="info">
                     <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
                     <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
