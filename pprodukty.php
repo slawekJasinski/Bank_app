@@ -52,7 +52,7 @@ ROW;
         <script src="js/jquery.scrollTo.min.js"></script>
         <script src="js/scroll-up.js"></script>
 	
-        <title>Side-navigation-bar</title>
+        <title>KAS Bank - bankowość elektroniczna</title>
     </head>
     
     <body>
