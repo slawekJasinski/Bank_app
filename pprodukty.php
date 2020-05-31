@@ -1,5 +1,5 @@
 <?php
-{
+/*{ POCZĄTEK KOMENTARZA
     session_start();
     $_SESSION['account_number']='12345678901234567890123456';
     require_once('connect.php');
@@ -23,10 +23,10 @@
 ROW;
         }
     }
-}
+}   KONIEC KOMENTARZA*/ 
 ?>
 
-<!---<form action="logout.php" method="post">
+<!-- POCZĄREK KOMENTARZA <form action="logout.php" method="post">
     <button type="submit">logout</button>
 </form>
 <form action="karty.php" method="post">
@@ -34,7 +34,8 @@ ROW;
 </form>
 <form action="transfer_form.php" method="post">
     <button type="submit">Może byś tak zrobił przelew?</button>
-</form> -->
+</form> KONIEC KOMENTARZA-->
+
 <!DOCTYPE html>
     <html lang="en">
     <head>
