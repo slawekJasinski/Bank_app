@@ -65,7 +65,7 @@ ROW;
                     <ul>
                         <li><a href="pprodukty.php"><i class="fas fa-home"></i>Strona główna</a></li>
                         <li><a href="#"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
-                        <li><a href="#"><i class="fas fa-credit-card"></i>Karty</a></li>
+                        <li><a href="karty.php"><i class="fas fa-credit-card"></i>Karty</a></li>
                         <li><a href="#"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
                         <li><a href="#"><i class="fas fa-exchange-alt"></i>Przelewy</a></li>
                         <li><a href="#"><i class="fas fa-history"></i>Historia rachunku</a></li>
@@ -91,7 +91,7 @@ ROW;
                 <div class="header">
 
                     <div class="logo-header">
-                        <img src="logo.png" alt="logo KAS Bank" >
+                        <img src="img/logo.png" alt="logo KAS Bank" >
                         <div style="clear: both;"></div>
                     </div>
 
