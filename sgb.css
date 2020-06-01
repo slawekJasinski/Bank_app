@@ -13,7 +13,6 @@
 
 body{
    background-color: #f3f5f9;
-   background: url("img/bg.jpg");
    background-size: cover;
 }
 
@@ -120,8 +119,7 @@ body{
   color: #717171;
   line-height: 25px;
   padding-top: 90px;
-  margin-top: 140px;
-  background-color: yellowgreen;
+  /*margin-top: 140px;*/
 }
 
 .wrapper .main_content .info div{
