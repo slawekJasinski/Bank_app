@@ -3,7 +3,7 @@ jQuery(function($)
                 //zresetuj scrolla
                 $.scrollTo(0);
                 
-                $('.scrollup').click(function() { $.scrollTo($('body')); });
+                $('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
             }
             );
             
