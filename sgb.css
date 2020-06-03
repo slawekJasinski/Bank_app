@@ -12,10 +12,8 @@
 }
 
 body{
-   /*background-color: #f3f5f9;*/
-   background-color: green;
-   /*background: url("img/bg.jpg");*/
-   background-size: cover;
+   background-color: #717171;
+   background: url("https://www.blendswap.com/blend_previews/12461/0/0");
 }
 
 .wrapper{
@@ -27,7 +25,7 @@ body{
   width: 220px;
   height: 100%;
   background: #4b4276;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   position: fixed;
 }
 
@@ -35,7 +33,8 @@ body{
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
+  padding: 30px;
 }
 
 .wrapper .sidebar .sidebar-top ul li{
@@ -148,7 +147,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: 750px;
-  border-radius: 10px;
+  border-radius: 20px;
   font-size: 26px;
   line-height: 30px;
   color: rgb(226, 226, 226);
@@ -177,6 +176,25 @@ body{
     height: 100%;
   }
 
+  .btn{
+    color: #bdb8d7;
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px;
+    margin: 20px;
+    height: 50px;
+    padding: 15px;
+    background-color: #594f8d;
+  }
+
+  .btn:hover{
+    cursor: pointer;
+    color: black;
+    background-color: #4b4276;
+    color: #fff;
+    border-radius: 10px;
+  }
+
 .logo-header{
   height: 100%;
   float: left;  
@@ -194,19 +212,6 @@ body{
   position: fixed;
 }
 
-.scrollup
-{
-	width: 64px;
-	height: 64px;
-	text-decoration: none;
-	background: url("img/up.png") no-repeat 0px 0px;
-	position: fixed;
-	right: 50px;
-	bottom: 50px;
-  display: none;
-  opacity: .85;
-}
-
 .wrapper .main_content .header .sign-out a{
     color: #bdb8d7;
     padding: 15px;
@@ -222,4 +227,17 @@ body{
 
 .wrapper .main_content .header .sign-out .fas{
   padding-left: 10px;
+}
+
+.scrollup
+{
+	width: 64px;
+	height: 64px;
+	text-decoration: none;
+	background: url("img/up.png") no-repeat 0px 0px;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+  display: none;
+  opacity: .85;
 }

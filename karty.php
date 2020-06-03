@@ -2,7 +2,7 @@
     session_start();
     require_once('connect.php');
     if (isset($_SESSION['username'])) {
-        $conn = mysqli_connect('localhost', 'root', '', 'wikomp_gr1'); //połaczenie z baza
+        $conn = mysqli_connect('localhost', 'root', '', 'wikomp_gr11'); //połaczenie z baza
         $username = $_SESSION['username'];
         $id = $_SESSION['id'];
         $sql = "SELECT * FROM `produkty_klienci` join `karty` using (id_produktu_klienta) WHERE id_klienta=$id";

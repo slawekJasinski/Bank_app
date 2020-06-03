@@ -1,7 +1,7 @@
 <?php
 session_start();
 $_SESSION['error-trigger']=0;
-$conn = mysqli_connect('localhost', 'wikomp_gr1', 'BDWsB2021', 'wikomp_gr1');
+$conn = mysqli_connect('localhost', 'wikomp_gr1', 'BDWsB2021', 'wikomp_gr11');
 //wyciągniecie wartości z indexu
 if(isset($_POST['login'])) {
     $username = $_POST['login'];

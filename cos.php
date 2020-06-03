@@ -1,7 +1,7 @@
 <?php
 session_start();
-define('DB_NAME', 'wikomp_gr1');
-define('DB_USER', 'wikomp_gr1');
+define('DB_NAME', 'wikomp_gr11');
+define('DB_USER', 'wikomp_gr11');
 define('DB_PASSWORD', 'BDWsB2021');
 define('DB_HOST', 'localhost');
 $conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);

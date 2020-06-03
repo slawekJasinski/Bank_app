@@ -1,5 +1,5 @@
 <?php
-/*{ POCZĄTEK KOMENTARZA
+{ 
     session_start();
     $_SESSION['account_number']='12345678901234567890123456';
     require_once('connect.php');
@@ -23,18 +23,18 @@
 ROW;
         }
     }
-}   KONIEC KOMENTARZA*/ 
+}  
 ?>
 
-<!-- POCZĄREK KOMENTARZA <form action="logout.php" method="post">
+ <!--<form action="logout.php" method="post">
     <button type="submit">logout</button>
 </form>
 <form action="karty.php" method="post">
-    <button type="submit">PRzejdzź do kart</button>
+    <button type="submit">Przejdź do kart</button>
 </form>
-<form action="transfer_form.php" method="post">
+<form action="Przelew.php" method="post">
     <button type="submit">Może byś tak zrobił przelew?</button>
-</form> KONIEC KOMENTARZA-->
+</form> -->
 
 <!DOCTYPE html>
     <html lang="en">
@@ -59,11 +59,11 @@ ROW;
 
             <div class="sidebar">
                 <div class="sidebar-top">
-                    <a href="pprodukty.php"><h2>Pulpit</h2></a>
+                    <a href="#"><h2 style="">Pulpit</h2></a>
                     <ul>
-                        <li><a href="pprodukty.php"><i class="fas fa-home"></i>Strona główna</a></li>
+                        <li><a href="#"><i class="fas fa-home"></i>Strona główna</a></li>
                         <li><a href="#"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
-                        <li><a href="karty.php"><i class="fas fa-credit-card"></i>Karty</a></li>
+                        <li><a href="#"><i class="fas fa-credit-card"></i>Karty</a></li>
                         <li><a href="#"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
                         <li><a href="#"><i class="fas fa-exchange-alt"></i>Przelewy</a></li>
                         <li><a href="#"><i class="fas fa-history"></i>Historia rachunku</a></li>
@@ -94,7 +94,11 @@ ROW;
                     </div>
 
                     <div class="sign-out">
-                        <a href="logout.php">Wyloguj<i class="fas fa-sign-out-alt"></i></a>
+
+                    <form action="logout.php" method="get">
+                        <button class="btn">Wyloguj<i class="fas fa-sign-out-alt"></i></button>
+                    </form>
+                                                
                     </div>
                     
                 </div>  
@@ -105,6 +109,10 @@ ROW;
                     </div>
 
                     <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero qu</div>
+                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
+                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
+                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
+                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
                     <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
                     <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
                     <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
