@@ -13,7 +13,8 @@
 
 body{
    /*background-color: #f3f5f9;*/
-   background-color: pink;
+   background-color: green;
+   /*background: url("img/bg.jpg");*/
    background-size: cover;
 }
 
