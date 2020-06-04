@@ -78,8 +78,8 @@ ROW;
                 <div class="sidebar-bottom">
                     <div class="sidebar-top">
                         <ul>
-                            <li><a href="#" style="padding: 0; text-align: center; line-height: 50px;">Ustawienia</a></li>
-                            <li><a href="logout.php" style="padding: 0; text-align: center; line-height: 50px;">Wyloguj</a></li>
+                            <li><a href="#" style="padding: 0; text-align: center; line-height: 50px;">Ustawienia</a></li> 
+                            <li><a href="#" style="padding: 0; text-align: center; line-height: 50px;">Wyloguj</a></li> <!--zrobić forma!!!-->
                         </ul>
                     </div>
                 </div>
@@ -95,9 +95,9 @@ ROW;
 
                     <div class="sign-out">
 
-                    <form action="logout.php" method="get">
-                        <button class="btn">Wyloguj<i class="fas fa-sign-out-alt"></i></button>
-                    </form>
+                        <form action="logout.php" method="get">
+                            <button class="btn">Wyloguj<i class="fas fa-sign-out-alt"></i></button>
+                        </form>
                                                 
                     </div>
                     
@@ -107,19 +107,105 @@ ROW;
                     <div class="warn">
                         <div class="msg">Wszelkie e-maile, wiadomości i telefony, w których jesteś proszony o <strong style="color: #fff;">dane autoryzacyjne</strong> typu numer identyfikacyjny, kod dostępu lub kod SMS, traktuj jako <b style="color: #fff;">próbę oszustwa</b>!</div>
                     </div>
+                    <!--może rozdzielić warn i square (od info)-->
 
-                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero qu</div>
-                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
-                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
-                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
-                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
-                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
-                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
-                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
-                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
-                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
-                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
-                    <div class="square">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem odit porro qui officia reprehenderit ea libero quia, ipsum expedita autem repellat iste ab similique at ad? Quibusdam, eum numquam.</div>
+                    <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <form action="twoje_sprawy.php" method="get">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <form action="twoje_sprawy.php" method="get">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <form action="twoje_sprawy.php" method="get">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <form action="twoje_sprawy.php" method="get">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <form action="twoje_sprawy.php" method="get">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <form action="twoje_sprawy.php" method="get">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <form action="twoje_sprawy.php" method="get">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <form action="twoje_sprawy.php" method="get">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <form action="twoje_sprawy.php" method="get">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <form action="twoje_sprawy.php" method="get">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <form action="twoje_sprawy.php" method="get">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <form action="twoje_sprawy.php" method="get">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </form>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>

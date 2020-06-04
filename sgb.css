@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
-
+/*mogłem to wpakować w Sass-a :P*/
 
 *{
   margin: 0;
@@ -12,8 +12,8 @@
 }
 
 body{
-   background-color: #717171;
-   background: url("https://www.blendswap.com/blend_previews/12461/0/0");
+  background-color: #717171;
+  background: url("img/bg3.jpg");
 }
 
 .wrapper{
@@ -25,7 +25,6 @@ body{
   width: 220px;
   height: 100%;
   background: #4b4276;
-  /*padding-top: 30px;*/
   position: fixed;
 }
 
@@ -33,7 +32,6 @@ body{
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  /*margin-bottom: 30px;*/
   padding: 30px;
 }
 
@@ -53,7 +51,7 @@ body{
   padding-left: 20px;
 }
 
-.wrapper .sidebar .sidebar-top ul li a .fas{
+.wrapper .sidebar .sidebar-top ul li a .fas{ /* fonty (ikonki) */
   width: 25px;
   font-size: 20px;
   margin-right: 10px;
@@ -92,15 +90,6 @@ body{
   background-color: #4b4276;
 }
 
-.wrapper .sidebar .sidebar-bottom .social_media a:hover{
-  background-color: #4b4276;
-}
-
-.wrapper .sidebar .sidebar-bottom .social_media ul li a .fas{
-  width: 25px;
-  font-size: 20px;
-  margin-right: 10px;
-}
 /*#########################################################*/
 .wrapper .main_content{
   margin-left: 220px;
@@ -112,32 +101,18 @@ body{
   /*border-bottom: 1px solid #e0e4e8;*/
   height: 90px;
   width: 100%;
+  position: fixed;
+  z-index: 1; /* <--- żeby kafelki .square po scrollowaniu były "pod" .header*/
 }
-
-/*.wrapper .main_content .info{ testowanie teraz ##########################
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-top: 110px;
-  color: #717171;
-  line-height: 25px;
-}
-
-.wrapper .main_content .info div{
-  margin-bottom: 20px;
-  text-align: justify;
-}*/
 
 .wrapper .main_content .info{
-  /*background-color: gray;*/
   margin-top: 90px;
-  width: 100%;
+  width: 100;
   height: 100%;
   line-height: 25px;
 }
 
 .wrapper .main_content .info .warn{
-  /*background-color: pink;*/
   text-align: center;
   padding: 40px;
 }
@@ -156,44 +131,70 @@ body{
 
 .wrapper .main_content .info .square{
   text-align: justify;
-  background-color: yellow;
+  background-color: rgb(243, 243, 243);
   margin-bottom: 10px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 380px;
-  height: 250px;
+  height: 280px;
   float: left;
-  }
+  padding: 15px;
+  border-radius: 20px;
+  position: relative;
+}
 
 .sign-out{
-    line-height: 90px;
-    text-align: center;
-    text-align: right;
-    padding-right: 240px;
-    color: rgb(240, 240, 240);
-    display: block;
-    height: 100%;
-  }
+  line-height: 90px;
+  text-align: center;
+  text-align: right;
+  padding-right: 240px;
+  color: rgb(240, 240, 240);
+  display: block;
+  height: 100%;
+}
 
-  .btn{
-    color: #bdb8d7;
-    font-size: 20px;
-    border: 0;
-    border-radius: 10px;
-    margin: 20px;
-    height: 50px;
-    padding: 15px;
-    background-color: #594f8d;
-  }
+.btn{
+  color: #bdb8d7;
+  font-size: 20px;
+  border: 0;
+  border-radius: 10px;
+  margin: 20px;
+  height: 50px;
+  padding: 15px;
+  background-color: #594f8d;
+}
 
-  .btn:hover{
-    cursor: pointer;
-    color: black;
-    background-color: #4b4276;
-    color: #fff;
-    border-radius: 10px;
-  }
+.btn:hover{
+  cursor: pointer;
+  color: black;
+  background-color: #4b4276;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.btn2{
+  color: #bdb8d7;
+  font-size: 20px;
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: 50px;
+  padding: 15px;
+  background-color: #4b4276;
+  text-align: center; 
+  width: 65%;
+  transition: .5s;
+ }
+  
+.btn2:hover{
+  cursor: pointer;
+  background-color: #594f8d;
+  color: #fff;
+  border-radius: 10px;
+  width: 85%;
+  transition: .5s;
+}
 
 .logo-header{
   height: 100%;
@@ -208,14 +209,10 @@ body{
   background-color: #bdb8d7;
 }
 
-.header{
-  position: fixed;
-}
-
 .wrapper .main_content .header .sign-out a{
-    color: #bdb8d7;
-    padding: 15px;
-    font-size: 20px;
+  color: #bdb8d7;
+  padding: 15px;
+  font-size: 20px;
 }
 
 .wrapper .main_content .header .sign-out a:hover{
@@ -229,8 +226,7 @@ body{
   padding-left: 10px;
 }
 
-.scrollup
-{
+.scrollup{
 	width: 64px;
 	height: 64px;
 	text-decoration: none;
@@ -239,5 +235,11 @@ body{
 	right: 50px;
 	bottom: 50px;
   display: none;
-  opacity: .85;
+}
+
+.test{
+  position: absolute;
+  width: 350px;
+  text-align: center;
+  bottom: 0;
 }
