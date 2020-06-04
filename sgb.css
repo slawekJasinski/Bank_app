@@ -13,7 +13,7 @@
 
 body{
   background-color: #717171;
-  background: url("img/bg.jpg");
+  background: url("img/background3.jpg");
 }
 
 .wrapper{
@@ -235,6 +235,7 @@ body{
 	right: 50px;
 	bottom: 50px;
   display: none;
+  z-index: 1;
 }
 
 .test{
