@@ -61,11 +61,11 @@ ROW;
                 <div class="sidebar-top">
                     <a href="#"><h2 style="">Pulpit</h2></a>
                     <ul>
-                        <li><a href="#"><i class="fas fa-home"></i>Strona główna</a></li>
+                        <li><a href="pprodukty.php"><i class="fas fa-home"></i>Strona główna</a></li>
                         <li><a href="#"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
-                        <li><a href="#"><i class="fas fa-credit-card"></i>Karty</a></li>
-                        <li><a href="#"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
-                        <li><a href="#"><i class="fas fa-exchange-alt"></i>Przelewy</a></li>
+                        <li><a href="karty.php"><i class="fas fa-credit-card"></i>Karty</a></li>
+                        <li><a href="twoje_sprawy.php"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
+                        <li><a href="Przelew.php"><i class="fas fa-exchange-alt"></i>Przelewy</a></li>
                         <li><a href="#"><i class="fas fa-history"></i>Historia rachunku</a></li>
                         <li><a href="#"><i class="fas fa-exclamation-circle"></i>Limity</a></li>
                         <li><a href="#"><i class="fas fa-ban"></i>Blokady kart</a></li>

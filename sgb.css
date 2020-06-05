@@ -13,7 +13,6 @@
 
 body{
   /*background-color: #717171;*/
-  background-color: black;
   background: url("img/background3.jpg");
 }
 
@@ -27,6 +26,10 @@ body{
   height: 100%;
   background: #4b4276;
   position: fixed;
+  z-index: 1;
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 .wrapper .sidebar .sidebar-top h2{
@@ -102,11 +105,13 @@ body{
 .wrapper .main_content .header{
   background-color: #594f8d;
   color: #717171;
-  border-bottom: 1px solid #e0e4e8;
   height: 90px;
   width: 100%;
   position: fixed;
   z-index: 1; /* <--- żeby kafelki .square po scrollowaniu były "pod" .header*/
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,1);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,1);
 }
 
 .wrapper .main_content .info{
