@@ -6,7 +6,7 @@ session_start();
   <head>
     <meta charset="utf-8">
     <title>KAS Bank - logowanie</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
   </head>
 
   <body>
@@ -27,6 +27,10 @@ session_start();
       <input type="password" name="password" placeholder="Hasło" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
       <input type="submit" name="" value="Zaloguj">
     </form>
+
+    <nav>
+      <a href="admin">Zaloguj jako administrator</a>
+    </nav>
 
   </body>
 </html>
