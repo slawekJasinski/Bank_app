@@ -59,13 +59,13 @@ ROW;
 
             <div class="sidebar">
                 <div class="sidebar-top">
-                    <a href="#"><h2 style="">Pulpit</h2></a>
+                    <a href="#"><h2>Pulpit</h2></a>
   
                     <ul>
-                        <li><a href="pprodukty.php"><i class="fas fa-home"></i>Strona główna</a></li>
-                        <li><a href="#"><i class="fas fa-briefcase"></i>Dodaj klienta [test]</a></li>
-                        <li><a href="karty.php"><i class="fas fa-credit-card"></i>Usuń klienta [test]</a></li>
-                        <li><a href="twoje_sprawy.php"><i class="fas fa-file-alt"></i>Zarządzanie klientami</a></li>
+                        <li><a href="admin_panel.php"><i class="fas fa-home"></i>Strona główna</a></li>
+                        <li><a href="#"><i class="fas fa-user-cog"></i>Zarządzanie klientami</a></li>
+                        <li><a href="#"><i class="fas fa-user-plus"></i>Dodaj klienta</a></li>
+                        <li><a href="#"><i class="fas fa-user-minus"></i>Usuń klienta</a></li>
                     </ul> 
                 </div>
                 
@@ -73,7 +73,7 @@ ROW;
                     <div class="sidebar-top">
                         <ul>
                             <li><a href="#" style="padding: 0; text-align: center; line-height: 50px;">Ustawienia</a></li> 
-                            <li style="border-bottom: 1px solid green;"><a href="#" style="padding: 0; text-align: center; line-height: 50px;">Wyloguj</a></li> <!--zrobić forma!!!-->
+                            <li><a href="#" style="padding: 0; text-align: center; line-height: 50px;">Wyloguj</a></li> <!--zrobić forma!!!-->
                         </ul>
                     </div>
                 </div>
@@ -98,16 +98,31 @@ ROW;
                 </div>  
 
                 <div class="info">
+                    
 
-                    <div class="square">
-                        <p>Wnioski</p>
-                        <div class="test">
-                            <form action="twoje_sprawy.php" method="get">
-                                <button class="btn2">Zobacz swoje wnioski</button>
-                            </form>
+                        <div class="square">
+                            <p>W tym panelu możesz utworzyć konto dla nowego klienta</p>
+                            <p><a href="#"><i class="fas fa-user-plus"></i></a></p>
+                            <div class="test">
+                                <a href="#">
+                                    <button class="btn2">Utwórz konto nowego klienta</button>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                   
+                        <div class="square">
+                            <p>W tym panelu możesz zarządać istniejącymi klientami</p>
+                            <p><a href="#"><i class="fas fa-user-cog"></i></a></p>
+                            <div class="test">
+                                <a href="#">
+                                    <button class="btn2">Przejdź do zarządzania</button>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        
+                        
+
+                    
                 </div>
             </div>
         </div>

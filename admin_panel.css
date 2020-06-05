@@ -11,9 +11,15 @@
   /*scroll-behavior: smooth;*/
 }
 
+
+
 body{
   /*background-color: #717171;*/
-  background-color: gray;
+  background: url("img/background3.jpg");
+  background-size: 10%;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .wrapper{
@@ -42,7 +48,7 @@ body{
   text-align: center;
   padding: 30px;
   /*border-right: 0px solid #e0e4e8;*/ /*borderrrrrrrrrrrrrrr*/
-    height: 89px;
+  height: 89px;
 }
 
 .wrapper .sidebar .sidebar-top ul li{
@@ -51,15 +57,6 @@ body{
   border-top: 1px solid rgba(226,226,226,0.1);
   height: 50px;
 }    
-
-.wrapper .sidebar .sidebar-top ul li:first-child{
-  border-top: 1px solid rgba(226,226,226,0.1);
-}
-
-.wrapper .sidebar .sidebar-top ul li:last-child{
-    border-bottom: 1px solid rgba(226,226,226,0.1);
-    border-top: 1px solid rgba(226,226,226,0.1);
-}
 
 .wrapper .sidebar .sidebar-top ul li a{
   color: #bdb8d7;
@@ -86,7 +83,7 @@ body{
 
 .wrapper .sidebar .sidebar-bottom{
     /*height: 100%;*/
-    height: 70%;
+    height: 680px;
     background-color: #594f8d;
     /*padding-top: 300px;*/
     position: relative;
@@ -129,15 +126,15 @@ body{
   width: 100%;
   position: fixed;
   z-index: 1; /* <--- żeby kafelki .square po scrollowaniu były "pod" .header*/
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,1);
-  box-shadow: 0px 5px 5px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,.75);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,.75);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,.75);
 }
 
 .wrapper .main_content .info{
-  margin-top: 90px;
-  width: 100;
-  height: 100%;
+  margin-top: 200px;
+  width: 100vw;
+  /*height: 100%;*/
   line-height: 25px;
 }
 
@@ -159,19 +156,43 @@ body{
 }
 
 .wrapper .main_content .info .square{
-  text-align: justify;
+  text-align: center;
   background-color: rgb(243, 243, 243);
-  margin-bottom: 15px;
+  /*margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 15px;
-  width: 380px;
+  margin-top: 15px;*/
+  width: 900px;
   height: 280px;
-  float: left;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 50px;
+  /*float: left;*/
   padding: 15px;
   border-radius: 20px;
   position: relative;
+  color: rgb(65, 70, 139);
+  font-size: 30px;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
+-moz-box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
+box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
 }
+
+.wrapper .main_content .info .square:last-child{
+    margin-bottom: 110px;
+}
+
+.wrapper .main_content .info .square p:first-of-type{
+    margin-top: 30px;
+}
+
+.wrapper .main_content .info .square i{
+    color: green;
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+
 
 .sign-out{
   /*line-height: 90px;*/
@@ -209,7 +230,7 @@ body{
   border-radius: 10px;
   margin-bottom: 20px;
   height: 50px;
-  padding: 15px;
+  /*padding: 15px;*/ /*czy to musi być?????*/
   background-color: #4b4276;
   text-align: center; 
   width: 65%;
@@ -263,15 +284,16 @@ body{
 	position: fixed;
 	right: 50px;
 	bottom: 50px;
-  display: none;
-  z-index: 1;
+    display: none;
+    z-index: 1;
 }
 
 .test{
   position: absolute;
-  width: 350px;
+  width: 870px;
   text-align: center;
   bottom: 0;
+  padding: 0 150px;
 }
 
 .btn-test{
@@ -283,3 +305,7 @@ body{
   cursor: pointer;
 }
 
+.info2{
+    width: 100%;
+    height: 500px;
+}

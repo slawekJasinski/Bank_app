@@ -112,9 +112,105 @@ ROW;
                     <div class="square">
                         <p>Wnioski</p>
                         <div class="test">
-                            <form action="twoje_sprawy.php" method="get">
+                            <a href="twoje_sprawy.php">
                                 <button class="btn2">Zobacz swoje wnioski</button>
-                            </form>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <a href="twoje_sprawy.php">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <a href="twoje_sprawy.php">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <a href="twoje_sprawy.php">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <a href="twoje_sprawy.php">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <a href="twoje_sprawy.php">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <a href="twoje_sprawy.php">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <a href="twoje_sprawy.php">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <a href="twoje_sprawy.php">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <a href="twoje_sprawy.php">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <a href="twoje_sprawy.php">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <a href="twoje_sprawy.php">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="square">
+                        <p>Wnioski</p>
+                        <div class="test">
+                            <a href="twoje_sprawy.php">
+                                <button class="btn2">Zobacz swoje wnioski</button>
+                            </a>
                         </div>
                     </div>
                    
