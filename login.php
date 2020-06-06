@@ -1,7 +1,7 @@
 <?php
 session_start();
 $_SESSION['error-trigger']=0;
-$conn = mysqli_connect('localhost', 'wikomp_gr1', 'BDWsB2021', 'wikomp_gr11');
+$conn = mysqli_connect('localhost', 'wikomp_gr1', 'BDWsB2021', 'wikomp_gr1');
 //wyciągniecie wartości z indexu
 if(isset($_POST['login'])) {
     $username = $_POST['login'];
@@ -30,7 +30,7 @@ if(isset($_POST['login'])) {
                 $_SESSION['success'] = "OK";
                 header('location: pprodukty.php');
             } else {
-                if ($user['dozwolone_logowanie'] == 0) {
+                if ($user['czy_dozwolone_logowanie'] == 0) {
                     $_SESSION['error-trigger'] = 1;
                     $_SESSION['error'] = "Konto zablokowane. Skontaktuj się z bankiem";
                 }else{

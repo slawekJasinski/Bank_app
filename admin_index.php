@@ -1,4 +1,5 @@
-<?php include('connect.php');
+<?php
+include('connect.php');
 session_start();
 ?>
 <!DOCTYPE html>
@@ -7,13 +8,13 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>login tutorial</title>
+    <title>KASBank - administracja</title>
 </head>
 <body>
-<form action="login.php" method="post">
+<form action="admin_login.php" method="post">
     <input type="text" name="login" id="login" required/>
     <br/>
-    <input type="password" name="password" id="password"required/>
+    <input type="password" name="password" id="password" required/>
     <br/>
     <button type="submit">login</button>
 </form>
