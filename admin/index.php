@@ -30,7 +30,7 @@ session_start();
            		   </div>
            		   <div class="div">
            		   		<h5>login</h5>
-           		   		<input type="email" class="input" name="login" required>
+           		   		<input type="text" class="input" name="login" required>
            		   </div>
            		</div>
            		<div class="input-div pass">
