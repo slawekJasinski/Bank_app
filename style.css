@@ -74,6 +74,10 @@ nav a{
   background: #2ecc71;
 }
 
-.iconn > i{
+.icon {
   color: white;
+}
+
+.icon:hover{
+  cursor: pointer;
 }

@@ -30,3 +30,9 @@ ROW;
     <button type="submit">logout</button>
 </form>
 
+<style>
+    td{
+        color: #fff;
+    }
+</style>
+

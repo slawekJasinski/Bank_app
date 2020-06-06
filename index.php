@@ -10,27 +10,29 @@ session_start();
   </head>
 
   <body>
-
-    <form class="box" action="pprodukty.php" method="post">
-      <h1>Zaloguj się</h1>
-
-      <div class="iconn">
-        <i class="fas fa-user"></i>
-      </div>
-      
-      <input type="email" name="login" placeholder="Login" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
-
-      <div class="iconn">
-        <i class="fas fa-lock"></i>
-      </div>
-
-      <input type="password" name="password" placeholder="Hasło" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
-      <input type="submit" name="" value="Zaloguj">
-    </form>
-
     <nav>
-      <a href="admin">Zaloguj jako administrator</a>
+      <a href="admin/index.php">Zaloguj jako administrator</a>
     </nav>
 
+    <form class="box" action="admin_login.php" method="post">
+      <h1>Zaloguj się</h1>
+
+      <label for="login">
+        <div class="icon">
+          <i class="fas fa-user"></i>
+        </div>
+      </label>
+
+      <input type="email" name="login" id="login" placeholder="Login" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
+
+      <label for="password">
+        <div class="icon">
+          <i class="fas fa-lock"></i>
+        </div>
+      </label>
+
+      <input type="password" name="password" id="password" placeholder="Hasło" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
+      <input type="submit" name="" value="Zaloguj">
+    </form>
   </body>
 </html>

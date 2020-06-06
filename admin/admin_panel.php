@@ -2,8 +2,8 @@
 { 
     session_start();
     $_SESSION['account_number']='12345678901234567890123456';
-    require_once('connect.php');
-    if (isset($_SESSION['username'])) {
+    require_once('../connect.php');
+    /*if (isset($_SESSION['username'])) {
         $username = $_SESSION['username'];
         $id = $_SESSION['id'];
         $sql = "SELECT * FROM `produkty_klienci` left join `produkty` on produkty_klienci.id_produktu=produkty.id_produktu where id_klienta=$id";
@@ -22,19 +22,9 @@
       </br>
 ROW;
         }
-    }
+    }*/
 }  
 ?>
-
- <!--<form action="logout.php" method="post">
-    <button type="submit">logout</button>
-</form>
-<form action="karty.php" method="post">
-    <button type="submit">Przejdź do kart</button>
-</form>
-<form action="Przelew.php" method="post">
-    <button type="submit">Może byś tak zrobił przelew?</button>
-</form> -->
 
 <!DOCTYPE html>
     <html lang="en">
@@ -83,13 +73,13 @@ ROW;
                 <div class="header">
 
                     <div class="logo-header">
-                        <img src="img/logo.png" alt="logo KAS Bank" >
+                        <img src="../img/logo.png" alt="logo KAS Bank" >
                         <div style="clear: both;"></div>
                     </div>
 
                     <div class="sign-out">
 
-                        <form action="logout.php" method="get">
+                        <form action="../admin_logout.php" method="get">
                             <button class="btn">Wyloguj<i class="fas fa-sign-out-alt"></i></button>
                         </form>
                                                 
