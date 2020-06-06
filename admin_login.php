@@ -39,7 +39,11 @@ if (isset($_POST['login'])) {
                     $_SESSION['error-trigger'] = 1;
                     $_SESSION['error'] = "Błedne hasło";
                     }
-                header('location: Produkty.php');
+                ?>
+                <script>
+                    history.back()
+                </script>
+                <?php
                 }
             }
         }
