@@ -14,7 +14,7 @@ session_start();
       <a href="admin/index.php">Zaloguj jako administrator</a>
     </nav>
 
-    <form class="box" action="admin_login.php" method="post">
+    <form class="box" action="login.php" method="post">
       <h1>Zaloguj się</h1>
 
       <label for="login">
