@@ -7,7 +7,7 @@
     <title>KASBank - administracja</title>
 </head>
 <body>
-Status sprawy:<?php
+<h1 style="color: red;">Status sprawy:</h1><?php
 {
     session_start();
     require_once('connect.php');
@@ -21,7 +21,7 @@ Status sprawy:<?php
         }
         echo "</select>";
     ?>
-    </select><br><br>
+    </select><br><br>  <!-- tu jest jakieś zamknięcie selecta z html ale nie ma otwarcia, pomyłka? -->
     <?php
     if(isset($_POST['number'])) {
         $account = $_POST['number'];

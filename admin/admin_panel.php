@@ -27,7 +27,7 @@ ROW;
 ?>
 
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,7 +54,7 @@ ROW;
                     <ul>
                         <li><a href="admin_panel.php"><i class="fas fa-home"></i>Strona główna</a></li>
                         <li><a href="#"><i class="fas fa-user-cog"></i>Zarządzanie klientami</a></li>
-                        <li><a href="#"><i class="fas fa-user-plus"></i>Dodaj klienta</a></li>
+                        <li><a href="../register.php"><i class="fas fa-user-plus"></i>Dodaj klienta</a></li>
                         <li><a href="#"><i class="fas fa-user-minus"></i>Usuń klienta</a></li>
                     </ul> 
                 </div>
@@ -92,9 +92,9 @@ ROW;
 
                         <div class="square">
                             <p>W tym panelu możesz utworzyć konto dla nowego klienta</p>
-                            <p><a href="#"><i class="fas fa-user-plus"></i></a></p>
+                            <p><a href="../register.php"><i class="fas fa-user-plus"></i></a></p>
                             <div class="test">
-                                <a href="#">
+                                <a href="../register.php">
                                     <button class="btn2">Utwórz konto nowego klienta</button>
                                 </a>
                             </div>

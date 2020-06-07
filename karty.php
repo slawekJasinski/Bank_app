@@ -26,13 +26,7 @@ ROW;
         }
     }
 ?>
+
 <form action="logout.php" method="post">
     <button type="submit">logout</button>
 </form>
-
-<style>
-    td{
-        color: #fff;
-    }
-</style>
-

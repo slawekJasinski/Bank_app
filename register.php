@@ -22,9 +22,11 @@ session_start();
     <input type="text" name="login" id="login" required/>
     <br/>
     PESEL //11 znaków<br>
-    <input type="number" name="login" id="login" required/>
+    <input type="text" name="login" id="login" required/>
     <br/>
-    Typ dokumentu tożsamości
+    Typ dokumentu tożsamości<br>
+    <input type="text" name="login" id="login" required/>
+    <br>
     Typ adresu <br>
     <input type="text" name="login" id="login" required/>
     <br/>
@@ -46,34 +48,34 @@ session_start();
     }
     ?>
     Numer dokumentu tożsamości<br>
-    <input type="text" name="login" id="login" required/>
+    <input type="text" name="login" id="login" required>
     <br/>
     ID wstawiającego //lista<br>
-    <input type="text" name="login" id="login" required/>
+    <input type="text" name="login" id="login" required>
     <br/>
     Miasto<br>
-    <input type="text" name="login" id="login" required/>
+    <input type="text" name="login" id="login" required>
     <br/>
     Ulica<br>
-    <input type="text" name="login" id="login" required/>
+    <input type="text" name="login" id="login" required>
     <br/>
     Numer domu<br>
-    <input type="text" name="login" id="login" required/>
+    <input type="text" name="login" id="login" required>
     <br/>
     Numer mieszkania<br>
-    <input type="text" name="login" id="login" required/>
+    <input type="text" name="login" id="login" required>
     <br/>
     Kod pocztowy<br>
-    <input type="password" name="password" id="password" required/>
+    <input type="text" name="password" id="password" required>
     <br/>
     Kraj<br>
-    <input type="" name="password" id="password" required/>
+    <input type="text" name="password" id="password" required>
     <br/>
     Adres email<br>
-    <input type="number" name="login" id="login" required/>
+    <input type="email" name="login" id="login" required>
     <br/>
     Hasło<br>
-    <input type="password" name="login" id="login" required/>
+    <input type="password" name="password" id="password" required>
     <br/>
     Zgoda1 <br>
     Zgoda2<br>

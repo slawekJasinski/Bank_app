@@ -30,7 +30,8 @@ if (isset($_POST['login'])) {
                 $_SESSION['username'] = $username;
                 $_SESSION['id'] = $user['id_klienta'];
                 $_SESSION['success'] = "OK";
-                header('location: admin_main_page.php');
+                //header('location: admin_main_page.php');
+                header('location: admin/admin_panel.php');
             } else {
                 if ($dozwolone_logowanie == 0) {
                     $_SESSION['error-trigger'] = 1;
