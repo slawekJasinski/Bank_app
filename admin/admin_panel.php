@@ -108,6 +108,15 @@ ROW;
                                 </a>
                             </div>
                         </div>
+                        <div class="square">
+                            <p>W tym panelu możesz zarządać istniejącymi klientami</p>
+                            <p><a href="#"><i class="fas fa-user-cog"></i></a></p>
+                            <div class="test">
+                                <a href="#">
+                                    <button class="btn2">Przejdź do zarządzania</button>
+                                </a>
+                            </div>
+                        </div>
                         
                         
                         
