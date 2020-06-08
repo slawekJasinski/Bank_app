@@ -23,8 +23,8 @@
                 <div class="sidebar-top">
                     <a href="#"><h2 style="">Pulpit</h2></a>
                     <ul>
-                        <li><a href="pprodukty.php"><i class="fas fa-home"></i>Strona główna</a></li>
-                        <li><a href="#"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
+                        <li><a href="main_page.php"><i class="fas fa-home"></i>Strona główna</a></li>
+                        <li><a href="pprodukty.php"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
                         <li><a href="karty.php"><i class="fas fa-credit-card"></i>Karty płatnicze</a></li>
                         <li><a href="twoje_sprawy.php"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
                         <li><a href="Przelew.php"><i class="fas fa-exchange-alt"></i>Przelewy</a></li>
@@ -41,7 +41,7 @@
                     <div class="sidebar-top">
                         <ul>
                             <li><a href="#" style="padding: 0; text-align: center; line-height: 50px;">Ustawienia</a></li> 
-                            <li><a href="#" style="padding: 0; text-align: center; line-height: 50px;">Wyloguj</a></li> <!--zrobić forma!!!(lub nie)-->
+                            <li><a href="Logout.php" style="padding: 0; text-align: center; line-height: 50px;">Wyloguj</a></li> <!--zrobić forma!!!(lub nie)-->
                         </ul>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
 
                     <div class="sign-out">
 
-                        <form action="logout.php" method="get">  <!-- form czy a href ? -->
+                        <form action="Logout.php" method="get">  <!-- form czy a href ? -->
                             <button class="btn">Wyloguj<i class="fas fa-sign-out-alt"></i></button>
                         </form>
                                                 

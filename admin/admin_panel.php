@@ -63,7 +63,7 @@ ROW;
                     <div class="sidebar-top">
                         <ul>
                             <li><a href="#" style="padding: 0; text-align: center; line-height: 50px;">Ustawienia</a></li> 
-                            <li><a href="#" style="padding: 0; text-align: center; line-height: 50px;">Wyloguj</a></li> <!--zrobić forma!!!-->
+                            <li><a href="../admin_logout.php" style="padding: 0; text-align: center; line-height: 50px;">Wyloguj</a></li>
                         </ul>
                     </div>
                 </div>
@@ -79,9 +79,9 @@ ROW;
 
                     <div class="sign-out">
 
-                        <form action="../admin_logout.php" method="get">
+                        <a href="../admin_logout.php">
                             <button class="btn">Wyloguj<i class="fas fa-sign-out-alt"></i></button>
-                        </form>
+                        </a>
                                                 
                     </div>
                     
@@ -92,7 +92,7 @@ ROW;
 
                         <div class="square">
                             <p>W tym panelu możesz utworzyć konto dla nowego klienta</p>
-                            <p><a href="../register.php"><i class="fas fa-user-plus"></i></a></p>
+                            <p class="icon1"><a href="../register.php"><i class="fas fa-user-plus" style="color: green"></i></a></p>
                             <div class="test">
                                 <a href="../register.php">
                                     <button class="btn2">Utwórz konto nowego klienta</button>
@@ -101,7 +101,7 @@ ROW;
                         </div>
                         <div class="square">
                             <p>W tym panelu możesz zarządać istniejącymi klientami</p>
-                            <p><a href="#"><i class="fas fa-user-cog"></i></a></p>
+                            <p class="icon2"><a href="#"><i class="fas fa-user-cog" style="color: gray"></i></a></p>
                             <div class="test">
                                 <a href="#">
                                     <button class="btn2">Przejdź do zarządzania</button>
@@ -109,11 +109,11 @@ ROW;
                             </div>
                         </div>
                         <div class="square">
-                            <p>W tym panelu możesz zarządać istniejącymi klientami</p>
-                            <p><a href="#"><i class="fas fa-user-cog"></i></a></p>
+                            <p>W tym panelu możesz usunąć konto obecnego klienta</p>
+                            <p class="icon3"><a href="#"><i class="fas fa-user-minus" style="color: #e00000"></i></a></p>
                             <div class="test">
                                 <a href="#">
-                                    <button class="btn2">Przejdź do zarządzania</button>
+                                    <button class="btn2">Usuń konto klienta</button>
                                 </a>
                             </div>
                         </div>
