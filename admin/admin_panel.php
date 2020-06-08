@@ -37,8 +37,8 @@ ROW;
 
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <script src="js/jquery.scrollTo.min.js"></script>
-        <script src="js/scroll-up.js"></script>
+        <script src="../js/jquery.scrollTo.min.js"></script>
+        <script src="../js/scroll-up.js"></script>
 	
         <title>KAS Bank - panel Administratora</title>
     </head>
@@ -49,7 +49,7 @@ ROW;
 
             <div class="sidebar">
                 <div class="sidebar-top">
-                    <a href="#"><h2>Pulpit</h2></a>
+                    <a href="admin_panel.php"><h2>Pulpit</h2></a>
   
                     <ul>
                         <li><a href="admin_panel.php"><i class="fas fa-home"></i>Strona główna</a></li>
@@ -79,9 +79,9 @@ ROW;
 
                     <div class="sign-out">
 
-                        <a href="../admin_logout.php">
+                        <form action="../admin_logout.php" method="get">  <!-- form czy a href ? -->
                             <button class="btn">Wyloguj<i class="fas fa-sign-out-alt"></i></button>
-                        </a>
+                        </form>
                                                 
                     </div>
                     

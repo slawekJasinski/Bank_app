@@ -14,10 +14,12 @@ session_start();
 
 	<body>
 		<nav>
-			<a href="../index.php">Zaloguj jako klient</a>
+			<a href="../index.php">Zaloguj jako <span style="color: #fff">klient</span></a>
 		</nav>
+		
 		<img class="wave" src="img/wave.png">
 		<div class="container">
+			
 			<div class="img">
 				<img src="img/bg2.svg">
 			</div>

@@ -13,7 +13,7 @@
 
 body{
   /*background-color: #717171;*/
-  background: url("../../img/background3.jpg");
+  background: url("img/background3.jpg");
   background-size: 10%;
   height: 100vh;
   width: 100vw;
@@ -115,6 +115,17 @@ body{
 /*#########################################################*/
 .wrapper .main_content{
   margin-left: 220px;
+  width: 100%;
+}
+
+.register-form{
+    background-color: green;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+    text-align: center;
+    
 }
 
 .wrapper .main_content .header{
@@ -127,66 +138,6 @@ body{
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,.75);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,.75);
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,.75);
-}
-
-.wrapper .main_content .info{
-  margin-top: 200px;
-  width: 100vw;
-  /*height: 100%;*/
-  line-height: 25px;
-}
-
-.wrapper .main_content .info .warn{
-  text-align: center;
-  padding: 40px;
-}
-
-.wrapper .main_content .info .warn .msg{
-  background-color: rgb(210, 0, 0);
-  margin-left: auto;
-  margin-right: auto;
-  width: 750px;
-  border-radius: 20px;
-  font-size: 26px;
-  line-height: 30px;
-  color: rgb(226, 226, 226);
-  padding: 20px;
-}
-
-.wrapper .main_content .info .square{
-  text-align: center;
-  background-color: rgb(243, 243, 243);
-  /*margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 15px;*/
-  width: 900px;
-  height: 280px;
-  margin-left: 400px;
-  margin-right: 400px;
-  margin-bottom: 50px;
-  /*float: left;*/
-  padding: 15px;
-  border-radius: 20px;
-  position: relative;
-  color: rgb(65, 70, 139);
-  font-size: 30px;
-  -webkit-box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
--moz-box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
-box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
-}
-
-.wrapper .main_content .info .square:last-child{
-    margin-bottom: 110px;
-}
-
-.wrapper .main_content .info .square p:first-of-type{
-    margin-top: 30px;
-}
-
-.wrapper .main_content .info .square i{
-    margin-top: 50px;
-    font-size: 40px;
 }
 
 .sign-out{
@@ -212,10 +163,10 @@ box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
 
 .btn:hover{
   cursor: pointer;
-  color: black;
+  /*color: black;*/
   background-color: #4b4276;
   color: #fff;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
 }
 
 .btn2{
@@ -275,32 +226,10 @@ box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
 	width: 64px;
 	height: 64px;
 	text-decoration: none;
-	background: url("../../img/up.png") no-repeat 0px 0px;
+	background: url("img/up.png") no-repeat 0px 0px;
 	position: fixed;
 	right: 50px;
 	bottom: 50px;
   display: none;
   z-index: 1;
-}
-
-.test{
-  position: absolute;
-  width: 870px;
-  text-align: center;
-  bottom: 0;
-  padding: 0 150px;
-}
-
-.btn-test{
-
-  padding: 0;
-}
-
-.btn-test:hover{
-  cursor: pointer;
-}
-
-.info2{
-    width: 100%;
-    height: 500px;
 }
