@@ -24,10 +24,10 @@
                     <a href="#"><h2 style="">Pulpit</h2></a>
                     <ul>
                         <li><a href="main_page.php"><i class="fas fa-home"></i>Strona główna</a></li>
-                        <li><a href="pprodukty.php"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
+                        <li><a href="pprodukty2.php"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
                         <li><a href="karty.php"><i class="fas fa-credit-card"></i>Karty płatnicze</a></li>
                         <li><a href="twoje_sprawy.php"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
-                        <li><a href="Przelew.php"><i class="fas fa-exchange-alt"></i>Przelewy</a></li>
+                        <li><a href="transfer_form.php"><i class="fas fa-exchange-alt"></i>Przelewy</a></li>
                         <li><a href="#"><i class="fas fa-history"></i>Historia rachunku</a></li>
                         <li><a href="#"><i class="fas fa-exclamation-circle"></i>Limity</a></li>
                         <li><a href="#"><i class="fas fa-ban"></i>Blokady kart</a></li>
@@ -80,10 +80,18 @@
                         </div>
                     </div>
                    <div class="square">
-                        <p>Wnioski</p>
+                        <p>Twoje produkty</p>
+                        <div class="test">
+                            <a href="pprodukty.php">
+                                <button class="btn2">Zobacz produkty</button>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="square">
+                        <p>Karty</p>
                         <div class="test">
                             <a href="twoje_sprawy.php">
-                                <button class="btn2">Zobacz swoje wnioski</button>
+                                <button class="btn2">Wyświetl karty</button>
                             </a>
                         </div>
                     </div>
@@ -96,18 +104,10 @@
                         </div>
                     </div>
                    <div class="square">
-                        <p>Wnioski</p>
+                        <p>Przelew</p>
                         <div class="test">
                             <a href="twoje_sprawy.php">
-                                <button class="btn2">Zobacz swoje wnioski</button>
-                            </a>
-                        </div>
-                    </div>
-                   <div class="square">
-                        <p>Wnioski</p>
-                        <div class="test">
-                            <a href="twoje_sprawy.php">
-                                <button class="btn2">Zobacz swoje wnioski</button>
+                                <button class="btn2">Wykonaj przelew</button>
                             </a>
                         </div>
                     </div>

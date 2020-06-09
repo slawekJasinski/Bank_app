@@ -102,7 +102,6 @@ session_start();
             <input type="text" name="login" id="login" required>
             <br/>
             ID wstawiającego //lista<br>
-            <input type="text" name="login" id="login" required>
             <br/>
             Miasto<br>
             <input type="text" name="login" id="login" required>
@@ -111,13 +110,13 @@ session_start();
             <input type="text" name="login" id="login" required>
             <br/>
             Numer domu<br>
-            <input type="text" name="login" id="login" pattern="[0-9]" required>
+            <input type="text" name="login" id="login" pattern="[0-9A-Za-z]" required>
             <br/>
             Numer mieszkania<br>
-            <input type="text" name="login" id="login" pattern="[0-9]">
+            <input type="text" name="login" id="login" pattern="[0-9A-Za-z]">
             <br/>
             Kod pocztowy<br>
-            <input type="text" name="password" id="password" pattern="[0-9]{2}-[0-9]{3}" required>
+            <input type="text" name="password" id="password" pattern="[0-9]{2}-[0-9]{3}">
             <br/>
             Kraj<br>
             <input type="text" name="password" id="password" required>
@@ -128,11 +127,11 @@ session_start();
             Hasło<br>
             <input type="password" name="password" id="password" required>
             <br/>
-            Zgoda na przetwarzanie danych osobowych<input type="checkbox" value="Zg1" name="zgody[]" <br/><br>
-            Zgoda na kontakt drogą elektroniczną w celu marketingowym<input type="checkbox" value="Zg2" name="zgody[]" <br/><br>
-            Zgoda na kontakt telefoniczny w celu marketingowym<input type="checkbox" value="Zg3" name="zgody[]" <br/><br>
-            Zgoda na powiadomienie sms o otrzymaniu wiadomości związanych ze zmianami w regulacjach bankowych<input type="checkbox" value="Zg4" name="zgody[]" <br/><br>
-            Zgoda na otrzymywanie korespondencji w formie elektronicznej na adres email<input type="checkbox" value="Zg5" name="zgody[]" <br/><br>
+            Zgoda na przetwarzanie danych osobowych<input type="checkbox" value="Zg1" name="zgody[]"> <br/><br>
+            Zgoda na kontakt drogą elektroniczną w celu marketingowym<input type="checkbox" value="Zg2" name="zgody[]"> <br/><br>
+            Zgoda na kontakt telefoniczny w celu marketingowym<input type="checkbox" value="Zg3" name="zgody[]"> <br/><br>
+            Zgoda na powiadomienie sms o otrzymaniu wiadomości związanych ze zmianami w regulacjach bankowych<input type="checkbox" value="Zg4" name="zgody[]"> <br/><br>
+            Zgoda na otrzymywanie korespondencji w formie elektronicznej na adres email<input type="checkbox" value="Zg5" name="zgody[]"> <br/><br>
             <button type="submit">Zapisz formularz</button>
         </form>
     </div>

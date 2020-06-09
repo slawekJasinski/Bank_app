@@ -1,7 +1,7 @@
 <?php
 session_start();
 $_SESSION['error-trigger']=0;
-$conn = mysqli_connect('localhost', 'root','','wikomp_gr11'); //połaczenie z baza
+$conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11'); //połaczenie z baza
 //wyciągniecie wartości z indexu
 if(isset($_POST['nr_konta'])) {
     $nr_konta = $_POST['nr_konta'];

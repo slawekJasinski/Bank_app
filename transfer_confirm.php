@@ -29,7 +29,7 @@ if($amount>$dostepne_srodki){
 }
 ?>
 Konto nadawcy:<?php echo $account ?><br>
-Konto odbiorcy:<?php echo $credit_card ?><br> Bank:<?php require_once('functions.php'); echo bank_name($credit_card) ?><br>
+Konto odbiorcy:<b><?php echo $credit_card ?><br> Bank:<?php require_once('functions.php'); echo bank_name($credit_card) ?></b><br>
 Kwota:<?php echo $amount ?> zł<br>
 <form action="przelewy.php" method="post">
     Podaj kod autoryzacyjny: <input type="text" name="cvv" id="cvv" minlength="4" maxlength="4" required/>

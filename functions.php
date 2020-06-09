@@ -18,7 +18,7 @@ function is_cvv_correct($cvv_from_user, $cvv_from_system ){
     }
 }
 function saldo($nr){
-    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
     $sql = sprintf("SELECT `saldo_rachunku`('%s') AS `saldo_rachunku`;", mysqli_real_escape_string($conn, $nr));
     if ($result = $conn->query($sql)) {
         $conn->close();
@@ -30,7 +30,7 @@ function saldo($nr){
     }
 }
 function dostepne_srodki($nr){
-    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
     $sql = sprintf("SELECT `dostepne_srodki_rachunku`('%s') AS `dostepne_srodki_rachunku`;", mysqli_real_escape_string($conn, $nr));
     if ($result = $conn->query($sql)) {
         $conn->close();
@@ -42,7 +42,7 @@ function dostepne_srodki($nr){
         }
 }
 function make_transfer($nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota){
-    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
     $sql = "SELECT `wykonaj_przelew`(?,?,?,?,?,?,?,?) AS `wykonaj_przelew`";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ssssssss", date("Y-m-d H-i-s"), $nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota);
@@ -57,7 +57,7 @@ function make_transfer($nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_o
     }
 }
 function make_future_transfer($nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota){
-    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
     $sql = "SELECT `wykonaj_przelew`(?,?,?,?,?,?,?,?) AS `wykonaj_przelew`";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ssssssss", date("Y-m-d H-i-s"), $nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota);
@@ -74,7 +74,7 @@ function make_future_transfer($nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $
 }
 function bank_name($nr){
 $nr=substr($nr,3,4);
-    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
     $sql = sprintf("SELECT * FROM `banki` where zakres_od<=$nr AND zakres_do>=$nr", mysqli_real_escape_string($conn, $nr));
     if ($result = $conn->query($sql)) {
         $conn->close();

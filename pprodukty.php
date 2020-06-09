@@ -13,7 +13,7 @@
             $saldo=saldo($row['id_produktu']);
             $dostepne_srodki=dostepne_srodki($row['id_produktu']);
             echo <<<ROW
-      <tr style="color: red;">
+      <tr>
         <td>$row[id_produktu_klienta]</td>
         <td>$row[id_klienta]</td>
         <td>$row[id_produktu]</td>
@@ -30,7 +30,3 @@ ROW;
     }
 }
 ?>
-
-<form action="logout.php">
-    <button>logout</button>
-</form>
