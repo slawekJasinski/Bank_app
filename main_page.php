@@ -82,7 +82,7 @@
                    <div class="square">
                         <p>Twoje produkty</p>
                         <div class="test">
-                            <a href="pprodukty.php">
+                            <a href="pprodukty2.php">
                                 <button class="btn2">Zobacz produkty</button>
                             </a>
                         </div>
