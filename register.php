@@ -128,12 +128,11 @@ session_start();
                         Hasło<br>
                         <input type="password" name="password" id="password" required>
                         <br/>
-                        Zgoda1 <br>
-                        Zgoda2<br>
-                        Zgoda3<br>
-                        Zgoda4<br>
-                        Zgoda5<br>
-
+                        Zgoda na przetwarzanie danych osobowych<input type="checkbox" value="Zg1" name="zgody[]" <br/><br>
+                        Zgoda na kontakt drogą elektroniczną w celu marketingowym<input type="checkbox" value="Zg2" name="zgody[]" <br/><br>
+                        Zgoda na kontakt telefoniczny w celu marketingowym<input type="checkbox" value="Zg3" name="zgody[]" <br/><br>
+                        Zgoda na powiadomienie sms o otrzymaniu wiadomości związanych ze zmianami w regulacjach bankowych<input type="checkbox" value="Zg4" name="zgody[]" <br/><br>
+                        Zgoda na otrzymywanie korespondencji w formie elektronicznej na adres email<input type="checkbox" value="Zg5" name="zgody[]" <br/><br>
                         <button type="submit">Zapisz formularz</button>
                     </form>
                 </div>
