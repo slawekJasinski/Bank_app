@@ -1,7 +1,6 @@
 <?php
 {
     session_start();
-    $_SESSION['account_number']='12345678901234567890123456';
     require_once('connect.php');
     require_once('functions.php');
     if (isset($_SESSION['username'])) {
@@ -27,7 +26,7 @@
       </br>
 ROW;
         }
-    }
+    }else(header('location:index.php'));
 }
 ?>
 
@@ -102,7 +101,6 @@ ROW;
             <div class="warn">
                 <div class="msg">Wszelkie e-maile, wiadomości i telefony, w których jesteś proszony o <strong style="color: #fff;">dane autoryzacyjne</strong> typu numer identyfikacyjny, kod dostępu lub kod SMS, traktuj jako <b style="color: #fff;">próbę oszustwa</b>!</div>
             </div>
-            <!--może rozdzielić warn i square (od info)-->
 
             <div class="square">
                 <p>Wnioski</p>
