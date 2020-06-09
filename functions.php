@@ -41,10 +41,48 @@ function dostepne_srodki($nr){
             }
         }
 }
-function make_transfer(){
+function make_transfer($nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota){
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $sql = "SELECT `wykonaj_przelew`(?,?,?,?,?,?,?,?) AS `wykonaj_przelew`";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssssssss", date("Y-m-d H-i-s"), $nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota);
+    $stmt->execute();
+    if ($result = $conn->query($sql)) {
+        $conn->close();
+        $count = $result->num_rows;
+        if ($count == 1) {
+            $amount = $result->fetch_assoc();
+            return $amount['wykonaj_przelew'];
+        }
+    }
+}
+function make_future_transfer($nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota){
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $sql = "SELECT `wykonaj_przelew`(?,?,?,?,?,?,?,?) AS `wykonaj_przelew`";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssssssss", date("Y-m-d H-i-s"), $nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota);
+    $stmt->execute();
+    if ($result = $conn->query($sql)) {
+        $conn->close();
+        $count = $result->num_rows;
+        if ($count == 1) {
+            $amount = $result->fetch_assoc();
+            return $amount['wykonaj_przelew'];
+        }
+    }
 
 }
-function make_future_transfer(){
-
+function bank_name($nr){
+$nr=substr($nr,3,4);
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $sql = sprintf("SELECT * FROM `banki` where zakres_od<=$nr AND zakres_do>=$nr", mysqli_real_escape_string($conn, $nr));
+    if ($result = $conn->query($sql)) {
+        $conn->close();
+        $count = $result->num_rows;
+        if ($count == 1) {
+            $amount = $result->fetch_assoc();
+            return $amount['nazwa_banku'];
+        }
+    }
 }
 ?>

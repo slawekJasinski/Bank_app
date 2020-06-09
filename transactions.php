@@ -21,7 +21,7 @@ if (isset($_SESSION['username'])) {
     }
     $username = $_SESSION['username'];
     $id = $_SESSION['id'];
-    $sql = "SELECT data_transakcji,numer_rachunku, kwota, tytul, \"PRZYCHODZACE\" as status FROM `transakcje_przychodzace` UNION SELECT data_transakcji,numer_rachunku, kwota, tytul, \"WYCHODZACE\" as status FROM `transakcje_wychodzace` ORDER BY data_transakcji";
+    $sql = "SELECT data_transakcji,numer_rachunku, kwota, tytul, \"PRZYCHODZACE\" as status FROM `transakcje_przychodzace` UNION SELECT data_transakcji,numer_rachunku, kwota, tytul, \"WYCHODZACE\" as status FROM `transakcje_wychodzace` ORDER BY data_transakcji WHERE 'numer_rachunku=$number";
     $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
     while ($row = mysqli_fetch_array($result)) {
         echo <<<ROW

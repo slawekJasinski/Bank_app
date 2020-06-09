@@ -1,5 +1,4 @@
 <?php
-require('connect.php');
 require('functions.php');
 session_start();
 ?>
@@ -24,12 +23,12 @@ session_start();
         }
         echo "</select>";
     ?>
-    </select><br><br>
     <?php
     if(isset($_POST['number'])){
         $account =  $_POST['number'];
         $_SESSION['number'] = $account;
     }
+    $sender=$_SESSION['username'];
     ?>
     <div>
         <label for="credit-card">Numer konta odbiorcy</label>
@@ -45,7 +44,7 @@ session_start();
     <input type="text" name="title" min="0.00" step="0.01" id="amount"required/>
     <br/>
     Data wykonania przelewu
-    <input id="datefield" type='date' name='date' min='1899-01-01' max='2020-12-31'></input>
+    <input id="datefield" type='date' name='date' min='2020-06-01' max='2020-12-31'></input>
     <script>
     var today = new Date();
     var dd = today.getDate();
