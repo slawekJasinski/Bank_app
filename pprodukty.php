@@ -1,7 +1,6 @@
 <?php
 {
     session_start();
-    $_SESSION['account_number']='12345678901234567890123456';
     require_once('connect.php');
     require_once('functions.php');
     if (isset($_SESSION['username'])) {
@@ -27,6 +26,6 @@
       </br>
 ROW;
         }
-    }
+    }else(header('location:index.php'));
 }
 ?>
