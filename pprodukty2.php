@@ -1,5 +1,7 @@
 <?php
     session_start();
+    require_once('connect.php');
+    require_once('functions.php');
 ?>
 
 <!DOCTYPE html>
@@ -82,45 +84,18 @@
                             </tr>
                             <!--</table>-->
                             <?php
-                            
-                                /*session_start();*/
-                                $_SESSION['account_number']='12345678901234567890123456';
-                                require_once('connect.php');
-                                require_once('functions.php');
+                            {
                                 if (isset($_SESSION['username'])) {
-                                    $username = $_SESSION['username'];
-                                    $id = $_SESSION['id'];
-                                    $sql = "SELECT * FROM `produkty_klienci` left join `produkty` on produkty_klienci.id_produktu=produkty.id_produktu where id_klienta=$id";
-                                    $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
-                                    while ($row = mysqli_fetch_assoc($result)) {
-                                        $saldo=saldo($row['id_produktu']);
-                                        $dostepne_srodki=dostepne_srodki($row['id_produktu']);
-                                        //echo"<table>";
-                                            /*echo"<tr>";
-                                                echo"<th>id_produktu_klienta</th>";
-                                                echo"<th>id_klienta</th>";
-                                                echo"<th>id_produktu</th>";
-                                                echo"<th>numer_rachunku</th>";
-                                                echo"<th>data_aktywacji</th>";
-                                                echo"<th>data_od</th>";
-                                                echo"<th>nazwa_produktu</th>";
-                                                echo"<th>saldo</th>";
-                                                echo"<th>dostepne_srodki</th>";
-                                            echo"</tr>";   */
-                                            echo"<tr>";
-                                                echo"<td>$row[numer_rachunku]</td>";
-                                                echo"<td>$row[data_aktywacji]</td>";
-                                                echo"<td>$row[data_od]</td>";
-                                                echo"<td>$row[nazwa_produktu]</td>";
-                                                echo"<td>$saldo</td>";
-                                                echo"<td>$dostepne_srodki</td>";
-                                            echo"</tr>";
-                                        //echo"</table>";
-                                    }
-                                }
+                                    products_show(1); // to są pordukty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
+                                    products_show(2);
+                                    products_show(3);
+                                    products_show(4);
+                                }else(header('location:index.php'));
+                            }
                             ?>
                         </table>
                     </div>
+
                 </div>
             </div>
         </div>
