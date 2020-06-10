@@ -13,8 +13,9 @@
 
 body{
   /*background-color: #717171;*/
-  background: url("img/background3.jpg");
+  background: url("../img/background3.jpg");
   background-size: 10%;
+  overflow-x: hidden;
 }
 
 .wrapper{
@@ -108,7 +109,7 @@ body{
 /*#########################################################*/
 .wrapper .main_content{
   margin-left: 220px;
-  height: 100vh;
+  /*height: 100vh;*/
   width: 100vw;
 }
 
@@ -198,29 +199,6 @@ body{
   border-radius: 10px;
 }
 
-.btn2{
-  color: #bdb8d7;
-  font-size: 20px;
-  border: 0;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  height: 50px;
-  padding: 15px;
-  background-color: #4b4276;
-  text-align: center; 
-  width: 65%;
-  transition: .5s;
- }
-  
-.btn2:hover{
-  cursor: pointer;
-  background-color: #594f8d;
-  color: #fff;
-  border-radius: 10px;
-  width: 85%;
-  transition: .5s;
-}
-
 .logo-header{
   height: 100%;
   float: left;  
@@ -255,7 +233,7 @@ body{
 	width: 64px;
 	height: 64px;
 	text-decoration: none;
-	background: url("img/up.png") no-repeat 0px 0px;
+	background: url("../img/up.png") no-repeat 0px 0px;
 	position: fixed;
 	right: 50px;
 	bottom: 50px;
@@ -270,24 +248,23 @@ body{
   bottom: 0;
 }
 
-.btn-test{
-
-  padding: 0;
-}
-
-.btn-test:hover{
-  cursor: pointer;
-}
-
 table{
-    border: 2px solid green;
-    background-color: red;
+    /*background-color: orangered;*/
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
+    width: 80%;
+    border: orchid;
 }
 
 tr{
-    border: 20px solid blue;
-    background-color: gray;
+    /*border: 20px solid blue;*/
+    background-color: yellow;
 }
 
+.table{
+  background-color: rgb(177, 176, 176);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

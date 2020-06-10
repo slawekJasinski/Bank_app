@@ -37,7 +37,7 @@
                         <li><a href="#"><i class="fas fa-ban"></i>Blokady kart</a></li>
                         <li><a href="#"><i class="fas fa-shopping-basket"></i>Koszyk przelewów</a></li>
                         <li><a href="#"><i class="fas fa-address-book"></i>Odbiorcy i płatnicy</a></li>
-                        <li><a href="#"><i class="fas fa-history"></i>Historia przelewów</a></li>
+                        <li><a href="transactions_history.php"><i class="fas fa-history"></i>Historia przelewów</a></li>
                     </ul> 
                 </div>
                 
@@ -70,61 +70,57 @@
                 </div>  
 
                 <div class="info">
-                    <table>
-                        <tr>
-                            <th>id_produktu_klienta</th>
-                            <th>id_klienta</th>
-                            <th>id_produktu</th>
-                            <th>numer_rachunku</th>
-                            <th>data_aktywacji</th>
-                            <th>data_od</th>
-                            <th>nazwa_produktu</th>
-                            <th>saldo</th>
-                            <th>dostepne_srodki</th>
-                        </tr>
-                        <!--</table>-->
-                        <?php
-                        
-                            /*session_start();*/
-                            $_SESSION['account_number']='12345678901234567890123456';
-                            require_once('connect.php');
-                            require_once('functions.php');
-                            if (isset($_SESSION['username'])) {
-                                $username = $_SESSION['username'];
-                                $id = $_SESSION['id'];
-                                $sql = "SELECT * FROM `produkty_klienci` left join `produkty` on produkty_klienci.id_produktu=produkty.id_produktu where id_klienta=$id";
-                                $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
-                                while ($row = mysqli_fetch_assoc($result)) {
-                                    $saldo=saldo($row['id_produktu']);
-                                    $dostepne_srodki=dostepne_srodki($row['id_produktu']);
-                                    //echo"<table>";
-                                        /*echo"<tr>";
-                                            echo"<th>id_produktu_klienta</th>";
-                                            echo"<th>id_klienta</th>";
-                                            echo"<th>id_produktu</th>";
-                                            echo"<th>numer_rachunku</th>";
-                                            echo"<th>data_aktywacji</th>";
-                                            echo"<th>data_od</th>";
-                                            echo"<th>nazwa_produktu</th>";
-                                            echo"<th>saldo</th>";
-                                            echo"<th>dostepne_srodki</th>";
-                                        echo"</tr>";   */
-                                        echo"<tr>";
-                                            echo"<td>$row[id_produktu_klienta]</td>";
-                                            echo"<td>$row[id_klienta]</td>";
-                                            echo"<td>$row[id_produktu]</td>";
-                                            echo"<td>$row[numer_rachunku]</td>";
-                                            echo"<td>$row[data_aktywacji]</td>";
-                                            echo"<td>$row[data_od]</td>";
-                                            echo"<td>$row[nazwa_produktu]</td>";
-                                            echo"<td>$saldo</td>";
-                                            echo"<td>$dostepne_srodki</td>";
-                                        echo"</tr>";
-                                    //echo"</table>";
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>numer_rachunku</>
+                                <th>data_aktywacji</th>
+                                <th>data_od</th>
+                                <th>nazwa_produktu</th>
+                                <th>saldo</th>
+                                <th>dostepne_srodki</th>
+                            </tr>
+                            <!--</table>-->
+                            <?php
+                            
+                                /*session_start();*/
+                                $_SESSION['account_number']='12345678901234567890123456';
+                                require_once('connect.php');
+                                require_once('functions.php');
+                                if (isset($_SESSION['username'])) {
+                                    $username = $_SESSION['username'];
+                                    $id = $_SESSION['id'];
+                                    $sql = "SELECT * FROM `produkty_klienci` left join `produkty` on produkty_klienci.id_produktu=produkty.id_produktu where id_klienta=$id";
+                                    $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                        $saldo=saldo($row['id_produktu']);
+                                        $dostepne_srodki=dostepne_srodki($row['id_produktu']);
+                                        //echo"<table>";
+                                            /*echo"<tr>";
+                                                echo"<th>id_produktu_klienta</th>";
+                                                echo"<th>id_klienta</th>";
+                                                echo"<th>id_produktu</th>";
+                                                echo"<th>numer_rachunku</th>";
+                                                echo"<th>data_aktywacji</th>";
+                                                echo"<th>data_od</th>";
+                                                echo"<th>nazwa_produktu</th>";
+                                                echo"<th>saldo</th>";
+                                                echo"<th>dostepne_srodki</th>";
+                                            echo"</tr>";   */
+                                            echo"<tr>";
+                                                echo"<td>$row[numer_rachunku]</td>";
+                                                echo"<td>$row[data_aktywacji]</td>";
+                                                echo"<td>$row[data_od]</td>";
+                                                echo"<td>$row[nazwa_produktu]</td>";
+                                                echo"<td>$saldo</td>";
+                                                echo"<td>$dostepne_srodki</td>";
+                                            echo"</tr>";
+                                        //echo"</table>";
+                                    }
                                 }
-                            }
-                        ?>
-                    </table>
+                            ?>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

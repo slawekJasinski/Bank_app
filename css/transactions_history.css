@@ -198,29 +198,6 @@ body{
   border-radius: 10px;
 }
 
-.btn2{
-  color: #bdb8d7;
-  font-size: 20px;
-  border: 0;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  height: 50px;
-  padding: 15px;
-  background-color: #4b4276;
-  text-align: center; 
-  width: 65%;
-  transition: .5s;
- }
-  
-.btn2:hover{
-  cursor: pointer;
-  background-color: #594f8d;
-  color: #fff;
-  border-radius: 10px;
-  width: 85%;
-  transition: .5s;
-}
-
 .logo-header{
   height: 100%;
   float: left;  
@@ -268,15 +245,6 @@ body{
   width: 350px;
   text-align: center;
   bottom: 0;
-}
-
-.btn-test{
-
-  padding: 0;
-}
-
-.btn-test:hover{
-  cursor: pointer;
 }
 
 table{

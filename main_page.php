@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="css/sgb.css" type="text/css">
+        <link rel="stylesheet" href="main_page.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -67,7 +67,7 @@
 
                 <div class="info">
                     <div class="warn">
-                        <div class="msg">Wszelkie e-maile, wiadomości i telefony, w których jesteś proszony o <strong style="color: #fff;">dane autoryzacyjne</strong> typu numer identyfikacyjny, kod dostępu lub kod SMS, traktuj jako <b style="color: #fff;">próbę oszustwa</b>!</div>
+                        <div class="msg">Wszelkie e-maile, wiadomości i telefony, w których jesteś proszony o <strong style="color: #fff;">dane autoryzacyjne</strong> typu numer identyfikacyjny, kod dostępu lub kod SMS, traktuj jako <strong style="color: #fff;">próbę oszustwa</strong>!</div>
                     </div>
                     <!--może rozdzielić warn i square (od info)-->
 
@@ -90,7 +90,7 @@
                    <div class="square">
                         <p>Karty</p>
                         <div class="test">
-                            <a href="twoje_sprawy.php">
+                            <a href="karty.php">
                                 <button class="btn2">Wyświetl karty</button>
                             </a>
                         </div>
@@ -106,7 +106,7 @@
                    <div class="square">
                         <p>Przelew</p>
                         <div class="test">
-                            <a href="twoje_sprawy.php">
+                            <a href="transferm_form.php">
                                 <button class="btn2">Wykonaj przelew</button>
                             </a>
                         </div>
