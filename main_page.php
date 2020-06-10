@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="sgb.css" type="text/css">
+        <link rel="stylesheet" href="css/sgb.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -33,7 +33,7 @@
                         <li><a href="#"><i class="fas fa-ban"></i>Blokady kart</a></li>
                         <li><a href="#"><i class="fas fa-shopping-basket"></i>Koszyk przelewów</a></li>
                         <li><a href="#"><i class="fas fa-address-book"></i>Odbiorcy i płatnicy</a></li>
-                        <li><a href="#"><i class="fas fa-history"></i>Historia przelewów</a></li>
+                        <li><a href="transactions_history.php"><i class="fas fa-history"></i>Historia przelewów</a></li>
                     </ul> 
                 </div>
                 

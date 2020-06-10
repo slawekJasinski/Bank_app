@@ -8,7 +8,7 @@ session_start();
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="register.css" type="text/css">
+        <link rel="stylesheet" href="css/register.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -24,12 +24,12 @@ session_start();
 
             <div class="sidebar">
                 <div class="sidebar-top">
-                    <a href="#"><h2>Pulpit</h2></a>
+                    <a href="admin/admin_panel.php"><h2>Pulpit</h2></a>
 
                     <ul>
-                        <li><a href="admin_panel.php"><i class="fas fa-home"></i>Strona główna</a></li>
+                        <li><a href="admin/admin_panel.php"><i class="fas fa-home"></i>Strona główna</a></li>
                         <li><a href="#"><i class="fas fa-user-cog"></i>Zarządzanie klientami</a></li>
-                        <li><a href="../register.php"><i class="fas fa-user-plus"></i>Dodaj klienta</a></li>
+                        <li><a href="register.php"><i class="fas fa-user-plus"></i>Dodaj klienta</a></li>
                         <li><a href="#"><i class="fas fa-user-minus"></i>Usuń klienta</a></li>
                     </ul> 
                 </div>
@@ -38,7 +38,7 @@ session_start();
                     <div class="sidebar-top">
                         <ul>
                             <li><a href="#" style="padding: 0; text-align: center; line-height: 50px;">Ustawienia</a></li> 
-                            <li><a href="../admin_logout.php" style="padding: 0; text-align: center; line-height: 50px;">Wyloguj</a></li>
+                            <li><a href="admin_logout.php" style="padding: 0; text-align: center; line-height: 50px;">Wyloguj</a></li>
                         </ul>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ session_start();
                     </div>
 
                     <div class="sign-out">
-                        <form action="Logout.php" method="get">  <!-- form czy a href ? -->
+                        <form action="admin_logout.php" method="get">  <!-- form czy a href ? -->
                             <button class="btn">Wyloguj<i class="fas fa-sign-out-alt"></i></button>
                         </form>
                     </div>

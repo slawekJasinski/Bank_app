@@ -13,7 +13,7 @@
 
 body{
   /*background-color: #717171;*/
-  background: url("img/background3.jpg");
+  background: url("../img/background3.jpg");
   background-size: 10%;
   height: 100vh;
   width: 100vw;
@@ -226,7 +226,7 @@ body{
 	width: 64px;
 	height: 64px;
 	text-decoration: none;
-	background: url("img/up.png") no-repeat 0px 0px;
+	background: url("../img/up.png") no-repeat 0px 0px;
 	position: fixed;
 	right: 50px;
 	bottom: 50px;

@@ -8,7 +8,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="pprodukty2.css" type="text/css">
+        <link rel="stylesheet" href="css/pprodukty2.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -25,7 +25,7 @@
 
             <div class="sidebar">
                 <div class="sidebar-top">
-                    <a href="#"><h2 style="">Pulpit</h2></a>
+                    <a href="#"><h2>Pulpit</h2></a>
                     <ul>
                         <li><a href="main_page.php"><i class="fas fa-home"></i>Strona główna</a></li>
                         <li><a href="pprodukty2.php"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
