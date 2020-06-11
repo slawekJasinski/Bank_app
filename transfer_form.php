@@ -71,7 +71,7 @@
                 </div>  
 
                 <div class="info">
-                    <form action="transfer_confirm.php" method="post">
+                    <form action="transfer_confirm.php" method="post" class="transfer-form">
 
                         <?php
                             $id=$_SESSION['id'];
