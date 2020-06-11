@@ -106,7 +106,7 @@
                    <div class="square">
                         <p>Przelew</p>
                         <div class="test">
-                            <a href="transferm_form.php">
+                            <a href="transfer_form.php">
                                 <button class="btn2">Wykonaj przelew</button>
                             </a>
                         </div>
@@ -175,7 +175,6 @@
                             </a>
                         </div>
                     </div>
-                   
                 </div>
             </div>
         </div>

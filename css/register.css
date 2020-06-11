@@ -9,11 +9,12 @@
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   /*scroll-behavior: smooth;*/
+  outline: none;
 }
 
 body{
-  /*background-color: #717171;*/
-  background: url("../img/background3.jpg");
+  background-color: #b4b4b4;
+  /*background: url("../img/background3.jpg");*/
   background-size: 10%;
   height: 100vh;
   width: 100vw;

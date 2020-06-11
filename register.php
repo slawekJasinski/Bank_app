@@ -71,19 +71,20 @@ session_start();
             <input type="text" name="surname" id="surname" pattern="^[A-ZÓŚŁŻŹĆ]{1}[a-zóąśłżźćń]{1,30}$" required>
             <br/>
             PESEL //11 znaków<br>
-            <input type="number" name="pesel" id="pesel" pattern="[0-9]{11}" required>
+            <input type="text" name="pesel" id="pesel" pattern="[0-9]{11}" required>
             <br/>
             Typ dokumentu tożsamości<br>
             <?php
-            $id=$_SESSION['id'];
-            $sql = "SELECT * FROM `dok_tozsamosci`";
-            $result = mysqli_query($conn,$sql);
-            echo "<select name=\"id_type\">";
-            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-                echo "<option value='" . $row['id_dok_tozsamosci'] . "'>" . $row['nazwa_dok_tozsamosci'] . " </option>";
-            }
-            echo "</select>";
-            ?>            <br>
+                $id=$_SESSION['id'];
+                $sql = "SELECT * FROM `dok_tozsamosci`";
+                $result = mysqli_query($conn,$sql);
+                echo "<select name=\"id_type\">";
+                while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+                    echo "<option value='" . $row['id_dok_tozsamosci'] . "'>" . $row['nazwa_dok_tozsamosci'] . " </option>";
+                }
+                echo "</select>";
+            ?>            
+            <br>
             Numer dokumentu tożsamości<br>
             <input type="text" name="id_number" id="id_number" required>
             <br/>
@@ -102,14 +103,14 @@ session_start();
             ////////////////////////////////////////////////////////////////////////////////////\/\/\'\//\//\/\/\/\/\/\/<br>
             Typ adresu <br>
             <?php
-            $id=$_SESSION['id'];
-            $sql = "SELECT * FROM `typy_adresu`";
-            $result = mysqli_query($conn,$sql);
-            echo "<select name=\"number\">";
-            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-                echo "<option value='" . $row['id_typu_adresu'] . "'>" . $row['nazwa_typu_adresu'] . " </option>";
-            }
-            echo "</select>";
+                $id=$_SESSION['id'];
+                $sql = "SELECT * FROM `typy_adresu`";
+                $result = mysqli_query($conn,$sql);
+                echo "<select name=\"number\">";
+                while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+                    echo "<option value='" . $row['id_typu_adresu'] . "'>" . $row['nazwa_typu_adresu'] . " </option>";
+                }
+                echo "</select>";
             ?>
             <br>
             Miasto<br>

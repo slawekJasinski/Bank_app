@@ -18,7 +18,7 @@ function is_cvv_correct($cvv_from_user, $cvv_from_system){
     }
 }
 function saldo($nr){
-    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
     $sql = sprintf("SELECT `saldo_rachunku`('%s') AS `saldo_rachunku`;", mysqli_real_escape_string($conn, $nr));
     if ($result = $conn->query($sql)) {
         $conn->close();
@@ -30,7 +30,7 @@ function saldo($nr){
     }
 }
 function dostepne_srodki($nr){
-    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
     $sql = sprintf("SELECT `dostepne_srodki_rachunku`('%s') AS `dostepne_srodki_rachunku`;", mysqli_real_escape_string($conn, $nr));
     if ($result = $conn->query($sql)) {
         $conn->close();
@@ -42,7 +42,7 @@ function dostepne_srodki($nr){
         }
 }
 function make_transfer($date, $nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota){
-    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
     $sql = "SET @p0='2020-01-01'; SET @p1='01100052449138977053770882'; SET @p2='s'; SET @p3='01100052449138977053770882'; SET @p4='a'; SET @p5=''; SET @p6='k'; SET @p7='5'; SELECT `wykonaj_przelew`(@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7) AS `wykonaj_przelew`;";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ssssssss", $date, $nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota);
@@ -57,7 +57,7 @@ function make_transfer($date, $nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $
     }
 }
 function make_future_transfer($nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota){
-    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
     $sql = "SELECT `wykonaj_przelew`(?,?,?,?,?,?,?,?) AS `wykonaj_przelew`";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ssssssss", date("Y-m-d H-i-s"), $nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota);
@@ -74,7 +74,7 @@ function make_future_transfer($nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $
 }
 function bank_name($nr){
 $nr=substr($nr,3,4);
-    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
     $sql = sprintf("SELECT * FROM `banki` where zakres_od<=$nr AND zakres_do>=$nr", mysqli_real_escape_string($conn, $nr));
     if ($result = $conn->query($sql)) {
         $conn->close();
@@ -88,7 +88,7 @@ $nr=substr($nr,3,4);
 
 function products_show($type)
 {
-    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr1');
+    $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
     $username = $_SESSION['username'];
     $id = $_SESSION['id'];
     $sql = "SELECT * FROM `produkty_klienci` left join `produkty` on produkty_klienci.id_produktu=produkty.id_produktu where id_klienta=$id and produkty.id_produktu=$type";
