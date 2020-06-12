@@ -4,7 +4,7 @@ session_start();
 if(!isset($_SESSION['username'])){
     header('location:index.php');
 }
-
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -83,7 +83,7 @@ if(!isset($_SESSION['username'])){
                         <?php
                             $id=$_SESSION['id'];
                             require_once('connect.php');
-                            $sql = "SELECT * FROM `produkty_klienci` where id_klienta=$id AND id_produktu=1";
+                        $sql = "SELECT * FROM `produkty_klienci` where id_klienta=$id AND id_produktu IN (select id_typu_produktu from typy_produktow where czy_produkt_z_karta=1)";
                             $result = mysqli_query($conn,$sql);
                             echo "<select name=\"number\">";
                             while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
