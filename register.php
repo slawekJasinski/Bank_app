@@ -61,7 +61,7 @@ session_start();
 
         <form action="register_execute.php" method="post" class="register-form">
 
-            <span style="color: red">Pierwsze imie</span>  <br>
+            Pierwsze imie  <br>
             <input type="text" name="name" id="name" pattern="^[A-ZŁŚŻ]{1}[a-zóąśłżźćń]{2,20}$" required>
             <br/>
             Drugie imie  //mozliwy NULL<br>
