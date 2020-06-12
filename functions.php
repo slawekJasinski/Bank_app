@@ -38,8 +38,8 @@ function dostepne_srodki($nr){
         if ($count == 1) {
             $amount = $result->fetch_assoc();
             return $amount['dostepne_srodki_rachunku'];
-            }
         }
+    }
 }
 function make_transfer($date, $nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota){
     $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
@@ -73,7 +73,7 @@ function make_future_transfer($nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $
 
 }
 function bank_name($nr){
-$nr=substr($nr,3,4);
+    $nr=substr($nr,3,4);
     $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
     $sql = sprintf("SELECT * FROM `banki` where zakres_od<=$nr AND zakres_do>=$nr", mysqli_real_escape_string($conn, $nr));
     if ($result = $conn->query($sql)) {
@@ -108,5 +108,9 @@ function products_show($type)
       
 ROW;
     }
+}
+function translate($nr){
+    if($nr==0) return "NIE";
+    else return "TAK";
 }
 ?>
