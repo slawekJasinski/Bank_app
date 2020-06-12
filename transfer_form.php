@@ -5,7 +5,6 @@ if(!isset($_SESSION['username'])){
     header('location:index.php');
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -85,17 +84,17 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="form">
                         <form action="transfer_confirm.php" method="post">
-                            <?php
-                                $id=$_SESSION['id'];
-                                require_once('connect.php');
-                                $sql = "SELECT * FROM `produkty_klienci` where id_klienta=$id AND id_produktu=1";
-                                $result = mysqli_query($conn,$sql);
-                                echo "<select name=\"number\">";
-                                while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-                                    echo "<option value='" . $row['numer_rachunku'] . "'>" . $row['numer_rachunku']." - dostępne środki: ".dostepne_srodki($row['id_produktu']) ."zł"." </option>";
-                                }
-                                echo "</select>";
-                                ?>
+                        <?php
+                            $id=$_SESSION['id'];
+                            require_once('connect.php');
+                            $sql = "SELECT * FROM `produkty_klienci` where id_klienta=$id AND id_produktu IN (select id_typu_produktu from typy_produktow where czy_produkt_z_karta=1)";
+                            $result = mysqli_query($conn,$sql);
+                            echo "<select name=\"number\">";
+                            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+                                echo "<option value='" . $row['numer_rachunku'] . "'>" . $row['numer_rachunku']." - dostępne środki:".dostepne_srodki($row['id_produktu']) ."zł"." </option>";
+                            }
+                            echo "</select>";
+                            ?>
 
                                 <?php
                                 if(isset($_POST['numer_rachunku'])){
