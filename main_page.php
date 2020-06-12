@@ -73,6 +73,7 @@
 
                     <div class="square">
                         <p>Wnioski</p>
+                        <i class="fas fa-file-alt"></i>
                         <div class="test">
                             <a href="#">
                                 <button class="btn2">Zobacz swoje wnioski</button>
@@ -81,6 +82,7 @@
                     </div>
                     <div class="square">
                         <p>Twoje produkty</p>
+                        <i class="fas fa-briefcase"></i>
                         <div class="test">
                             <a href="pprodukty.php">
                                 <button class="btn2">Zobacz produkty</button>
@@ -89,6 +91,7 @@
                     </div>
                     <div class="square">
                         <p>Karty</p>
+                        <i class="fas fa-credit-card"></i>
                         <div class="test">
                             <a href="karty.php">
                                 <button class="btn2">Wyświetl karty</button>
@@ -97,6 +100,7 @@
                     </div>
                     <div class="square">
                         <p>Historia rachunku</p>
+                        <i class="fas fa-history"></i>
                         <div class="test">
                             <a href="#">
                                 <button class="btn2">Historia rachunku</button>
@@ -105,6 +109,7 @@
                     </div>
                     <div class="square">
                         <p>Przelew</p>
+                        <i class="fas fa-exchange-alt"></i>
                         <div class="test">
                             <a href="transfer_form.php">
                                 <button class="btn2">Wykonaj przelew</button>
@@ -113,6 +118,7 @@
                     </div>
                     <div class="square">
                         <p>Historia przelewów</p>
+                        <i class="fas fa-history"></i>
                         <div class="test">
                             <a href="transactions_history.php">
                                 <button class="btn2">Historia przelewów</button>
@@ -121,6 +127,7 @@
                     </div>
                     <div class="square">
                         <p>Limity</p>
+                        <i class="fas fa-exclamation-circle"></i>
                         <div class="test">
                             <a href="#">
                                 <button class="btn2">Zobacz limity</button>
@@ -129,14 +136,16 @@
                     </div>
                     <div class="square">
                         <p>Koszyk przelewów</p>
+                        <i class="fas fa-shopping-basket"></i>
                         <div class="test">
                             <a href="#">
-                                <button class="btn2">Wyśietl koszyk</button>
+                                <button class="btn2">Wyświetl koszyk</button>
                             </a>
                         </div>
                     </div>
                     <div class="square">
                         <p>Blokady kart</p>
+                        <i class="fas fa-ban"></i>
                         <div class="test">
                             <a href="#">
                                 <button class="btn2">Zobacz blokady</button>
@@ -148,6 +157,7 @@
                     
                    <div class="square">
                         <p>Odbiorcy i płatnicy</p>
+                        <i class="fas fa-address-book"></i>
                         <div class="test">
                             <a href="#">
                                 <button class="btn2">Wyświetl listę</button>

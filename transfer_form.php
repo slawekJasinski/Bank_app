@@ -79,59 +79,69 @@ if(!isset($_SESSION['username'])){
                     </div>
 
                 </div>
-                <div class="info">
-                    <form action="transfer_confirm.php" method="post" class="transfer-form">
-                        <?php
-                            $id=$_SESSION['id'];
-                            require_once('connect.php');
-                            $sql = "SELECT * FROM `produkty_klienci` where id_klienta=$id AND id_produktu=1";
-                            $result = mysqli_query($conn,$sql);
-                            echo "<select name=\"number\">";
-                            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-                                echo "<option value='" . $row['numer_rachunku'] . "'>" . $row['numer_rachunku']." - dostępne środki:".dostepne_srodki($row['id_produktu']) ."zł"." </option>";
-                            }
-                            echo "</select>";
-                            ?>
-
+                <div class="wrapper2">
+                    <div class="title">
+                        Wykonaj przelew
+                    </div>
+                    <div class="form">
+                        <form action="transfer_confirm.php" method="post">
                             <?php
-                            if(isset($_POST['numer_rachunku'])){
-                                $account =  $_POST['numer_rachunku'];
-                                $_SESSION['numer_rachunku'] = $account;
-                            }
-                            $sender=$_SESSION['username'];
-                        ?>
-                        <br/>
-                        Numer konta odbiorcy
-                        <input type="text" name="credit-card" id="credit-card" autocomplete="off" required>
-                        </br>
-                        Kwota
-                        <input type="number" name="amount" min="0.00" id="amount" step="0.01"required>
-                        <br/>
-                        Nazwa odbiorcy
-                        <input type="text" name="receiver_name" id="receiver_name" required>
-                        <br/>
-                        Tytuł przelewu
-                        <input type="text" name="title" id="title" min="0.00" step="0.01" required>
-                        <br/>
-                        Data wykonania przelewu
-                        <input id="date" type="date" name="date" min="2020-06-01" max="2020-12-31"></input>
-                        <br/>
-                        Podaj kod autoryzacyjny: <input type="text" name="cvv" id="cvv" minlength="4" maxlength="4" required/>
-                        <br/>
-                        Twój kod autoryzacyjny to:
-                        <?php
-                            $_SESSION['cvv'] = rand(1000, 9999);
-                            echo $_SESSION['cvv'];
-                        ?>
-                        <br>
-                        <button type="submit" name="submit" onclick=value="submit">Wykonaj przelew</button>
-                        <?php
-                    /*if (isset($_POST['submit'])) {
-                        make_transfer($_POST['date'], $account, '1',$account, $_POST['receiver_name'], '1',$_POST['title'], $_POST['amount']);
-                        echo "Przelew został zrealizowany";
-                        }
-                        */?>
-                    </form>
+                                $id=$_SESSION['id'];
+                                require_once('connect.php');
+                                $sql = "SELECT * FROM `produkty_klienci` where id_klienta=$id AND id_produktu=1";
+                                $result = mysqli_query($conn,$sql);
+                                echo "<select name=\"number\">";
+                                while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+                                    echo "<option value='" . $row['numer_rachunku'] . "'>" . $row['numer_rachunku']." - dostępne środki: ".dostepne_srodki($row['id_produktu']) ."zł"." </option>";
+                                }
+                                echo "</select>";
+                                ?>
+
+                                <?php
+                                if(isset($_POST['numer_rachunku'])){
+                                    $account =  $_POST['numer_rachunku'];
+                                    $_SESSION['numer_rachunku'] = $account;
+                                }
+                                $sender=$_SESSION['username'];
+                            ?>
+                            <div class="inputfield">
+                                <label for="name">Numer konta odbiorcy</label>
+                                <input type="text" class="input" name="name" id="name" pattern="^[A-ZŁŚŻ]{1}[a-zóąśłżźćń]{2,20}$" required>
+                            </div>  
+                                <div class="inputfield">
+                                <label>Kwota</label>
+                                <input type="text" class="input" name="second_name" id="second_name" pattern="^[A-ZŁŚŻ]{1}[a-zóąśłżźćń]{1,20}$">
+                            </div> 
+                            <div class="inputfield">
+                                <label>Nazwa odbiorcy</label>
+                                <input type="text" class="input" name="surname" id="surname" pattern="^[A-ZÓŚŁŻŹĆ]{1}[a-zóąśłżźćń]{1,30}$" required>
+                            </div>  
+                            <div class="inputfield">
+                                <label>Tytuł przelewu</label>
+                                <input type="text" class="input" name="pesel" id="pesel" pattern="[0-9]{11}" required>
+                            </div>  
+                            <div class="inputfield">
+                                <label>Data wykonania przelewu</label>
+                                <input type="text" class="input" name="id_number" id="id_number" required>
+                            </div>  
+                            <div class="inputfield">
+                                <label>Podaj kod autoryzacyjny</label>
+                                <input type="email" class="input" name="email" id="email" required>
+                            </div>  
+                            <div class="inputfield">
+                                <label>Twój kod autoryzacyjny to:</label>
+                                <?php
+                                    $_SESSION['cvv'] = rand(1000, 9999);
+                                    echo $_SESSION['cvv'];
+                                ?>
+                            </div>  
+                                <div class="inputfield">
+                            </div> 
+                            <div class="inputfield">
+                                <input type="submit" value="Wykonaj" class="submit-btn">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

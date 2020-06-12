@@ -178,6 +178,14 @@ body{
   /*color: rgb(23, 74, 117);*/
 }
 
+.wrapper .main_content .info .square .fas{
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  margin-top: 58px;
+  color: #b3aecc;
+}
+
 .sign-out{
   /*line-height: 90px;*/
   text-align: center;
