@@ -5,6 +5,7 @@ if(!isset($_SESSION['username'])){
     header('location:index.php');
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -79,7 +80,7 @@ if(!isset($_SESSION['username'])){
 
                 </div>
                 <div class="wrapper2">
-                    <div class="title">
+                    <div class="form_title">
                         Wykonaj przelew
                     </div>
                     <div class="form">
@@ -91,7 +92,7 @@ if(!isset($_SESSION['username'])){
                             $result = mysqli_query($conn,$sql);
                             echo "<select name=\"number\">";
                             while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-                                echo "<option value='" . $row['numer_rachunku'] . "'>" . $row['numer_rachunku']." - dostępne środki:".dostepne_srodki($row['id_produktu']) ."zł"." </option>";
+                                echo "<option value='" . $row['numer_rachunku'] . "'>" . $row['numer_rachunku']." - dostępne środki: ".dostepne_srodki($row['id_produktu']) ."zł"." </option>";
                             }
                             echo "</select>";
                             ?>
@@ -105,27 +106,27 @@ if(!isset($_SESSION['username'])){
                             ?>
                             <div class="inputfield">
                                 <label for="name">Numer konta odbiorcy</label>
-                                <input type="text" class="input" name="name" id="name" pattern="^[A-ZŁŚŻ]{1}[a-zóąśłżźćń]{2,20}$" required>
+                                <input type="text" class="input" name="credit-card" id="credit-card" autocomplete="off" required>
                             </div>  
                                 <div class="inputfield">
                                 <label>Kwota</label>
-                                <input type="text" class="input" name="second_name" id="second_name" pattern="^[A-ZŁŚŻ]{1}[a-zóąśłżźćń]{1,20}$">
+                                <input type="number" class="input" name="amount" min="0.00" id="amount" step="0.01" required>
                             </div> 
                             <div class="inputfield">
                                 <label>Nazwa odbiorcy</label>
-                                <input type="text" class="input" name="surname" id="surname" pattern="^[A-ZÓŚŁŻŹĆ]{1}[a-zóąśłżźćń]{1,30}$" required>
+                                <input type="text" class="input" name="receiver_name" id="receiver_name" required>
                             </div>  
                             <div class="inputfield">
                                 <label>Tytuł przelewu</label>
-                                <input type="text" class="input" name="pesel" id="pesel" pattern="[0-9]{11}" required>
+                                <input type="text" class="input" name="title" id="title" min="0.00" step="0.01" required>
                             </div>  
                             <div class="inputfield">
                                 <label>Data wykonania przelewu</label>
-                                <input type="text" class="input" name="id_number" id="id_number" required>
+                                <input type="date" class="input" name="date" id="date" min="2020-06-01" max="2020-12-31">
                             </div>  
                             <div class="inputfield">
                                 <label>Podaj kod autoryzacyjny</label>
-                                <input type="email" class="input" name="email" id="email" required>
+                                <input type="text" class="input" name="cvv" id="cvv" minlength="4" maxlength="4" required>
                             </div>  
                             <div class="inputfield">
                                 <label>Twój kod autoryzacyjny to:</label>
@@ -137,7 +138,7 @@ if(!isset($_SESSION['username'])){
                                 <div class="inputfield">
                             </div> 
                             <div class="inputfield">
-                                <input type="submit" value="Wykonaj" class="submit-btn">
+                                <button type="submit" name="sumbit" value="Wykonaj" class="submit-btn">Wykonaj</button>
                             </div>
                         </form>
                     </div>
@@ -145,3 +146,4 @@ if(!isset($_SESSION['username'])){
             </div>
         </div>
     </body>
+</html>

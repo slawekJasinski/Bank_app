@@ -114,7 +114,7 @@ if(!isset($_SESSION['username'])){
                         <input type="text" name="title" id="title" min="0.00" step="0.01" required>
                         <br/>
                         Data wykonania przelewu
-                        <input id="date" type="date" name="date" min="2020-06-01" max="2020-12-31"></input>
+                        <input type="date" name="date" id="date" min="2020-06-01" max="2020-12-31"></input>
                         <br/>
                         Podaj kod autoryzacyjny: <input type="text" name="cvv" id="cvv" minlength="4" maxlength="4" required/>
                         <br/>
