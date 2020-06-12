@@ -137,11 +137,11 @@ session_start();
                             </div> 
                             <div class="inputfield">
                                 <label>Numer domu</label>
-                                <input type="text" class="input" name="house" id="house" pattern="[0-9]" required>
+                                <input type="text" class="input" name="house" id="house" pattern="[0-9]{1,}" required>
                             </div> 
                             <div class="inputfield">
                                 <label>Numer mieszkania</label>
-                                <input type="text" class="input" name="apartment" id="apartment" pattern="[0-9]">
+                                <input type="text" class="input" name="apartment" id="apartment" pattern="[0-9]{1,}">
                             </div> 
                             <div class="inputfield">
                                 <label>Kod pocztowy</label>
