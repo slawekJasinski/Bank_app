@@ -73,41 +73,43 @@ if(!isset($_SESSION['username'])){
         </div>
 
         <div class="info">
-            <table>
-                <tr>
-                    <th>numer_rachunku</th>
-                    <th>na_rachunek</th>
-                    <th>odbiorca</th>
-                    <th>tytul</th>
-                    <th>kwota</th>
-                    <th>data_wstawienia</th>
-                </tr>
-                <!--</table>-->
-                <?php
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>numer rachunku</th>
+                        <th>na rachunek</th>
+                        <th>odbiorca</th>
+                        <th>tytul</th>
+                        <th>kwota</th>
+                        <th>data_wstawienia</th>
+                    </tr>
+                    <!--</table>-->
+                    <?php
 
-                /*session_start();*/
-                require_once('connect.php');
-                require_once('functions.php');
-                if (isset($_SESSION['username'])) {
-                    $username = $_SESSION['username'];
-                    $id = $_SESSION['id'];
-                    $sql = "SELECT * FROM `produkty_klienci` as p join `koszyk_przelewow` as k on p.id_produktu_klienta=k.id_produktu_klienta join przelewy as pr on k.id_koszyka_przelewow=pr.id_koszyka_przelewow where p.id_klienta=$id";
-                    $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
-                    while ($row = mysqli_fetch_assoc($result)) {
+                    /*session_start();*/
+                    require_once('connect.php');
+                    require_once('functions.php');
+                    if (isset($_SESSION['username'])) {
+                        $username = $_SESSION['username'];
+                        $id = $_SESSION['id'];
+                        $sql = "SELECT * FROM `produkty_klienci` as p join `koszyk_przelewow` as k on p.id_produktu_klienta=k.id_produktu_klienta join przelewy as pr on k.id_koszyka_przelewow=pr.id_koszyka_przelewow where p.id_klienta=$id";
+                        $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
+                        while ($row = mysqli_fetch_assoc($result)) {
 
-                        echo"<tr>";
-                        echo"<td>$row[numer_rachunku]</td>";
-                        echo"<td>$row[na_rachunek]</td>";
-                        echo"<td>$row[odbiorca]</td>";
-                        echo"<td>$row[tytul]</td>";
-                        echo"<td>$row[kwota]</td>";
-                        echo"<td>$row[data_wstawienia]</td> ";
-                        echo"</tr>";
+                            echo"<tr>";
+                            echo"<td>$row[numer_rachunku]</td>";
+                            echo"<td>$row[na_rachunek]</td>";
+                            echo"<td>$row[odbiorca]</td>";
+                            echo"<td>$row[tytul]</td>";
+                            echo"<td>$row[kwota]</td>";
+                            echo"<td>$row[data_wstawienia]</td> ";
+                            echo"</tr>";
 
+                        }
                     }
-                }
-                ?>
-            </table>
+                    ?>
+                </table>
+            </div>
         </div>
     </div>
 </div>
