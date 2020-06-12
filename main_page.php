@@ -24,7 +24,7 @@
                     <a href="#"><h2 style="">Pulpit</h2></a>
                     <ul>
                         <li><a href="main_page.php"><i class="fas fa-home"></i>Strona główna</a></li>
-                        <li><a href="pprodukty2.php"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
+                        <li><a href="pprodukty.php"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
                         <li><a href="karty.php"><i class="fas fa-credit-card"></i>Karty płatnicze</a></li>
                         <li><a href="twoje_sprawy.php"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
                         <li><a href="transfer_form.php"><i class="fas fa-exchange-alt"></i>Przelewy</a></li>
@@ -82,7 +82,7 @@
                    <div class="square">
                         <p>Twoje produkty</p>
                         <div class="test">
-                            <a href="pprodukty2.php">
+                            <a href="pprodukty.php">
                                 <button class="btn2">Zobacz produkty</button>
                             </a>
                         </div>
