@@ -40,40 +40,21 @@ if(isset($_POST['password2'])){
     $password2 = $_POST['password2'];
 }
 if($password==$password2) {
-    $sql = "SET @p0='?'; SET @p1='?'; SET @p2='?'; SET @p3='?'; SET @p4='?'; SET @p5='?'; SET @p6='?'; SET @p7='?'; SET @p8='?'; SELECT `dodaj_klienta`(@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8) AS `dodaj_klienta`;";
+    //$sql = "SET @p0='?'; SET @p1='?'; SET @p2='?'; SET @p3='?'; SET @p4='?'; SET @p5='?'; SET @p6='?'; SET @p7='?'; SET @p8='?'; SELECT `dodaj_klienta`(@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8) AS `dodaj_klienta`;";
+    $sql = "SELECT `dodaj_klienta`(?, ?, ?, ?, ?, ?, ?, ?, ?) AS `dodaj_klienta`;";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sssiisiss", $name, $second_name, $surname, $pesel, $id_type, $id_number, $system_id, $email, $password);
-    echo $stmt;
     $stmt->execute();
     if ($result = $conn->query($sql)) {
         $conn->close();
         $count = $result->num_rows;
         if ($count == 1) {
             $amount = $result->fetch_assoc();
-            echo $amount['dodaj_klienta'];
         }
     } else {
-        echo $name;
-        "<br>";
-        echo $second_name;
-        "<br>";
-        echo $surname;
-        "<br>";
-        echo $id_type;
-        "<br>";
-        echo $id_number;
-        "<br>";
-        echo $email;
-        "<br>";
-        echo $email2;
-        "<br>";
-        echo $password;
-        "<br>";
-        echo $password2;
-        "<br>";
+
     }
 }
-
 
 if(isset($_POST['city'])){
     $city = $_POST['city'];
@@ -94,9 +75,10 @@ if(isset($_POST['country'])){
     $country = $_POST['country'];
 }
 if($password==$password2) {
-    $sql = "SET @p0='?'; SET @p1='?'; SET @p2='?'; SET @p3='?'; SET @p4='?'; SET @p5='?'; SET @p6='?'; SET @p7='?'; SELECT `dodaj_adres_klienta`(@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7) AS `dodaj_adres_klienta`;";
+    //$sql = "SET @p0='?'; SET @p1='?'; SET @p2='?'; SET @p3='?'; SET @p4='?'; SET @p5='?'; SET @p6='?'; SET @p7='?'; SELECT `dodaj_adres_klienta`(@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7) AS `dodaj_adres_klienta`;";
+    $sql = "SELECT `dodaj_adres_klienta`(?, ?, ?, ?, ?, ?, ?, ?) AS `dodaj_adres_klienta`;";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssiiss", $city, $street, $house, $apartment, $code, $country);
+    $stmt->bind_values("ssiiss", $city, $street, $house, $apartment, $code, $country);
     echo $stmt;
     $stmt->execute();
     if ($result = $conn->query($sql)) {
@@ -104,23 +86,11 @@ if($password==$password2) {
         $count = $result->num_rows;
         if ($count == 1) {
             $amount = $result->fetch_assoc();
-            echo $amount['dodaj_adres_klienta'];
         }
     }
             else {
-        echo $city;
-        "<br>";
-        echo $street;
-        "<br>";
-        echo $house;
-        "<br>";
-        echo $apartment;
-        "<br>";
-        echo $code;
-        "<br>";
-        echo $country;
-        "<br>";
+
         }
-        }
+}
 
     ?>
