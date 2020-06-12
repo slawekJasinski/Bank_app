@@ -19,7 +19,7 @@
         <td>$row[numer_karty]</td>
         <td>$row[data_waznosci]</td>
         <td>$row[CVV]</td>
-        <td>$row[zablokowana]</td>
+        <td>$row[czy_zablokowana]</td>
       </tr>
       </br>
 ROW;
