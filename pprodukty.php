@@ -86,7 +86,7 @@
                             <?php
                             {
                                 if (isset($_SESSION['username'])) {
-                                    products_show(1); // to są pordukty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
+                                    products_show(1); // to są produkty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
                                     products_show(2);
                                     products_show(3);
                                     products_show(4);
@@ -137,9 +137,55 @@
                                                         {
                                                             if (isset($_SESSION['username'])) {
                                                                 products_show(1); // to są pordukty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
+                                                                products_show(2);
+                                                                products_show(3);
+                                                                products_show(4);
+                                                            }else(header('location:index.php'));
+
+                                                            //echo 'test123';
+                                                        }
+                                                    ?>
+                                                </span>
+                                            </div>
+                                            <div class="phone">
+                                                <span>
+                                                    <?php
+                                                        {
+                                                            if (isset($_SESSION['username'])) {
+                                                                products_show(1); // to są pordukty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
                                                                 //products_show(2);
                                                                 //products_show(3);
                                                                 //products_show(4);
+                                                            }else(header('location:index.php'));
+
+                                                            //echo 'test123';
+                                                        }
+                                                    ?>
+                                                </span>
+                                            </div>
+                                            <div class="phone">
+                                                <span>TEST</span>
+                                            </div>
+                                            <div class="name">
+                                                <span>TEST</span>
+                                            </div>
+                                            <div class="status">
+                                                <span style="text-align: left;">TEST</span>
+                                            </div>
+                                            <div class="issue">
+                                                <span>TEST</span>
+                                            </div>
+                                        </div>
+                                   <div class="item">
+                                            <div class="name">
+                                                <span>
+                                                    <?php
+                                                        {
+                                                            if (isset($_SESSION['username'])) {
+                                                                products_show(1); // to są pordukty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
+                                                                products_show(2);
+                                                                products_show(3);
+                                                                products_show(4);
                                                             }else(header('location:index.php'));
 
                                                             //echo 'test123';
