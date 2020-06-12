@@ -239,8 +239,8 @@ body{
 	position: fixed;
 	right: 50px;
 	bottom: 50px;
-  display: none;
-  z-index: 1;
+    display: none;
+    z-index: 1;
 }
 
 .test{
@@ -260,7 +260,7 @@ table{
     /*border: orchid;*/
     font-family: "Montserrat", sans-serif;
     background-color: #fff;
-  border-radius: 20px;
+    border-radius: 20px;
 
 }
 
@@ -293,12 +293,12 @@ tbody{
 
 }
 
-.column1{
-  /*background-color: pink*/
+/*.column1{
+
 }
 
 .column2{
-  /*background-color: yellow*/
+
 }
 
 .column3{
@@ -315,7 +315,7 @@ tbody{
 
 .column6{
 
-}
+}*/
 
 /* ############################################################################# */
 

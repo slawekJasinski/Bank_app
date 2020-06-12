@@ -248,14 +248,45 @@ body{
 }
 
 table{
-    border: 2px solid green;
-    background-color: red;
-    margin-left: auto;
-    margin-right: auto;
+  /*background-color: orangered;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 140px;
+  margin-bottom: 20px;
+  width: 100%;
+  /*border: orchid;*/
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  border-radius: 20px;
+
 }
 
-tr{
-    border: 20px solid blue;
-    background-color: gray;
+th{
+/*border: 2px solid green;*/
+text-align: left;
+padding: 10px;
+border-bottom: 2px solid #eaeaea;
+font-weight: bold;
+border-spacing: 0px;
+}
+
+td{
+/*border: 2px solid red;*/
+padding: 10px;
+border-bottom: 1px solid #efefef;
+
+}
+tbody{
+width: 100%;
+
+}
+
+.table{
+background-color: #fff;
+width: 1500px;
+margin-left: auto;
+margin-right: auto;
+font-family: "Montserrat", sans-serif !important;
+
 }
 
