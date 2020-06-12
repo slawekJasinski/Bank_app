@@ -75,7 +75,7 @@
                     <div class="table">
                         <table>
                             <tr>
-                                <th>numer_rachunku</>
+                                <th>numer_rachunku</th>
                                 <th>data_aktywacji</th>
                                 <th>data_od</th>
                                 <th>nazwa_produktu</th>
@@ -94,6 +94,107 @@
                             }
                             ?>
                         </table>
+                    </div>
+
+                    <div class="wrapper2">
+  
+
+                        <div class="table_wrap">
+                            <div class="table_header">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <div class="name">
+                                                <span>numer rachunku</span>
+                                            </div>
+                                            <div class="phone">
+                                                <span>data aktywacji</span>
+                                            </div>
+                                            <div class="phone">
+                                                <span>data od</span>
+                                            </div>
+                                            <div class="name">
+                                                <span>nazwa produktu</span>
+                                            </div>
+                                            <div class="status">
+                                                <span>saldo</span>
+                                            </div>
+                                            <div class="issue">
+                                                <span>dostępne środki</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="table_body">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <div class="name">
+                                                <span>
+                                                    <?php
+                                                        {
+                                                            if (isset($_SESSION['username'])) {
+                                                                products_show(1); // to są pordukty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
+                                                                //products_show(2);
+                                                                //products_show(3);
+                                                                //products_show(4);
+                                                            }else(header('location:index.php'));
+
+                                                            //echo 'test123';
+                                                        }
+                                                    ?>
+                                                </span>
+                                            </div>
+                                            <div class="phone">
+                                                <span>
+                                                    <?php
+                                                        {
+                                                            if (isset($_SESSION['username'])) {
+                                                                products_show(1); // to są pordukty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
+                                                                //products_show(2);
+                                                                //products_show(3);
+                                                                //products_show(4);
+                                                            }else(header('location:index.php'));
+
+                                                            //echo 'test123';
+                                                        }
+                                                    ?>
+                                                </span>
+                                            </div>
+                                            <div class="phone">
+                                                <span>TEST</span>
+                                            </div>
+                                            <div class="name">
+                                                <span>TEST</span>
+                                            </div>
+                                            <div class="status">
+                                                <span style="text-align: left;">TEST</span>
+                                            </div>
+                                            <div class="issue">
+                                                <span>TEST</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div style="background-color: #fff">
+                            <?php
+                            {
+                                if (isset($_SESSION['username'])) {
+                                    products_show(1); // to są pordukty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
+                                    products_show(2);
+                                    products_show(3);
+                                    products_show(4);
+                                }else(header('location:index.php'));
+                            }
+                            ?>
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>

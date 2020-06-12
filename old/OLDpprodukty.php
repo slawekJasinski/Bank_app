@@ -11,20 +11,19 @@
         while ($row = mysqli_fetch_assoc($result)) {
             $saldo=saldo($row['id_produktu']);
             $dostepne_srodki=dostepne_srodki($row['id_produktu']);
-            echo <<<ROW
-      <tr>
-        <td>$row[id_produktu_klienta]</td>
-        <td>$row[id_klienta]</td>
-        <td>$row[id_produktu]</td>
-        <td>$row[numer_rachunku]</td>
-        <td>$row[data_aktywacji]</td>
-        <td>$row[data_od]</td>
-        <td>$row[nazwa_produktu]</td>
-        <td>$saldo</td>
-        <td>$dostepne_srodki</td>   
-      </tr>
-      </br>
-ROW;
+            
+      //echo'<tr>';
+        echo'<span>$row[id_produktu_klienta]</span>';
+        echo'<td>$row[id_klienta]</td>';
+        echo'<td>$row[id_produktu]</td>';
+        echo'<td>$row[numer_rachunku]</td>';
+        echo'<td>$row[data_aktywacji]</td>';
+        echo'<td>$row[data_od]</td>';
+        echo'<td>$row[nazwa_produktu]</td>';
+        echo'<td>$saldo</td>';
+        echo'<td>$dostepne_srodki</td>   ';
+        //echo'</tr>';
+
         }
     }else(header('location:index.php'));
 }
