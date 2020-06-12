@@ -26,7 +26,7 @@
                         <li><a href="main_page.php"><i class="fas fa-home"></i>Strona główna</a></li>
                         <li><a href="pprodukty.php"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
                         <li><a href="karty.php"><i class="fas fa-credit-card"></i>Karty płatnicze</a></li>
-                        <li><a href="twoje_sprawy.php"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
                         <li><a href="transfer_form.php"><i class="fas fa-exchange-alt"></i>Przelewy</a></li>
                         <li><a href="#"><i class="fas fa-history"></i>Historia rachunku</a></li>
                         <li><a href="#"><i class="fas fa-exclamation-circle"></i>Limity</a></li>
@@ -74,12 +74,12 @@
                     <div class="square">
                         <p>Wnioski</p>
                         <div class="test">
-                            <a href="twoje_sprawy.php">
+                            <a href="#">
                                 <button class="btn2">Zobacz swoje wnioski</button>
                             </a>
                         </div>
                     </div>
-                   <div class="square">
+                    <div class="square">
                         <p>Twoje produkty</p>
                         <div class="test">
                             <a href="pprodukty.php">
@@ -87,7 +87,7 @@
                             </a>
                         </div>
                     </div>
-                   <div class="square">
+                    <div class="square">
                         <p>Karty</p>
                         <div class="test">
                             <a href="karty.php">
@@ -95,15 +95,15 @@
                             </a>
                         </div>
                     </div>
-                   <div class="square">
-                        <p>Wnioski</p>
+                    <div class="square">
+                        <p>Historia rachunku</p>
                         <div class="test">
-                            <a href="twoje_sprawy.php">
-                                <button class="btn2">Zobacz swoje wnioski</button>
+                            <a href="#">
+                                <button class="btn2">Historia rachunku</button>
                             </a>
                         </div>
                     </div>
-                   <div class="square">
+                    <div class="square">
                         <p>Przelew</p>
                         <div class="test">
                             <a href="transfer_form.php">
@@ -111,70 +111,50 @@
                             </a>
                         </div>
                     </div>
-                   <div class="square">
-                        <p>Wnioski</p>
+                    <div class="square">
+                        <p>Historia przelewów</p>
                         <div class="test">
-                            <a href="twoje_sprawy.php">
-                                <button class="btn2">Zobacz swoje wnioski</button>
+                            <a href="transactions_history.php">
+                                <button class="btn2">Historia przelewów</button>
                             </a>
                         </div>
                     </div>
-                   <div class="square">
-                        <p>Wnioski</p>
+                    <div class="square">
+                        <p>Limity</p>
                         <div class="test">
-                            <a href="twoje_sprawy.php">
-                                <button class="btn2">Zobacz swoje wnioski</button>
+                            <a href="#">
+                                <button class="btn2">Zobacz limity</button>
                             </a>
                         </div>
                     </div>
-                   <div class="square">
-                        <p>Wnioski</p>
+                    <div class="square">
+                        <p>Koszyk przelewów</p>
                         <div class="test">
-                            <a href="twoje_sprawy.php">
-                                <button class="btn2">Zobacz swoje wnioski</button>
+                            <a href="#">
+                                <button class="btn2">Wyśietl koszyk</button>
                             </a>
                         </div>
                     </div>
-                   <div class="square">
-                        <p>Wnioski</p>
+                    <div class="square">
+                        <p>Blokady kart</p>
                         <div class="test">
-                            <a href="twoje_sprawy.php">
-                                <button class="btn2">Zobacz swoje wnioski</button>
+                            <a href="#">
+                                <button class="btn2">Zobacz blokady</button>
                             </a>
                         </div>
                     </div>
+
+                   <div class="square" style="opacity: 0;"></div>
+                    
                    <div class="square">
-                        <p>Wnioski</p>
+                        <p>Odbiorcy i płatnicy</p>
                         <div class="test">
-                            <a href="twoje_sprawy.php">
-                                <button class="btn2">Zobacz swoje wnioski</button>
+                            <a href="#">
+                                <button class="btn2">Wyświetl listę</button>
                             </a>
                         </div>
                     </div>
-                   <div class="square">
-                        <p>Wnioski</p>
-                        <div class="test">
-                            <a href="twoje_sprawy.php">
-                                <button class="btn2">Zobacz swoje wnioski</button>
-                            </a>
-                        </div>
-                    </div>
-                   <div class="square">
-                        <p>Wnioski</p>
-                        <div class="test">
-                            <a href="twoje_sprawy.php">
-                                <button class="btn2">Zobacz swoje wnioski</button>
-                            </a>
-                        </div>
-                    </div>
-                   <div class="square">
-                        <p>Wnioski</p>
-                        <div class="test">
-                            <a href="twoje_sprawy.php">
-                                <button class="btn2">Zobacz swoje wnioski</button>
-                            </a>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>

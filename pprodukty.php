@@ -32,7 +32,7 @@
                         <li><a href="main_page.php"><i class="fas fa-home"></i>Strona główna</a></li>
                         <li><a href="pprodukty.php"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
                         <li><a href="karty.php"><i class="fas fa-credit-card"></i>Karty płatnicze</a></li>
-                        <li><a href="twoje_sprawy.php"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
                         <li><a href="transfer_form.php"><i class="fas fa-exchange-alt"></i>Przelewy</a></li>
                         <li><a href="#"><i class="fas fa-history"></i>Historia rachunku</a></li>
                         <li><a href="#"><i class="fas fa-exclamation-circle"></i>Limity</a></li>
@@ -75,174 +75,26 @@
                     <div class="table">
                         <table>
                             <tr>
-                                <th>numer_rachunku</th>
-                                <th>data_aktywacji</th>
-                                <th>data_od</th>
-                                <th>nazwa_produktu</th>
+                                <th>numer rachunku</th>
+                                <th>data aktywacji</th>
+                                <th>data od</th>
+                                <th>nazwa produktu</th>
                                 <th>saldo</th>
-                                <th>dostepne_srodki</th>
+                                <th>dostępne środki</th>
                             </tr>
                             <!--</table>-->
                             <?php
-                            {
-                                if (isset($_SESSION['username'])) {
-                                    products_show(1); // to są produkty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
-                                    products_show(2);
-                                    products_show(3);
-                                    products_show(4);
-                                }else(header('location:index.php'));
-                            }
+                                {
+                                    if (isset($_SESSION['username'])) {
+                                        products_show(1); // to są produkty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
+                                        products_show(2);
+                                        products_show(3);
+                                        products_show(4);
+                                    }else(header('location:index.php'));
+                                }
                             ?>
                         </table>
                     </div>
-
-                    <div class="wrapper2">
-  
-
-                        <div class="table_wrap">
-                            <div class="table_header">
-                                <ul>
-                                    <li>
-                                        <div class="item">
-                                            <div class="name">
-                                                <span>numer rachunku</span>
-                                            </div>
-                                            <div class="phone">
-                                                <span>data aktywacji</span>
-                                            </div>
-                                            <div class="phone">
-                                                <span>data od</span>
-                                            </div>
-                                            <div class="name">
-                                                <span>nazwa produktu</span>
-                                            </div>
-                                            <div class="status">
-                                                <span>saldo</span>
-                                            </div>
-                                            <div class="issue">
-                                                <span>dostępne środki</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="table_body">
-                                <ul>
-                                    <li>
-                                        <div class="item">
-                                            <div class="name">
-                                                <span>
-                                                    <?php
-                                                        {
-                                                            if (isset($_SESSION['username'])) {
-                                                                products_show(1); // to są pordukty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
-                                                                products_show(2);
-                                                                products_show(3);
-                                                                products_show(4);
-                                                            }else(header('location:index.php'));
-
-                                                            //echo 'test123';
-                                                        }
-                                                    ?>
-                                                </span>
-                                            </div>
-                                            <div class="phone">
-                                                <span>
-                                                    <?php
-                                                        {
-                                                            if (isset($_SESSION['username'])) {
-                                                                products_show(1); // to są pordukty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
-                                                                //products_show(2);
-                                                                //products_show(3);
-                                                                //products_show(4);
-                                                            }else(header('location:index.php'));
-
-                                                            //echo 'test123';
-                                                        }
-                                                    ?>
-                                                </span>
-                                            </div>
-                                            <div class="phone">
-                                                <span>TEST</span>
-                                            </div>
-                                            <div class="name">
-                                                <span>TEST</span>
-                                            </div>
-                                            <div class="status">
-                                                <span style="text-align: left;">TEST</span>
-                                            </div>
-                                            <div class="issue">
-                                                <span>TEST</span>
-                                            </div>
-                                        </div>
-                                   <div class="item">
-                                            <div class="name">
-                                                <span>
-                                                    <?php
-                                                        {
-                                                            if (isset($_SESSION['username'])) {
-                                                                products_show(1); // to są pordukty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
-                                                                products_show(2);
-                                                                products_show(3);
-                                                                products_show(4);
-                                                            }else(header('location:index.php'));
-
-                                                            //echo 'test123';
-                                                        }
-                                                    ?>
-                                                </span>
-                                            </div>
-                                            <div class="phone">
-                                                <span>
-                                                    <?php
-                                                        {
-                                                            if (isset($_SESSION['username'])) {
-                                                                products_show(1); // to są pordukty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
-                                                                //products_show(2);
-                                                                //products_show(3);
-                                                                //products_show(4);
-                                                            }else(header('location:index.php'));
-
-                                                            //echo 'test123';
-                                                        }
-                                                    ?>
-                                                </span>
-                                            </div>
-                                            <div class="phone">
-                                                <span>TEST</span>
-                                            </div>
-                                            <div class="name">
-                                                <span>TEST</span>
-                                            </div>
-                                            <div class="status">
-                                                <span style="text-align: left;">TEST</span>
-                                            </div>
-                                            <div class="issue">
-                                                <span>TEST</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div style="background-color: #fff">
-                            <?php
-                            {
-                                if (isset($_SESSION['username'])) {
-                                    products_show(1); // to są pordukty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
-                                    products_show(2);
-                                    products_show(3);
-                                    products_show(4);
-                                }else(header('location:index.php'));
-                            }
-                            ?>
-                            </div>
-                        </div>
-
-
-                    </div>
-
                 </div>
             </div>
         </div>

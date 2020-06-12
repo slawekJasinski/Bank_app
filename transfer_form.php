@@ -38,7 +38,7 @@ session_start();
                         <li><a href="main_page.php"><i class="fas fa-home"></i>Strona główna</a></li>
                         <li><a href="pprodukty.php"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
                         <li><a href="karty.php"><i class="fas fa-credit-card"></i>Karty płatnicze</a></li>
-                        <li><a href="twoje_sprawy.php"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt"></i>Twoje wnioski</a></li>
                         <li><a href="transfer_form.php"><i class="fas fa-exchange-alt"></i>Przelewy</a></li>
                         <li><a href="#"><i class="fas fa-history"></i>Historia rachunku</a></li>
                         <li><a href="#"><i class="fas fa-exclamation-circle"></i>Limity</a></li>
