@@ -28,7 +28,7 @@ if(!isset($_SESSION['username'])){
 
             <div class="sidebar">
                 <div class="sidebar-top">
-                    <a href="main_page.php"><h2>Pulpit</h2></a>
+                    <a href="#"><h2 style="">Pulpit</h2></a>
                     <ul>
                         <li><a href="main_page.php"><i class="fas fa-home"></i>Strona główna</a></li>
                         <li><a href="pprodukty.php"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
@@ -73,41 +73,39 @@ if(!isset($_SESSION['username'])){
                 </div>  
 
                 <div class="info">
-                    <div class="table">
-                        <table>
-                            <tr>
-                                <th>na rachunek</th>
-                                <th>odbiorca</th>
-                                <th>tytuł</th>
-                                <th>kwota</th>
-                                <th>data wstawienia</th>
-                            </tr>
-                            <!--</table>-->
-                            <?php
+                    <table>
+                        <tr>
+                            <th>na_rachunek</th>
+                            <th>odbiorca</th>
+                            <th>tytul</th>
+                            <th>kwota</th>
+                            <th>data_wstawienia</th>
+                        </tr>
+                        <!--</table>-->
+                        <?php
 
-                                /*session_start();*/
-                                require_once('connect.php');
-                                require_once('functions.php');
-                                if (isset($_SESSION['username'])) {
-                                    $username = $_SESSION['username'];
-                                    $id = $_SESSION['id'];
-                                    $sql = "SELECT * FROM `przelewy`";
-                                    $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
-                                    while ($row = mysqli_fetch_assoc($result)) {
-                                        
-                                        echo"<tr>";
-                                            echo"<td>$row[na_rachunek]</td>";
-                                            echo"<td>$row[odbiorca]</td>";
-                                            echo"<td>$row[tytul]</td>";
-                                            echo"<td>$row[kwota]</td>";
-                                            echo"<td>$row[data_wstawienia]</td> ";
-                                        echo"</tr>";
+                            /*session_start();*/
+                            require_once('connect.php');
+                            require_once('functions.php');
+                            if (isset($_SESSION['username'])) {
+                                $username = $_SESSION['username'];
+                                $id = $_SESSION['id'];
+                                $sql = "SELECT * FROM `przelewy`";
+                                $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    
+                                    echo"<tr>";
+                                        echo"<td>$row[na_rachunek]</td>";
+                                        echo"<td>$row[odbiorca]</td>";
+                                        echo"<td>$row[tytul]</td>";
+                                        echo"<td>$row[kwota]</td>";
+                                        echo"<td>$row[data_wstawienia]</td> ";
+                                    echo"</tr>";
 
-                                    }
                                 }
-                            ?>
-                        </table>
-                    </div>
+                            }
+                        ?>
+                    </table>
                 </div>
             </div>
         </div>
