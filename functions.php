@@ -94,8 +94,8 @@ function products_show($type)
     $sql = "SELECT * FROM `produkty_klienci` left join `produkty` on produkty_klienci.id_produktu=produkty.id_produktu where id_klienta=$id and produkty.id_produktu=$type";
     $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
     while ($row = mysqli_fetch_assoc($result)) {
-        $saldo = saldo($row['id_produktu']);
-        $dostepne_srodki = dostepne_srodki($row['id_produktu']);
+        $saldo = saldo($row['id_produktu_klienta']);
+        $dostepne_srodki = dostepne_srodki($row['id_produktu_klienta']);
         echo <<<ROW
       <tr>
         <td class="column1">$row[numer_rachunku]</td>
