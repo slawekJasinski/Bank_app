@@ -21,7 +21,7 @@
 
             <div class="sidebar">
                 <div class="sidebar-top">
-                    <a href="main_page.php"><h2>Pulpit</h2></a>
+                    <a href="#"><h2 style="">Pulpit</h2></a>
                     <ul>
                         <li><a href="main_page.php"><i class="fas fa-home"></i>Strona główna</a></li>
                         <li><a href="pprodukty.php"><i class="fas fa-briefcase"></i>Twoje produkty</a></li>
