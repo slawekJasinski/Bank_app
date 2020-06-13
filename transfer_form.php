@@ -122,7 +122,7 @@ if(!isset($_SESSION['username'])){
                             </div>  
                             <div class="inputfield">
                                 <label>Data wykonania przelewu</label>
-                                <input type="date" class="input" name="date" id="date" min="2020-06-01" max="2020-12-31">
+                                <input type="date" class="input" name="date" id="date" min="<?php $date = date('m/d/Y h:i:s a', time())?>" max="2020-12-31">
                             </div>  
                             <div class="inputfield">
                                 <label>Podaj kod autoryzacyjny</label>
