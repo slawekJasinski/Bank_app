@@ -92,18 +92,20 @@ if(!isset($_SESSION['username'])){
                     if (isset($_SESSION['username'])) {
                         $username = $_SESSION['username'];
                         $id = $_SESSION['id'];
-                        $sql = "SELECT numer_rachunku, na_rachunek, odbiorca, tytul, kwota, pr.data_wstawienia FROM `produkty_klienci` as p join `koszyk_przelewow` as k on p.id_produktu_klienta=k.id_produktu_klienta join przelewy as pr on k.id_koszyka_przelewow=pr.id_koszyka_przelewow where p.id_klienta=$id UNION select t.numer_rachunku, na_rachunek, odbiorca, tytul, kwota, data_wstawienia from transakcje_wychodzace as t join produkty_klienci as pk on t.numer_rachunku=pk.numer_rachunku where pk.id_klienta=$id";
+                        $sql = "SELECT * from transakcje_wychodzace as t join produkty_klienci as pk on t.numer_rachunku=pk.numer_rachunku where pk.id_klienta=1 order by data_transakcji desc";
                         $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
                         while ($row = mysqli_fetch_assoc($result)) {
 
                             echo"<tr>";
+                            echo"<td>$row[data_transakcji]</td> ";
                             echo"<td>$row[numer_rachunku]</td>";
                             echo"<td>$row[na_rachunek]</td>";
                             echo"<td>$row[odbiorca]</td>";
+                            echo"<td>$row[adres_odbiorcy]</td>";
                             echo"<td>$row[tytul]</td>";
                             echo"<td>$row[kwota]</td>";
-                            echo"<td>$row[data_wstawienia]</td> ";
-                            echo"</tr>";
+                            echo"<td>$row[czy_wykonana]</td>";
+                            echo"</tr>";//sortowanie od najnowszych do najstarszych
 
                         }
                     }
