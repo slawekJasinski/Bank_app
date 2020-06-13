@@ -92,7 +92,7 @@ if(!isset($_SESSION['username'])){
                     if (isset($_SESSION['username'])) {
                         $username = $_SESSION['username'];
                         $id = $_SESSION['id'];
-                        $sql = "SELECT * FROM `produkty_klienci` as p join `koszyk_przelewow` as k on p.id_produktu_klienta=k.id_produktu_klienta join przelewy as pr on k.id_koszyka_przelewow=pr.id_koszyka_przelewow where p.id_klienta=$id";
+                        $sql = "SELECT numer_rachunku, na_rachunek, odbiorca, tytul, kwota, pr.data_wstawienia FROM `produkty_klienci` as p join `koszyk_przelewow` as k on p.id_produktu_klienta=k.id_produktu_klienta join przelewy as pr on k.id_koszyka_przelewow=pr.id_koszyka_przelewow where p.id_klienta=$id UNION select t.numer_rachunku, na_rachunek, odbiorca, tytul, kwota, data_wstawienia from transakcje_wychodzace as t join produkty_klienci as pk on t.numer_rachunku=pk.numer_rachunku where pk.id_klienta=$id";
                         $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
                         while ($row = mysqli_fetch_assoc($result)) {
 

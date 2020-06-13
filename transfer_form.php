@@ -92,7 +92,7 @@ if(!isset($_SESSION['username'])){
                             $result = mysqli_query($conn,$sql);
                             echo "<select name=\"number\">";
                             while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-                                echo "<option value='" . $row['numer_rachunku'] . "'>" . $row['numer_rachunku']." - dostępne środki: ".dostepne_srodki($row['id_produktu']) ."zł"." </option>";
+                                echo "<option value='" . $row['numer_rachunku'] . "'>" . $row['numer_rachunku']." - dostępne środki: ".dostepne_srodki($row['id_produktu_klienta']) ."zł"." </option>";
                             }
                             echo "</select>";
                             ?>
