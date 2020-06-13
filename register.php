@@ -153,35 +153,35 @@ session_start();
                             </div> 
                             <div class="inputfield terms" style="margin-top: 40px">
                                 <label class="check">
-                                    <input type="checkbox" value="Zg1" name="zgody[]">
+                                    <input type="checkbox" value="Zg1" name="Zg1">
                                     <span class="checkmark"></span>
                                 </label>
                                 <p>Zgoda na przetwarzanie danych osobowych</p>
                             </div> 
                             <div class="inputfield terms">
                                 <label class="check">
-                                    <input type="checkbox" value="Zg2" name="zgody[]">
+                                    <input type="checkbox" value="Zg2" name="Zg2">
                                     <span class="checkmark"></span>
                                 </label>
                                 <p>Zgoda na kontakt drogą elektroniczną w celu marketingowym</p>
                             </div> 
                             <div class="inputfield terms">
                                 <label class="check">
-                                    <input type="checkbox" value="Zg3" name="zgody[]">
+                                    <input type="checkbox" value="Zg3" name="Zg3">
                                     <span class="checkmark"></span>
                                 </label>
                                 <p>Zgoda na kontakt telefoniczny w celu marketingowym</p>
                             </div> 
                             <div class="inputfield terms">
                                 <label class="check">
-                                    <input type="checkbox" value="Zg4" name="zgody[]">
+                                    <input type="checkbox" value="Zg4" name="Zg4">
                                     <span class="checkmark"></span>
                                 </label>
                                 <p>Zgoda na powiadomienie sms o otrzymaniu wiadomości związanych ze zmianami w regulacjach bankowych</p>
                             </div> 
                             <div class="inputfield terms" style="margin-bottom: 40px">
                                 <label class="check">
-                                    <input type="checkbox" value="Zg5" name="zgody[]">
+                                    <input type="checkbox" value="Zg5" name="Zg5">
                                     <span class="checkmark"></span>
                                 </label>
                                 <p>Zgoda na otrzymywanie korespondencji w formie elektronicznej na adres email</p>

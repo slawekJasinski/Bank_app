@@ -44,10 +44,16 @@ if($email==$email2 && $password==$password2) {
     //$sql = "SELECT `dodaj_klienta`('?', '?', '?', '?', '?', '?', '?', '?', '?') AS `dodaj_klienta`;";
     $sql = "SELECT `dodaj_klienta`('$name', '$second_name', '$surname', '$pesel', '$id_type', '$id_number', '$sender', '$email', '$password') AS `dodaj_klienta`;";
     if ($stmt = $conn->query($sql)) {
-        echo "Udalo sie!";
+        $user = $stmt->fetch_assoc();
+        $nr_klienta = $user['dodaj_klienta'];
+        $_SESSION['$nr_klienta'] = $nr_klienta;
+        echo "Nr klienta:";
+        echo $nr_klienta;
     } else {
         ?>
-
+        <script>
+            history.back()
+        </script>
         <?php
     }
 }
@@ -69,20 +75,53 @@ if(isset($_POST['code'])){
 if(isset($_POST['country'])){
     $country = $_POST['country'];
 }
-if($password==$password2) {
+if($email==$email2 && $password==$password2) {
+    $nr_klienta = $_SESSION['$nr_klienta'];
     //$sql = "SET @p0='?'; SET @p1='?'; SET @p2='?'; SET @p3='?'; SET @p4='?'; SET @p5='?'; SET @p6='?'; SET @p7='?'; SELECT `dodaj_adres_klienta`(@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7) AS `dodaj_adres_klienta`;";
-    $sql = "SELECT `dodaj_adres_klienta`('$city', '$street', '$house', '$apartment', '$code', '$country') AS `dodaj_adres_klienta`;";
-    $stmt = $conn->prepare($sql);
-    $stmt->execute();
-    if ($result = $conn->query($sql)) {
-        $conn->close();
-        $count = $result->num_rows;
-        if ($count == 1) {
-            $amount = $result->fetch_assoc();
-        }
+    $sql = "SELECT `dodaj_adres_klienta`('$nr_klienta', 2, '$city', '$street', '$house', '$apartment', '$code', '$country') AS `dodaj_adres_klienta`;";
+    if ($stmt = $conn->query($sql)) {
+        echo "</br>Dodano adres!";
+    } else {
+        ?>
+        <script>
+            history.back()
+        </script>
+        <?php
     }
-            else {
-
-        }
+}
+if(isset($_POST['Zg1'])){
+    $nr_klienta = $_SESSION['$nr_klienta'];
+    $sql = "SELECT `dodaj_zgody_klienta`($nr_klienta, 1, 1) AS `dodaj_zgody_klienta`;";
+    if ($stmt = $conn->query($sql)) {
+        echo "</br>Wyrażono zgodę nr 1!";
+    }
+}
+if(isset($_POST['Zg2'])){
+    $nr_klienta = $_SESSION['$nr_klienta'];
+    $sql = "SELECT `dodaj_zgody_klienta`($nr_klienta, 2, 1) AS `dodaj_zgody_klienta`;";
+    if ($stmt = $conn->query($sql)) {
+        echo "</br>Wyrażono zgodę nr 2!";
+    }
+}
+if(isset($_POST['Zg3'])){
+    $nr_klienta = $_SESSION['$nr_klienta'];
+    $sql = "SELECT `dodaj_zgody_klienta`($nr_klienta, 3, 1) AS `dodaj_zgody_klienta`;";
+    if ($stmt = $conn->query($sql)) {
+        echo "</br>Wyrażono zgodę nr 3!";
+    }
+}
+if(isset($_POST['Zg4'])){
+    $nr_klienta = $_SESSION['$nr_klienta'];
+    $sql = "SELECT `dodaj_zgody_klienta`($nr_klienta, 4, 1) AS `dodaj_zgody_klienta`;";
+    if ($stmt = $conn->query($sql)) {
+        echo "</br>Wyrażono zgodę nr 4!";
+    }
+}
+if(isset($_POST['Zg5'])){
+    $nr_klienta = $_SESSION['$nr_klienta'];
+    $sql = "SELECT `dodaj_zgody_klienta`($nr_klienta, 5, 1) AS `dodaj_zgody_klienta`;";
+    if ($stmt = $conn->query($sql)) {
+        echo "</br>Wyrażono zgodę nr 5!";
+    }
 }
 ?>
