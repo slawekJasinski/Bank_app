@@ -46,6 +46,8 @@ if (isset($_POST['login'])) {
                     if ($correct == 3 || $correct > 3) {
                         $update_query2 = "UPDATE `ebok` SET czy_dozwolone_logowanie = '0' where login='$username'";
                         $update_to_db = mysqli_query($conn, $update_query2);
+                        $update_query3 = "UPDATE `ebok` SET liczba_niepoprawnych_logowan = '0' where login='$username'";
+                        $update_to_db = mysqli_query($conn, $update_query3);
                     }
                     ?>
                     <script>
