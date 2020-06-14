@@ -31,6 +31,7 @@ if (isset($_POST['login'])) {
                 $_SESSION['username'] = $username;
                 $_SESSION['id'] = $user['id_klienta'];
                 $_SESSION['success'] = "OK";
+                unset($_SESSION['error']);
                 header('location: main_page.php');
             } else {
                 if ($dozwolone_logowanie == 0) {

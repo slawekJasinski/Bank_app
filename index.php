@@ -15,6 +15,22 @@ session_start();
       <a href="admin/index.php">Zaloguj jako administrator</a>
     </nav>
 
+  <?php
+    if (isset($_SESSION['error'])) {
+  
+      echo <<<ERROR
+        <div class="card card-outline card-danger">
+          <div class="card-header">
+            <h3 class="card-tittle" style="color: red;">{$_SESSION['error']}</h3>
+            <div class="card-tools">
+            </div>
+          </div>
+        </div>
+      ERROR;
+      unset($_SESSION['error']);
+    }
+?>
+
     <form class="box" action="login.php" method="post">
       <h1>Zaloguj się</h1>
 
