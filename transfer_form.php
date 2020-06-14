@@ -19,13 +19,6 @@ if(!isset($_SESSION['username'])){
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="js/jquery.scrollTo.min.js"></script>
         <script src="js/scroll-up.js"></script>
-        <script type="text/javascript">
-            function transfer(){
-                $.ajax({url:"transfer_confirm.php", success:function(result) {
-                        $("div").text(result);
-                    }})
-            }
-        </script>
 
         <title>KAS Bank - bankowość elektroniczna</title>
     </head>
