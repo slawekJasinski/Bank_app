@@ -40,6 +40,11 @@ if(isset($_POST['title'])){
 }
 ?>
 <h1>Podsumowanie przelewu</h1> <br>
+<?php
+echo $date;
+echo $receiver_name;
+echo $_receiver_address
+echo $credit_card;
 <?php make_transfer($date, $account, $sender, $credit_card, $receiver_name, $_receiver_address, $title, $amount); ?>
 <script>alert("<?php echo bank_name(substr($credit_card, 3, 6)); ?>")</script>
 Konto nadawcy:<?php if(!empty($account)){echo $account;} ?><br>
