@@ -28,7 +28,7 @@ if (isset($_POST['login'])) {
             if ($password == $passdb && $dozwolone_logowanie==1) {
                 echo("Logowanie zakończone sukcesem");
                 $_SESSION['username'] = $username;
-                $_SESSION['id'] = $user['id_klienta'];
+                $_SESSION['id'] = $user['id_uzytkownika'];
                 $_SESSION['success'] = "OK";
                 //header('location: admin_main_page.php');
                 header('location: admin/admin_panel.php');
