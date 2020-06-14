@@ -61,6 +61,10 @@ if (isset($_POST['login'])) {
             $_SESSION['error'] = "Konto jest zablokowane";
             header('index.php');
         }
+    }else {
+        $_SESSION['error-trigger'] = 1;
+        $_SESSION['error'] = "Takie konto nie istnieje";
+        header('index.php');
     }
 }
 ?>
