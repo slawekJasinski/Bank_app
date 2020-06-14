@@ -1,7 +1,4 @@
 <?php
-if(!isset($_SESSION['username'])){
-    header('location:index.php');
-}
 include('connect.php');
 session_start();
 ?>

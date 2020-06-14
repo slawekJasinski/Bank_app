@@ -1,7 +1,4 @@
 <?php
-if(!isset($_SESSION['username'])){
-    header('location:index.php');
-}
 session_start();
 $id=$_SESSION['id'];
 //wybór typu reklamacji
