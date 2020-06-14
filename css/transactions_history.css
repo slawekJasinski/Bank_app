@@ -255,12 +255,11 @@ table{
   margin-right: auto;
   margin-top: 140px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 1600px;
   /*border: orchid;*/
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
-  border-radius: 20px;
-
+  border-radius: 8px;
 }
 
 th{
@@ -278,14 +277,6 @@ td{
   border-bottom: 1px solid #efefef;
 }
 
-tbody{
+/*tbody{
   width: 100%;
-}
-
-.table{
-  background-color: #fff;
-  width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Montserrat", sans-serif !important;
-}
+}*/

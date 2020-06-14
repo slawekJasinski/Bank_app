@@ -107,8 +107,7 @@ require_once('functions.php')
                         <td>$row[kwota]</td>
                         <td>%s</td>
                         </tr>
-                          </br>
-ROW;
+                        ROW;
                         $string = sprintf($string, translate($row['czy_wykonana']));
                         echo $string;
                     }
