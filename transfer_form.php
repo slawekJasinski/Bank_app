@@ -20,13 +20,6 @@ if(!isset($_SESSION['username'])){
         <script src="js/jquery.scrollTo.min.js"></script>
         <script src="js/scroll-up.js"></script>
         <script src="js/date.js"></script>
-        <script type="text/javascript">
-            function transfer(){
-                $.ajax({url:"transfer_confirm.php", success:function(result) {
-                        $("div").text(result);
-                    }})
-            }
-        </script>
 
         <title>KAS Bank - bankowość elektroniczna</title>
     </head>
@@ -139,11 +132,9 @@ if(!isset($_SESSION['username'])){
                                     $_SESSION['cvv'] = rand(1000, 9999);
                                     echo $_SESSION['cvv'];
                                 ?>
-                            </div>  
-                                <div class="inputfield">
-                            </div> 
+                            </div>
                             <div class="inputfield">
-                                <button type="submit" name="sumbit" value="Wykonaj" class="submit-btn">Wykonaj</button>
+                                <button type="submit" name="submit" id="submit" value="Wykonaj" class="submit-btn">Wykonaj</button>
                             </div>
                         </form>
                     </div>
