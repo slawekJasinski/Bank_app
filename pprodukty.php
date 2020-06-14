@@ -73,6 +73,7 @@
 
                 <div class="info">
                     <div class="table">
+                        <h1>Konta osobiste</h1>
                         <table>
                             <tr>
                                 <th>numer rachunku</th>
@@ -86,8 +87,77 @@
                                 {
                                     if (isset($_SESSION['username'])) {
                                         products_show(1); // to są produkty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
+                                        //products_show(2);
+                                        //products_show(3);
+                                        //products_show(4);
+                                    }else(header('location:index.php'));
+                                }
+                            ?>
+                        </table>
+                    </div>
+                    <div class="table">
+                        <h1>Karty kredytowe</h1>
+                        <table>
+                            <tr>
+                                <th>numer rachunku</th>
+                                <th>data aktywacji</th>
+                                <th>nazwa produktu</th>
+                                <th>saldo</th>
+                                <th>dostępne środki</th>
+                            </tr>
+                            <!--</table>-->
+                            <?php
+                                {
+                                    if (isset($_SESSION['username'])) {
+                                        //products_show(1); // to są produkty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
                                         products_show(2);
+                                        //products_show(3);
+                                        //products_show(4);
+                                    }else(header('location:index.php'));
+                                }
+                            ?>
+                        </table>
+                    </div>
+                    <div class="table">
+                        <h1>Kredyty</h1>
+                        <table>
+                            <tr>
+                                <th>numer rachunku</th>
+                                <th>data aktywacji</th>
+                                <th>nazwa produktu</th>
+                                <th>saldo</th>
+                                <th>dostępne środki</th>
+                            </tr>
+                            <!--</table>-->
+                            <?php
+                                {
+                                    if (isset($_SESSION['username'])) {
+                                        //products_show(1); // to są produkty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
+                                        //products_show(2);
                                         products_show(3);
+                                        //products_show(4);
+                                    }else(header('location:index.php'));
+                                }
+                            ?>
+                        </table>
+                    </div>
+                    <div class="table">
+                        <h1>Lokaty</h1>
+                        <table>
+                            <tr>
+                                <th>numer rachunku</th>
+                                <th>data aktywacji</th>
+                                <th>nazwa produktu</th>
+                                <th>saldo</th>
+                                <th>dostępne środki</th>
+                            </tr>
+                            <!--</table>-->
+                            <?php
+                                {
+                                    if (isset($_SESSION['username'])) {
+                                        //products_show(1); // to są produkty po id, 1-konto 2-karta kredytowa 3-kredyt 4-lokata
+                                        //products_show(2);
+                                        //products_show(3);
                                         products_show(4);
                                     }else(header('location:index.php'));
                                 }

@@ -250,11 +250,23 @@ body{
   bottom: 0;
 }
 
+.table:first-child{
+  margin-top: 130px;
+}
+
+.table h1{
+  color: #ecb100;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 table{
     /*background-color: orangered;*/
     margin-left: auto;
     margin-right: auto;
-    margin-top: 140px;
+    /*margin-top: 140px;*/
+    margin-top: 20px;
     margin-bottom: 20px;
     width: 1500px;
     /*border: orchid;*/
@@ -278,10 +290,15 @@ td{
   border-bottom: 1px solid #efefef;
   
 }
+
 tbody{
   width: 100%;
 
 }
+
+
+
+
 
 
 

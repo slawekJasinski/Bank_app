@@ -98,11 +98,11 @@ function products_show($type)
         $dostepne_srodki = dostepne_srodki($row['id_produktu_klienta']);
         echo <<<ROW
       <tr>
-        <td class="column1">$row[numer_rachunku]</td>
-        <td class="column2">$row[data_aktywacji]</td>
-        <td class="column4">$row[nazwa_produktu]</td>
-        <td class="column5">$saldo</td>
-        <td class="column6">$dostepne_srodki</td>   
+        <td>$row[numer_rachunku]</td>
+        <td>$row[data_aktywacji]</td>
+        <td>$row[nazwa_produktu]</td>
+        <td>$saldo</td>
+        <td>$dostepne_srodki</td>   
       </tr>
       
 ROW;
