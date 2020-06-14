@@ -127,4 +127,5 @@ if(isset($_POST['Zg5'])){
         echo "</br>Wyrażono zgodę nr 5!";
     }
 }
+header('location:admin/admin_panel.php')
 ?>
