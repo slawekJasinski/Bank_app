@@ -5,6 +5,9 @@
 
     </title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav>
+        <a href="main_page.php">Powrót do strony głównej</a>
+    </nav>
 </head>
 <body>
 <?php
@@ -13,6 +16,9 @@ require_once('functions.php');
 $sender = $_SESSION['username'];
 if(isset($_POST['number'])){
     $account = $_POST['number'];
+}else {
+    $_SESSION['error-trigger'] = 1;
+    $_SESSION['error'] = "Błędne dane. Spróbuj później!";
 }
 if(isset($_POST['credit-card'])){
     $credit_card = $_POST['credit-card'];
@@ -22,6 +28,9 @@ if(isset($_POST['amount'])){
 }
 if(isset($_POST['receiver_name'])){
     $receiver_name = $_POST['receiver_name'];
+}
+if(isset($_POST['receiver_address'])){
+    $_receiver_address = $_POST['receiver_address'];
 }
 if(isset($_POST['date'])){
     $date = $_POST['date'];
