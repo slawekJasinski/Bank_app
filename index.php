@@ -41,7 +41,7 @@ session_start();
         </div>
       </label>
 
-      <input type="email" name="login" id="login" placeholder="Login" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
+      <input type="email" name="login" id="login" placeholder="Login" autocomplete="off" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
 
       <label for="password">
         <div class="icon">
