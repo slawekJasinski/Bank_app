@@ -120,7 +120,7 @@ session_start();
                         $id=$_SESSION['id'];
                         $sql = "SELECT * FROM `typy_adresu`";
                         $result = mysqli_query($conn,$sql);
-                        echo "<select class=\"custom_select\" name=\"number\">";
+                        echo "<select class=\"custom_select\" name=\"address_id\">";
                         while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
                             echo "<option value='" . $row['id_typu_adresu'] . "'>" . $row['nazwa_typu_adresu'] . " </option>";
                         }
