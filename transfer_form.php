@@ -106,7 +106,7 @@ if(!isset($_SESSION['username'])){
                                 $sender=$_SESSION['username'];
                             ?>
                             <div class="inputfield">
-                                <label for="name">Numer konta odbiorcy</label>
+                                <label for="name">Numer rachunku odbiorcy</label>
                                 <input type="text" class="input" name="credit-card" id="credit-card" autocomplete="off" pattern="[0-9]{26}" required>
                             </div>  
                                 <div class="inputfield">
@@ -126,7 +126,7 @@ if(!isset($_SESSION['username'])){
                                 <input type="text" class="input" name="title" id="title" min="0.00" step="0.01" autocomplete="off" required>
                             </div>  
                             <div class="inputfield">
-                                <label>Data wykonania przelewu</label>
+                                <label>Data realizacji przelewu</label>
                                 <input type="date" class="input" name="date" id="date" min="<?php echo date('Y-m-d'); ?>" max="2020-12-31" value="<?php echo date('Y-m-d'); ?>">
                             </div>  
                             <div class="inputfield">

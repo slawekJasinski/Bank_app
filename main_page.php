@@ -151,11 +151,8 @@
                                 <button class="btn2">Zobacz blokady</button>
                             </a>
                         </div>
-                    </div>
-
-                   <div class="square" style="opacity: 0;"></div>
-                    
-                   <div class="square">
+                    </div>                    
+                    <div class="square">
                         <p>Odbiorcy i płatnicy</p>
                         <i class="fas fa-address-book"></i>
                         <div class="test">

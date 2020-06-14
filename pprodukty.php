@@ -77,7 +77,6 @@
                             <tr>
                                 <th>numer rachunku</th>
                                 <th>data aktywacji</th>
-                                <th>data od</th>
                                 <th>nazwa produktu</th>
                                 <th>saldo</th>
                                 <th>dostępne środki</th>
