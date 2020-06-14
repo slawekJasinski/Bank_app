@@ -1,6 +1,9 @@
 <?php
 { 
     session_start();
+    if(!isset($_SESSION['username'])){
+        header('location:../admin_index.php');
+    }
     $_SESSION['account_number']='12345678901234567890123456';
     require_once('../connect.php');
 }  
