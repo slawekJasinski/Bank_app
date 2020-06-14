@@ -43,9 +43,8 @@ function dostepne_srodki($nr){
 }
 function make_transfer($date, $nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota){
     $conn = mysqli_connect('localhost', 'wikomp_gr1','BDWsB2021','wikomp_gr11');
-    $sql = "SET @p0='2020-01-01'; SET @p1='01100052449138977053770882'; SET @p2='s'; SET @p3='01100052449138977053770882'; SET @p4='a'; SET @p5=''; SET @p6='k'; SET @p7='5'; SELECT `wykonaj_przelew`(@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7) AS `wykonaj_przelew`;";
+    $sql = "SELECT `wykonaj_przelew`('$date', '$nr_rachunku', '$nadawca', '$na_rachunek', '$odbiorca', '$adres_odbiorcy', '$tytul', '$kwota') AS `wykonaj_przelew`;";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssssssss", $date, $nr_rachunku, $nadawca, $na_rachunek, $odbiorca, $adres_odbiorcy, $tytul, $kwota);
     $stmt->execute();
     if ($result = $conn->query($sql)) {
         $conn->close();
