@@ -100,7 +100,7 @@ require_once('functions.php')
                         while ($row = mysqli_fetch_assoc($result)) {
                             $string = <<<ROW
                             <tr>
-                            <td>$row[data_transakcji]</td>
+                            <td>%s</td>
                             <td>$row[numer_rachunku]</td>
                             <td>$row[na_rachunek]</td>
                             <td>$row[odbiorca]</td>
@@ -110,7 +110,7 @@ require_once('functions.php')
                             <td>%s</td>
                             </tr>
                             ROW;
-                            $string = sprintf($string, translate($row['czy_wykonana']));
+                            $string = sprintf($string, sama_data($row['data_transakcji']), translate($row['czy_wykonana']));
                             echo $string;
                         }
                     }

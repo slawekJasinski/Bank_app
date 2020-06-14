@@ -37,6 +37,7 @@ if (isset($_POST['login'])) {
                 if ($dozwolone_logowanie == 0) {
                     $_SESSION['error-trigger'] = 1;
                     $_SESSION['error'] = "Konto jest zablokowane";
+                    header('index.php');
 
                 } else {
                     $_SESSION['error-trigger'] = 1;
@@ -59,9 +60,13 @@ if (isset($_POST['login'])) {
             }
         } else {
             $_SESSION['error-trigger'] = 1;
-            $_SESSION['error'] = "Konto jest zablokowane";
+            $_SESSION['error'] = "Błąd systemowy. Spróbuj jeszcze raz.";
             header('index.php');
         }
+    }else {
+        $_SESSION['error-trigger'] = 1;
+        $_SESSION['error'] = "Takie konto nie istnieje!";
+        header('index.php');
     }
 }
 ?>

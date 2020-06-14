@@ -111,4 +111,10 @@ function translate($nr){
     if($nr==0) return "NIE";
     else return "TAK";
 }
+
+function sama_data($varchar){
+    return substr($varchar, 0, 10);
+}
 ?>
+
+
