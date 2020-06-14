@@ -19,6 +19,7 @@ if(!isset($_SESSION['username'])){
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="js/jquery.scrollTo.min.js"></script>
         <script src="js/scroll-up.js"></script>
+        <script src="js/date.js"></script>
         <script type="text/javascript">
             function transfer(){
                 $.ajax({url:"transfer_confirm.php", success:function(result) {
@@ -106,7 +107,7 @@ if(!isset($_SESSION['username'])){
                             ?>
                             <div class="inputfield">
                                 <label for="name">Numer konta odbiorcy</label>
-                                <input type="text" class="input" name="credit-card" id="credit-card" autocomplete="off" required>
+                                <input type="text" class="input" name="credit-card" id="credit-card" autocomplete="off" pattern="[0-9]{26}" required>
                             </div>  
                                 <div class="inputfield">
                                 <label>Kwota</label>
@@ -114,19 +115,23 @@ if(!isset($_SESSION['username'])){
                             </div> 
                             <div class="inputfield">
                                 <label>Nazwa odbiorcy</label>
-                                <input type="text" class="input" name="receiver_name" id="receiver_name" required>
+                                <input type="text" class="input" name="receiver_name" id="receiver_name" autocomplete="off" required>
                             </div>  
                             <div class="inputfield">
+                                <label>Adres odbiorcy</label>
+                                <textarea class="textarea"></textarea>
+                            </div> 
+                            <div class="inputfield">
                                 <label>Tytuł przelewu</label>
-                                <input type="text" class="input" name="title" id="title" min="0.00" step="0.01" required>
+                                <input type="text" class="input" name="title" id="title" min="0.00" step="0.01" autocomplete="off" required>
                             </div>  
                             <div class="inputfield">
                                 <label>Data wykonania przelewu</label>
-                                <input type="date" class="input" name="date" id="date" min="<?php $date = date('m/d/Y h:i:s a', time())?>" max="2020-12-31">
+                                <input type="date" class="input" name="date" id="date" min="<?php echo date('Y-m-d'); ?>" max="2020-12-31" value="<?php echo date('Y-m-d'); ?>">
                             </div>  
                             <div class="inputfield">
                                 <label>Podaj kod autoryzacyjny</label>
-                                <input type="text" class="input" name="cvv" id="cvv" minlength="4" maxlength="4" required>
+                                <input type="text" class="input" name="cvv" id="cvv" minlength="4" maxlength="4" autocomplete="off" required>
                             </div>  
                             <div class="inputfield">
                                 <label>Twój kod autoryzacyjny to:</label>
