@@ -94,6 +94,8 @@ if(!isset($_SESSION['username'])){
                                 if(isset($_POST['numer_rachunku'])){
                                     $account =  $_POST['numer_rachunku'];
                                     $_SESSION['numer_rachunku'] = $account;
+                                }else{
+                                    header('location: main_page.php');
                                 }
                                 $sender=$_SESSION['username'];
                             ?>
