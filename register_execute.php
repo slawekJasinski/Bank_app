@@ -57,6 +57,9 @@ if($email==$email2 && $password==$password2) {
         <?php
     }
 }
+if(isset($_POST['address_id'])){
+    $address_id = $_POST['address_id'];
+}
 if(isset($_POST['city'])){
     $city = $_POST['city'];
 }
@@ -78,7 +81,7 @@ if(isset($_POST['country'])){
 if($email==$email2 && $password==$password2) {
     $nr_klienta = $_SESSION['$nr_klienta'];
     //$sql = "SET @p0='?'; SET @p1='?'; SET @p2='?'; SET @p3='?'; SET @p4='?'; SET @p5='?'; SET @p6='?'; SET @p7='?'; SELECT `dodaj_adres_klienta`(@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7) AS `dodaj_adres_klienta`;";
-    $sql = "SELECT `dodaj_adres_klienta`('$nr_klienta', 2, '$city', '$street', '$house', '$apartment', '$code', '$country') AS `dodaj_adres_klienta`;";
+    $sql = "SELECT `dodaj_adres_klienta`('$nr_klienta', $address_id, '$city', '$street', '$house', '$apartment', '$code', '$country') AS `dodaj_adres_klienta`;";
     if ($stmt = $conn->query($sql)) {
         echo "</br>Dodano adres!";
     } else {

@@ -138,11 +138,9 @@ if(!isset($_SESSION['username'])){
                                     $_SESSION['cvv'] = rand(1000, 9999);
                                     echo $_SESSION['cvv'];
                                 ?>
-                            </div>  
-                                <div class="inputfield">
-                            </div> 
+                            </div>
                             <div class="inputfield">
-                                <button type="submit" name="sumbit" value="Wykonaj" class="submit-btn">Wykonaj</button>
+                                <button type="submit" name="submit" id="submit" value="Wykonaj" class="submit-btn">Wykonaj</button>
                             </div>
                         </form>
                     </div>
