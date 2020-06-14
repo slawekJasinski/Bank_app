@@ -262,21 +262,14 @@ body{
 }
 
 table{
-    /*background-color: orangered;*/
-    margin-left: auto;
-    margin-right: auto;
-    /*margin-top: 140px;*/
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 1500px;
-    /*border: orchid;*/
-    font-family: "Montserrat", sans-serif;
-    background-color: #fff;
-    border-radius: 8px;
+  margin: 20px auto;
+  width: 1500px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 th{
-  /*border: 2px solid green;*/
   text-align: left;
   padding: 10px;
   border-bottom: 2px solid #eaeaea;
@@ -285,7 +278,6 @@ th{
 }
 
 td{
-  /*border: 2px solid red;*/
   padding: 10px;
   border-bottom: 1px solid #efefef;
   
@@ -296,52 +288,7 @@ tbody{
 
 }
 
-
-
-
-
-
-
-/*.column1{
-
-}
-
-.column2{
-
-}
-
-.column3{
-
-}
-
-.column4{
-
-}
-
-.column5{
-  
-}
-
-.column6{
-
-}*/
-
 /* ############################################################################# */
-
-
-/*
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  font-family: "Montserrat", sans-serif;
-}
-
-body {
-  background: #eaeaea;
-}*/
-
 
 .table_wrap {
   width: 1500px;

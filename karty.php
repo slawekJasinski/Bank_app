@@ -73,6 +73,7 @@
 
                 <div class="info">
                     <div class="table">
+                        <h1>Karty płatnicze</h1>
                         <table>
                             <tr>
                                 <th>numer rachunku</th>

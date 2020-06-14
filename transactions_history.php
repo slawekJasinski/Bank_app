@@ -74,46 +74,49 @@ require_once('functions.php')
         </div>
 
         <div class="info">
-            <table>
-                <tr>
-                    <th>data transakcji</th>
-                    <th>numer rachunku</th>
-                    <th>na rachunek</th>
-                    <th>odbiorca</th>
-                    <th>adres odbiorcy</th>
-                    <th>tytuł</th>
-                    <th>kwota</th>
-                    <th>wykonana</th>
-                </tr>
-                <!--</table>-->
-                <?php
-                /*session_start();*/
-                require_once('connect.php');
-                require_once('functions.php');
-                if (isset($_SESSION['username'])) {
-                    $username = $_SESSION['username'];
-                    $id = $_SESSION['id'];
-                    $sql = "SELECT * from transakcje_wychodzace as t join produkty_klienci as pk on t.numer_rachunku=pk.numer_rachunku where pk.id_klienta=$id order by data_transakcji desc";
-                    $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        $string = <<<ROW
-                        <tr>
-                        <td>$row[data_transakcji]</td>
-                        <td>$row[numer_rachunku]</td>
-                        <td>$row[na_rachunek]</td>
-                        <td>$row[odbiorca]</td>
-                        <td>$row[adres_odbiorcy]</td>
-                        <td>$row[tytul]</td>
-                        <td>$row[kwota]</td>
-                        <td>%s</td>
-                        </tr>
-                        ROW;
-                        $string = sprintf($string, translate($row['czy_wykonana']));
-                        echo $string;
+            <div class="table">
+                <h1>Historia przelewów</h1>
+                <table>
+                    <tr>
+                        <th>data transakcji</th>
+                        <th>numer rachunku</th>
+                        <th>na rachunek</th>
+                        <th>odbiorca</th>
+                        <th>adres odbiorcy</th>
+                        <th>tytuł</th>
+                        <th>kwota</th>
+                        <th>wykonana</th>
+                    </tr>
+                    <!--</table>-->
+                    <?php
+                    /*session_start();*/
+                    require_once('connect.php');
+                    require_once('functions.php');
+                    if (isset($_SESSION['username'])) {
+                        $username = $_SESSION['username'];
+                        $id = $_SESSION['id'];
+                        $sql = "SELECT * from transakcje_wychodzace as t join produkty_klienci as pk on t.numer_rachunku=pk.numer_rachunku where pk.id_klienta=$id order by data_transakcji desc";
+                        $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            $string = <<<ROW
+                            <tr>
+                            <td>$row[data_transakcji]</td>
+                            <td>$row[numer_rachunku]</td>
+                            <td>$row[na_rachunek]</td>
+                            <td>$row[odbiorca]</td>
+                            <td>$row[adres_odbiorcy]</td>
+                            <td>$row[tytul]</td>
+                            <td>$row[kwota]</td>
+                            <td>%s</td>
+                            </tr>
+                            ROW;
+                            $string = sprintf($string, translate($row['czy_wykonana']));
+                            echo $string;
+                        }
                     }
-                }
-                ?>
-            </table>
+                    ?>
+                </table>
+            </div>
         </div>
     </div>
 </div>

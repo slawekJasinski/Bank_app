@@ -7,7 +7,7 @@
     <title>KASBank - administracja</title>
 </head>
 <body>
-<h1 style="color: red;">Status sprawy:</h1><?php
+<h1>Status sprawy:</h1><?php
 {
     session_start();
     require_once('connect.php');
