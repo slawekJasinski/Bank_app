@@ -1,6 +1,10 @@
 <?php
 session_start();
 $id=$_SESSION['id'];
+session_start();
+if(!isset($_SESSION['username'])){
+    header('location:index.php');
+}
 //wybór typu reklamacji
 //varchar - temat reklamacji(40 znaków)
 //varchar - tekst reklamacji(nieograniczony)
