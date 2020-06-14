@@ -76,14 +76,14 @@ require_once('functions.php')
         <div class="info">
             <table>
                 <tr>
-                    <th>data_transakcji</th>
-                    <th>numer_rachunku</th>
-                    <th>na_rachunek</th>
+                    <th>data transakcji</th>
+                    <th>numer rachunku</th>
+                    <th>na rachunek</th>
                     <th>odbiorca</th>
-                    <th>adres_odbiorcy</th>
-                    <th>tytul</th>
+                    <th>adres odbiorcy</th>
+                    <th>tytuł</th>
                     <th>kwota</th>
-                    <th>czy_wykonana</th>
+                    <th>wykonana</th>
                 </tr>
                 <!--</table>-->
                 <?php

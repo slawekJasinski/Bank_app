@@ -100,7 +100,6 @@ function products_show($type)
       <tr>
         <td class="column1">$row[numer_rachunku]</td>
         <td class="column2">$row[data_aktywacji]</td>
-        <td class="column3">$row[data_od]</td>
         <td class="column4">$row[nazwa_produktu]</td>
         <td class="column5">$saldo</td>
         <td class="column6">$dostepne_srodki</td>   
