@@ -2,6 +2,9 @@
     session_start();
     require_once('connect.php');
     require_once('functions.php');
+if(!isset($_SESSION['username'])){
+    header('location:index.php');
+}
 ?>
 
 <!DOCTYPE html>
