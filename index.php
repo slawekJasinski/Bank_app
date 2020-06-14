@@ -15,7 +15,10 @@ session_start();
       <a href="admin/index.php">Zaloguj jako administrator</a>
     </nav>
 
-  <?php
+  
+
+    <form class="box" action="login.php" method="post">
+    <?php
     if (isset($_SESSION['error'])) {
   
       echo <<<ERROR
@@ -30,8 +33,6 @@ session_start();
       unset($_SESSION['error']);
     }
 ?>
-
-    <form class="box" action="login.php" method="post">
       <h1>Zaloguj się</h1>
 
       <label for="login">
@@ -40,7 +41,7 @@ session_start();
         </div>
       </label>
 
-      <input type="email" name="login" id="login" placeholder="Login" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
+      <input type="email" name="login" id="login" placeholder="Login" autocomplete="off" required="required" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
 
       <label for="password">
         <div class="icon">
