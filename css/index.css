@@ -1,4 +1,4 @@
-@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
@@ -34,6 +34,26 @@ nav a{
 
 nav span{
   color: #fff;
+}
+
+img{
+  position: absolute;
+  /*bottom: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);*/
+  bottom: 10px;
+  left: 10px;
+  width: 150px;
+  height: auto;
+}
+
+.img2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: auto;
+  height: 50px;
 }
 
 #zegar{
@@ -114,4 +134,20 @@ nav span{
 
 .icon:hover{
   cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+
+	nav img{
+		display: none;
+  }
+  
+  #zegar, nav a{
+    font-size: 14px;
+  }
+
+  img{
+    display: none;
+  }
+
 }

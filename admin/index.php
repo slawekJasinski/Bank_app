@@ -18,6 +18,7 @@
 		<nav>
 			<a href="../">Zaloguj jako <span>klient</span></a>
 			<div id="zegar"></div>
+			<img src="../img/logo.png" alt="">
 		</nav>
 		
 		<img class="wave" src="img/wave.png">

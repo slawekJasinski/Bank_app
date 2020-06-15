@@ -12,6 +12,11 @@ body{
 	background-color: #594f8d;
 }
 
+nav{
+	position: relative;
+	height: 54px;
+}
+
 nav a{
 	text-decoration: none;
 	color: #d9d9d9;
@@ -22,6 +27,15 @@ nav a{
 	font-weight: 600;
 	right: 10px;
 	top: 19px;
+}
+
+nav img{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: auto;
+	height: 75px;
 }
 
 nav span{
@@ -249,5 +263,9 @@ form{
 
 	.login-content{
 		justify-content: center;
+	}
+
+	nav img{
+		display: none;
 	}
 }

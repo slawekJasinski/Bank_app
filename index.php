@@ -17,7 +17,10 @@
     <nav>
       <a href="admin">Zaloguj jako <span>administrator</span></a>
       <div id="zegar"></div>
+		  <img src="img/logo.png" alt="" class="img2">
     </nav>
+
+    <img src="img/logo.png" alt="" class="img">
 
     <form class="box" action="login.php" method="post">
       <?php
