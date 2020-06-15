@@ -12,27 +12,23 @@ session_start();
 
   <body>
     <nav>
-      <a href="admin/index.php">Zaloguj jako administrator</a>
+      <a href="admin/index.php">Zaloguj jako <span style="color: #fff;">administrator</span></a>
+
+      
     </nav>
 
-  
-
     <form class="box" action="login.php" method="post">
-    <?php
-    if (isset($_SESSION['error'])) {
-  
-      echo <<<ERROR
-        <div class="card card-outline card-danger">
-          <div class="card-header">
-            <h3 class="card-tittle" style="color: red;">{$_SESSION['error']}</h3>
-            <div class="card-tools">
-            </div>
-          </div>
-        </div>
-      ERROR;
-      unset($_SESSION['error']);
-    }
-?>
+      <?php
+        if (isset($_SESSION['error'])) {
+      
+          echo <<<ERROR
+            
+            <h3 style="color: red;">{$_SESSION['error']}</h3>
+              
+          ERROR;
+          unset($_SESSION['error']);
+        }
+      ?>
       <h1>Zaloguj się</h1>
 
       <label for="login">

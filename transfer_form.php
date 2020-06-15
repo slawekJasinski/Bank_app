@@ -78,27 +78,28 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="form">
                         <form action="transfer_confirm.php" method="post">
-                        <?php
-                            $id=$_SESSION['id'];
-                            require_once('connect.php');
-                            $sql = "SELECT * FROM `produkty_klienci` where id_klienta=$id AND id_produktu IN (select id_typu_produktu from typy_produktow where czy_produkt_z_karta=1)";
-                            $result = mysqli_query($conn,$sql);
-                            echo "<select name=\"number\">";
-                            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-                                echo "<option value='" . $row['numer_rachunku'] . "'>" . $row['numer_rachunku']." - dostępne środki: ".dostepne_srodki($row['id_produktu_klienta']) ."zł"." </option>";
+                            <?php
+                                $id=$_SESSION['id'];
+                                require_once('connect.php');
+                                $sql = "SELECT * FROM `produkty_klienci` where id_klienta=$id AND id_produktu IN (select id_typu_produktu from typy_produktow where czy_produkt_z_karta=1)";
+                                $result = mysqli_query($conn,$sql);
+                                echo "<select name=\"number\">";
+                                while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+                                    echo "<option value='" . $row['numer_rachunku'] . "'>" . $row['numer_rachunku']." - dostępne środki: ".dostepne_srodki($row['id_produktu_klienta']) ."zł"." </option>";
+                                }
+                                echo "</select>";
+                            ?>
+                            
+                            <?php
+                            if(isset($_POST['numer_rachunku'])){
+                                $account =  $_POST['numer_rachunku'];
+                                $_SESSION['numer_rachunku'] = $account;
+                            }else{
+                                header('location: main_page.php');
                             }
-                            echo "</select>";
+                            $sender=$_SESSION['username'];
                             ?>
 
-                                <?php
-                                if(isset($_POST['numer_rachunku'])){
-                                    $account =  $_POST['numer_rachunku'];
-                                    $_SESSION['numer_rachunku'] = $account;
-                                }else{
-                                    header('location: main_page.php');
-                                }
-                                $sender=$_SESSION['username'];
-                            ?>
                             <div class="inputfield">
                                 <label for="name">Numer rachunku odbiorcy</label>
                                 <input type="text" class="input" name="credit-card" id="credit-card" autocomplete="off" pattern="[0-9]{26}" required>

@@ -42,10 +42,10 @@
     <h1>Podsumowanie przelewu</h1> <br>
     <?php make_transfer($date, $account, $sender, $credit_card, $receiver_name, $_receiver_address, $title, $amount); ?>
     <script>alert("<?php echo "Przelew do: ".bank_name(substr($credit_card, 3, 6)); ?>")</script>
-    Konto nadawcy:<?php echo $account ?><br>
-    Konto odbiorcy:<b><?php echo $credit_card ?><br>
-        Bank:<?php echo bank_name($credit_card) ?></b><br>
-    Kwota:<?php echo $amount ?> zł<br>
+    Konto nadawcy: <?php echo $account ?><br>
+    Konto odbiorcy: <?php echo $credit_card ?><br>
+        Bank: <?php echo bank_name($credit_card) ?><br>
+    Kwota: <?php echo $amount ?> zł<br>
 
 </body>
 </html>
