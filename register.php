@@ -15,7 +15,7 @@ session_start();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/scroll-up.js"></script>
-    <title>rejestracja</title>
+    <title>KAS Bank - Rejestracja klienta</title>
 </head>
 
 <body>
