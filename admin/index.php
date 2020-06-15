@@ -9,12 +9,14 @@ session_start();
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+		<script src="js/timer.js" type="text/javascript" ></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
-	<body>
+	<body onload="odliczanie();">
 		<nav>
 			<a href="../index.php">Zaloguj jako <span style="color: #fff">klient</span></a>
+			<div id="zegar"></div>
 		</nav>
 		
 		<img class="wave" src="img/wave.png">

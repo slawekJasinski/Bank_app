@@ -8,13 +8,13 @@ session_start();
     <meta charset="utf-8">
     <title>KAS Bank - logowanie</title>
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <script src="js/timer.js" type="text/javascript" ></script>
   </head>
 
-  <body>
+  <body onload="odliczanie();">
     <nav>
       <a href="admin/index.php">Zaloguj jako <span style="color: #fff;">administrator</span></a>
-
-      
+      <div id="zegar"></div>
     </nav>
 
     <form class="box" action="login.php" method="post">
