@@ -161,7 +161,7 @@ ROW;
 
 body{
   /*background-color: #717171;*/
-  background: url("../img/background3.jpg");
+  background: url("../img/bg.jpg");
   background-size: 10%;
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;

@@ -1,6 +1,6 @@
 <?php
 session_start();
 // zniszczenie sesji
-header('location: admin');
+header('location: ./');
 session_destroy();
 ?>

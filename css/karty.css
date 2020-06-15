@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
-/*mogłem to wpakować w Sass-a :P*/
-/* pousuwać potem to co niepotrzebne */
+
 *{
   margin: 0;
   padding: 0;
@@ -12,8 +11,7 @@
 }
 
 body{
-  /*background-color: #717171;*/
-  background: url("../img/background3.jpg");
+  background: url("../img/bg.jpg");
   background-size: 10%;
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
@@ -22,7 +20,6 @@ body{
 
 .wrapper{
   display: flex;
-  /*position: relative;*/
 }
 
 .wrapper .sidebar{
@@ -41,8 +38,6 @@ body{
   text-transform: uppercase;
   text-align: center;
   padding: 30px;
-  /*border-right: 0px solid #e0e4e8;*/ /*borderrrrrrrrrrrrrrr*/
-
 }
 
 .wrapper .sidebar .sidebar-top ul li{
@@ -50,7 +45,6 @@ body{
   border-bottom: 1px solid rgba(226,226,226,0.1);
   border-top: 1px solid rgba(226,226,226,0.1);
   height: 50px;
-
 }    
 
 .wrapper .sidebar .sidebar-top ul li a{
@@ -109,9 +103,9 @@ body{
 }
 
 /*#########################################################*/
+
 .wrapper .main_content{
   margin-left: 220px;
-  /*height: 100vh;*/
   width: 100vw;
 }
 
@@ -173,7 +167,6 @@ body{
 }
 
 .sign-out{
-  /*line-height: 90px;*/
   text-align: center;
   text-align: right;
   padding-right: 240px;
@@ -270,7 +263,6 @@ table{
 }
 
 th{
-  /*border: 2px solid green;*/
   text-align: left;
   padding: 10px;
   border-bottom: 2px solid #eaeaea;
@@ -279,32 +271,15 @@ th{
 }
 
 td{
-  /*border: 2px solid red;*/
   padding: 10px;
   border-bottom: 1px solid #efefef;
   
 }
 tbody{
   width: 100%;
-
 }
 
 /* ############################################################################# */
-
-
-/*
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  font-family: "Montserrat", sans-serif;
-}
-
-body {
-  background: #eaeaea;
-}*/
-
 
 .table_wrap {
   width: 1500px;

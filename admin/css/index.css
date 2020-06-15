@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
 
-
 *{
 	padding: 0;
 	margin: 0;
@@ -10,8 +9,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 	overflow: hidden;
-	background-color: #594f8d;  /* jaśniejsze */
-	/*background-color: #4b4276;*/ /* ciemniejsze */
+	background-color: #594f8d;
 }
 
 nav a{
@@ -21,7 +19,6 @@ nav a{
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
 	line-height: 16px;
-	/*font-family: 'Courier Prime', monospace;*/
 	font-weight: 600;
 	right: 10px;
 	top: 19px;
@@ -40,7 +37,7 @@ nav span{
 	color: #d9d9d9;
 	font-family: 'Courier Prime', monospace;
 	font-weight: 700;
-  }
+}
 
 a{
 	display: block;
@@ -50,10 +47,6 @@ a{
 	font-size: 0.9rem;
 	transition: .3s;
 }
-
-/*a:hover{
-	color: #38d39f;
-}*/
 
 .wave{
 	position: fixed;
@@ -104,7 +97,6 @@ form{
 
 .login-content h2{
 	margin: 15px 0;
-	/*color: #333;*/
 	color: #d9d9d9;
 	text-transform: uppercase;
 	font-size: 2.9rem;

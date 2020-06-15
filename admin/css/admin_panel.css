@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
-/*mogłem to wpakować w Sass-a :P*/
 
 *{
   margin: 0;
@@ -12,8 +11,7 @@
 }
 
 body{
-  /*background-color: #717171;*/
-  background: url("../../img/background3.jpg");
+  background: url("../../img/bg.jpg");
   background-size: 10%;
   height: 100vh;
   width: 100vw;
@@ -22,7 +20,6 @@ body{
 
 .wrapper{
   display: flex;
-  /*position: relative;*/
 }
 
 .wrapper .sidebar{
@@ -45,7 +42,6 @@ body{
   text-transform: uppercase;
   text-align: center;
   padding: 30px;
-  /*border-right: 0px solid #e0e4e8;*/ /*borderrrrrrrrrrrrrrr*/
   height: 89px;
 }
 
@@ -80,16 +76,14 @@ body{
 }
 
 .wrapper .sidebar .sidebar-bottom{
-    /*height: 100%;*/
-    height: 680px;
-    background-color: #594f8d;
-    /*padding-top: 300px;*/
-    position: relative;
+  height: 680px;
+  background-color: #594f8d;
+  position: relative;
 }
 
 .wrapper .sidebar .sidebar-bottom ul{
-    position: absolute;
-    bottom: 0px;
+  position: absolute;
+  bottom: 0px;
 }
 
 .wrapper .sidebar .sidebar-bottom ul li{
@@ -113,6 +107,7 @@ body{
 }
 
 /*#########################################################*/
+
 .wrapper .main_content{
   margin-left: 220px;
 }
@@ -132,7 +127,6 @@ body{
 .wrapper .main_content .info{
   margin-top: 200px;
   width: 100vw;
-  /*height: 100%;*/
   line-height: 25px;
 }
 
@@ -156,41 +150,35 @@ body{
 .wrapper .main_content .info .square{
   text-align: center;
   background-color: rgb(243, 243, 243);
-  /*margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 15px;*/
   width: 900px;
   height: 280px;
   margin-left: 400px;
   margin-right: 400px;
   margin-bottom: 50px;
-  /*float: left;*/
   padding: 15px;
   border-radius: 20px;
   position: relative;
   color: rgb(65, 70, 139);
   font-size: 30px;
   -webkit-box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
--moz-box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
-box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
+  -moz-box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
+  box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
 }
 
 .wrapper .main_content .info .square:last-child{
-    margin-bottom: 110px;
+  margin-bottom: 110px;
 }
 
 .wrapper .main_content .info .square p:first-of-type{
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .wrapper .main_content .info .square i{
-    margin-top: 50px;
-    font-size: 40px;
+  margin-top: 50px;
+  font-size: 40px;
 }
 
 .sign-out{
-  /*line-height: 90px;*/
   text-align: center;
   text-align: right;
   padding-right: 240px;
@@ -225,12 +213,11 @@ box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
   border-radius: 10px;
   margin-bottom: 20px;
   height: 50px;
-  /*padding: 15px;*/ /*czy to musi być?????*/
   background-color: #4b4276;
   text-align: center; 
   width: 65%;
   transition: .5s;
- }
+}
   
 .btn2:hover{
   cursor: pointer;
@@ -292,6 +279,6 @@ box-shadow: 0px 0px 10px 3px rgba(36,36,36,1);
 }
 
 .info2{
-    width: 100%;
-    height: 500px;
+  width: 100%;
+  height: 500px;
 }

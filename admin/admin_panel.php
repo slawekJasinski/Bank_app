@@ -37,7 +37,7 @@
                     <ul>
                         <li><a href="admin_panel.php"><i class="fas fa-home"></i>Strona główna</a></li>
                         <li><a href="#"><i class="fas fa-user-cog"></i>Zarządzanie klientami</a></li>
-                        <li><a href="../register.php"><i class="fas fa-user-plus"></i>Dodaj klienta</a></li>
+                        <li><a href="register.php"><i class="fas fa-user-plus"></i>Dodaj klienta</a></li>
                         <li><a href="#"><i class="fas fa-user-minus"></i>Usuń klienta</a></li>
                     </ul> 
                 </div>
@@ -46,7 +46,7 @@
                     <div class="sidebar-top">
                         <ul>
                             <li><a href="#" style="padding: 0; text-align: center; line-height: 50px;">Ustawienia</a></li> 
-                            <li><a href="../admin_logout.php" style="padding: 0; text-align: center; line-height: 50px;">Wyloguj</a></li>
+                            <li><a href="admin_logout.php" style="padding: 0; text-align: center; line-height: 50px;">Wyloguj</a></li>
                         </ul>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
 
                     <div class="sign-out">
 
-                        <form action="../admin_logout.php" method="get">  <!-- form czy a href ? -->
+                        <form action="admin_logout.php" method="get">  <!-- form czy a href ? -->
                             <button class="btn">Wyloguj<i class="fas fa-sign-out-alt"></i></button>
                         </form>
                                                 
@@ -75,9 +75,9 @@
 
                         <div class="square">
                             <p>W tym panelu możesz utworzyć konto dla nowego klienta</p>
-                            <p class="icon1"><a href="../register.php"><i class="fas fa-user-plus" style="color: green"></i></a></p>
+                            <p class="icon1"><a href="register.php"><i class="fas fa-user-plus" style="color: green"></i></a></p>
                             <div class="test">
-                                <a href="../register.php">
+                                <a href="register.php">
                                     <button class="btn2">Utwórz konto nowego klienta</button>
                                 </a>
                             </div>

@@ -9,7 +9,7 @@ session_start();
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-		<script src="js/timer.js" type="text/javascript" ></script>
+		<script src="../js/timer.js" type="text/javascript" ></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
@@ -26,7 +26,7 @@ session_start();
 				<img src="img/bg2.svg">
 			</div>
 			<div class="login-content">
-				<form action="../admin_login.php" method="post">
+				<form action="admin_login.php" method="post">
 					<img src="img/avatar2.svg" class="avatar">
 					<h2 class="title">Administrator</h2>
 					<div class="input-div one">
