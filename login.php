@@ -60,7 +60,7 @@ if (isset($_POST['login'])) {
             }
         } else {
             $_SESSION['error-trigger'] = 1;
-            $_SESSION['error'] = "Błąd systemowy.<br><br>Spróbuj ponownie.";
+            $_SESSION['error'] = "Błąd systemowy.<br>Spróbuj ponownie.";
             header('location: index.php');
         }
     }else {

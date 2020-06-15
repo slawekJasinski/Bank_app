@@ -15,7 +15,7 @@ session_start();
 
 	<body onload="odliczanie();">
 		<nav>
-			<a href="../index.php">Zaloguj jako <span style="color: #fff">klient</span></a>
+			<a href="../">Zaloguj jako <span>klient</span></a>
 			<div id="zegar"></div>
 		</nav>
 		

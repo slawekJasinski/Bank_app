@@ -13,7 +13,7 @@ session_start();
 
   <body onload="odliczanie();">
     <nav>
-      <a href="admin/index.php">Zaloguj jako <span style="color: #fff;">administrator</span></a>
+      <a href="admin">Zaloguj jako <span>administrator</span></a>
       <div id="zegar"></div>
     </nav>
 
