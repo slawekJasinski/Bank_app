@@ -35,7 +35,9 @@ nav a{
   top: 19px;
 }
 
-
+nav span{
+  color: #fff;
+}
 
 #zegar{
   position: absolute;
