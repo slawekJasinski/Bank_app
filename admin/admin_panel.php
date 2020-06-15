@@ -1,12 +1,12 @@
 <?php
-{ 
-    session_start();
-    if(!isset($_SESSION['username'])){
-        header('location:../admin_index.php');
-    }
-    $_SESSION['account_number']='12345678901234567890123456';
-    require_once('../connect.php');
-}  
+    { 
+        session_start();
+        if(!isset($_SESSION['username'])){
+            header('location:../admin_index.php');
+        }
+        $_SESSION['account_number']='12345678901234567890123456';
+        require_once('../connect.php');
+    }  
 ?>
 
 <!DOCTYPE html>
@@ -71,40 +71,34 @@
                 </div>  
 
                 <div class="info">
-                    
 
-                        <div class="square">
-                            <p>W tym panelu możesz utworzyć konto dla nowego klienta</p>
-                            <p class="icon1"><a href="register.php"><i class="fas fa-user-plus" style="color: green"></i></a></p>
-                            <div class="test">
-                                <a href="register.php">
-                                    <button class="btn2">Utwórz konto nowego klienta</button>
-                                </a>
-                            </div>
+                    <div class="square">
+                        <p>W tym panelu możesz utworzyć konto dla nowego klienta</p>
+                        <p class="icon1"><a href="register.php"><i class="fas fa-user-plus" style="color: green"></i></a></p>
+                        <div class="test">
+                            <a href="register.php">
+                                <button class="btn2">Utwórz konto nowego klienta</button>
+                            </a>
                         </div>
-                        <div class="square">
-                            <p>W tym panelu możesz zarządać istniejącymi klientami</p>
-                            <p class="icon2"><a href="#"><i class="fas fa-user-cog" style="color: gray"></i></a></p>
-                            <div class="test">
-                                <a href="#">
-                                    <button class="btn2">Przejdź do zarządzania</button>
-                                </a>
-                            </div>
+                    </div>
+                    <div class="square">
+                        <p>W tym panelu możesz zarządać istniejącymi klientami</p>
+                        <p class="icon2"><a href="#"><i class="fas fa-user-cog" style="color: gray"></i></a></p>
+                        <div class="test">
+                            <a href="#">
+                                <button class="btn2">Przejdź do zarządzania</button>
+                            </a>
                         </div>
-                        <div class="square">
-                            <p>W tym panelu możesz usunąć konto obecnego klienta</p>
-                            <p class="icon3"><a href="#"><i class="fas fa-user-minus" style="color: #e00000"></i></a></p>
-                            <div class="test">
-                                <a href="#">
-                                    <button class="btn2">Usuń konto klienta</button>
-                                </a>
-                            </div>
+                    </div>
+                    <div class="square">
+                        <p>W tym panelu możesz usunąć konto obecnego klienta</p>
+                        <p class="icon3"><a href="#"><i class="fas fa-user-minus" style="color: #e00000"></i></a></p>
+                        <div class="test">
+                            <a href="#">
+                                <button class="btn2">Usuń konto klienta</button>
+                            </a>
                         </div>
-                        
-                        
-                        
-
-                    
+                    </div>
                 </div>
             </div>
         </div>

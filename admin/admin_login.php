@@ -1,10 +1,10 @@
 <?php
-session_start();
-require_once('../connect.php');
-require_once('../functions.php');
-$_SESSION['error-trigger'] = 0;
-//wyciągniecie wartości z indexu
-if (isset($_POST['login'])) {
+    session_start();
+    require_once('../connect.php');
+    require_once('../functions.php');
+    $_SESSION['error-trigger'] = 0;
+    //wyciągniecie wartości z indexu
+    if (isset($_POST['login'])) {
     $username = $_POST['login'];
     $password = $_POST['password'];
     $hashed_password = password_hash($_POST["password"], PASSWORD_DEFAULT);

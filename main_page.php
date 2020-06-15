@@ -1,8 +1,8 @@
 <?php
-session_start();
-if(!isset($_SESSION['username'])){
-    header('location:index.php');
-}
+    session_start();
+    if(!isset($_SESSION['username'])){
+        header('location:index.php');
+    }
 ?>
 <!DOCTYPE html>
     <html lang="en">
@@ -167,7 +167,6 @@ if(!isset($_SESSION['username'])){
                             </a>
                         </div>
                     </div>
-                   
                 </div>
             </div>
         </div>
