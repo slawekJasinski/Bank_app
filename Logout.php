@@ -1,6 +1,6 @@
 <?php
 session_start();
 // zniszczenie sesji
-header('location: index.php');
+header('location: ./');
 session_destroy();
 ?>
