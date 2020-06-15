@@ -268,4 +268,8 @@ form{
 	nav img{
 		display: none;
 	}
+
+	#zegar, nav a{
+		font-size: 14px;
+	}
 }
