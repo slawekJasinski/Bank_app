@@ -89,17 +89,6 @@
                                 }
                                 echo "</select>";
                             ?>
-                            
-                            <?php
-                            if(isset($_POST['numer_rachunku'])){
-                                $account =  $_POST['numer_rachunku'];
-                                $_SESSION['numer_rachunku'] = $account;
-                            }else{
-                                header('location: main_page.php');
-                            }
-                            $sender=$_SESSION['username'];
-                            ?>
-
                             <div class="inputfield">
                                 <label for="name">Numer rachunku odbiorcy</label>
                                 <input type="text" class="input" name="credit-card" id="credit-card" autocomplete="off" pattern="[0-9]{26}" required>

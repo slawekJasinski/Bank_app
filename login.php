@@ -5,7 +5,7 @@
     $_SESSION['error-trigger'] = 0;
     //wyciągniecie wartości z indexu
     if (isset($_POST['login'])) {
-        $username = $_POST['login'];
+        $username = htmlspecialchars(trim($_POST['login']));
         $password = $_POST['password'];
         $hashed_password = password_hash($_POST["password"], PASSWORD_DEFAULT);
         //sqlinjection
