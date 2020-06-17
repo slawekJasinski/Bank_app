@@ -95,7 +95,7 @@
                             if (isset($_SESSION['username'])) {
                                 $username = $_SESSION['username'];
                                 $id = $_SESSION['id'];
-                                $sql = "SELECT * from transakcje_wychodzace as t join produkty_klienci as pk on t.numer_rachunku=pk.numer_rachunku where pk.id_klienta=$id order by data_transakcji desc";
+                                $sql = "SELECT * from transakcje_wychodzace as t join produkty_klienci as pk on t.numer_rachunku=pk.numer_rachunku where pk.id_klienta=$id order by data_transakcji desc, data_wstawienia desc";
                                 $result = mysqli_query($conn, $sql) or die("Błąd polaczenia" . mysqli_error($conn));
                                 while ($row = mysqli_fetch_assoc($result)) {
                                     $string = <<<ROW
