@@ -103,7 +103,7 @@
                             </div>  
                             <div class="inputfield">
                                 <label>Adres odbiorcy</label>
-                                <textarea class="textarea"></textarea>
+                                <textarea class="textarea" name="receiver_address" id="receiver_address"></textarea>
                             </div> 
                             <div class="inputfield">
                                 <label>Tytuł przelewu</label>
