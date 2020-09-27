@@ -113,8 +113,8 @@ ROW;
                             </tr>
                             <!--</table>-->
                             <?php
-                                //session_start();
-                                //require_once('connect.php');
+                                //session_start(); 
+                                //require_once('connect.php'); 
                                 if (isset($_SESSION['username'])) {
                                     $conn = mysqli_connect('localhost', 'wikomp_gr1', 'BDWsB2021', 'wikomp_gr11'); //połaczenie z baza
                                     $username = $_SESSION['username'];
